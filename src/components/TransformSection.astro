@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import teamMember from "../assets/team-member.jpg";
+import { site } from "../lib/site";
+
+const cards = [
+  {
+    title: "Cosmetic care",
+    body: "Veneers, whitening, and clear braces.",
+    accent: "border-aqua",
+  },
+  {
+    title: "Restorative care",
+    body: "Implants, crowns, bridges, and complex restoration.",
+    accent: "border-gold",
+  },
+];
+---
+
+<section class="bg-white py-20 lg:py-28">
+  <div class="shell grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
+    <div class="lg:order-2">
+      <Image
+        src={teamMember}
+        alt="Dental team member in the bright Westport practice"
+        loading="lazy"
+        widths={[640, 1100, 1800]}
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        class="h-[390px] w-full object-cover sm:h-[540px]"
+      />
+    </div>
+
+    <div class="lg:order-1">
+      <p class="text-xs font-extrabold uppercase tracking-[.22em] text-teal">
+        02 · Transform and restore
+      </p>
+      <h2 class="mt-5 text-5xl font-light leading-[.98] tracking-[-.045em] sm:text-6xl">
+        Refine a detail.<br /><span class="font-extrabold">Rebuild with care.</span>
+      </h2>
+      <p class="mt-6 text-base leading-7 text-navy/70">
+        Explore options ranging from whitening, veneers, and clear braces to crowns, bridges,
+        dental implants, and full-mouth restoration.
+      </p>
+
+      <div class="mt-8 grid gap-5 sm:grid-cols-2">
+        {
+          cards.map((card) => (
+            <div class:list={["border-l-2 pl-4", card.accent]}>
+              <h3 class="font-extrabold">{card.title}</h3>
+              <p class="mt-2 text-sm leading-6 text-navy/65">{card.body}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <a
+        href={site.contactUrl}
+        class="mt-9 inline-block bg-navy px-7 py-4 text-sm font-extrabold text-white transition hover:bg-teal"
+        >Discuss Your Needs</a
+      >
+    </div>
+  </div>
+</section>

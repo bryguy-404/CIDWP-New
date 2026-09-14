@@ -1,0 +1,23 @@
+---
+import { site } from "../lib/site";
+---
+
+<section id="reviews" class="bg-navy text-white">
+  <div
+    class="shell flex flex-col gap-5 py-7 md:flex-row md:items-center md:justify-between"
+  >
+    <div>
+      <p class="text-xs font-bold uppercase tracking-[.2em] text-aqua">Patient perspectives</p>
+      <p class="mt-1 text-lg font-semibold">
+        See the latest independently published patient feedback.
+      </p>
+    </div>
+    <a
+      href={site.reviewsUrl}
+      target="_blank"
+      rel="noopener"
+      class="border border-white/40 px-5 py-3 text-center text-sm font-bold transition hover:border-aqua hover:text-aqua"
+      >View Current Google Reviews →</a
+    >
+  </div>
+</section>

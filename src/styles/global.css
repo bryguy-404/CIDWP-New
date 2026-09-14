@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+/**
+ * Design tokens — mirrored from `src/lib/theme.config.ts`.
+ * Tailwind v4 is CSS-first, so it cannot read the TS file directly.
+ * Keep the two in sync.
+ */
+@theme {
+  /* Semantic roles */
+  --color-primary: #1b2a45;
+  --color-secondary: #0d8aaa;
+  --color-accent: #2aacd1;
+  --color-background: #f7f5f1;
+  --color-foreground: #1b2a45;
+  --color-muted: #5d6779;
+
+  /* Brand aliases — the names used in the approved mockup */
+  --color-navy: #1b2a45;
+  --color-teal: #0d8aaa;
+  --color-aqua: #2aacd1;
+  --color-gold: #c6a15b;
+  --color-ivory: #f7f5f1;
+
+  --font-sans: "Manrope", sans-serif;
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  /* Preloaded and mapped, but intentionally unused in the approved design. */
+  --font-serif: "Cormorant Garamond", serif;
+
+  /* The design is strictly square-cornered — no radius anywhere. */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+  }
+
+  /* Accessibility addition beyond the mockup: a visible keyboard focus ring. */
+  :focus-visible {
+    outline: 2px solid var(--color-aqua);
+    outline-offset: 3px;
+  }
+}
+
+/** Centered page container shared by every section. */
+@utility shell {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem; /* max-w-7xl */
+  padding-inline: 1.25rem; /* px-5 */
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem; /* sm:px-6 */
+  }
+}
+
+/** Full-viewport hero, with svh fallback for mobile browser chrome. */
+@utility hero-frame {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/**
+ * Horizontal ivory wash over the full-bleed hero photo: opaque at the left so
+ * copy stays legible, fully transparent by 82% of the width.
+ */
+@utility hero-wash {
+  background: linear-gradient(
+    90deg,
+    rgb(247 245 241 / 0.98) 0%,
+    rgb(247 245 241 / 0.92) 35%,
+    rgb(247 245 241 / 0.35) 62%,
+    rgb(247 245 241 / 0) 82%
+  );
+  @media (width < 48rem) {
+    background: linear-gradient(90deg, rgb(247 245 241 / 0.96), rgb(247 245 241 / 0.72));
+  }
+}
+
+/** Ivory paper stock with a barely-there navy micro-dot texture. */
+@utility paper {
+  background-color: var(--color-ivory);
+  background-image: radial-gradient(rgb(27 42 69 / 0.055) 0.65px, transparent 0.65px);
+  background-size: 8px 8px;
+}

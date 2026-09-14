@@ -1,0 +1,32 @@
+---
+const cards = [
+  {
+    title: "For anxious patients",
+    body: "Ask about sedation options and a pace of care that helps you feel informed throughout your visit.",
+  },
+  {
+    title: "Technology, explained",
+    body: "Technology-forward planning is paired with direct explanations, so treatment choices remain clear and personal.",
+  },
+];
+---
+
+<section id="comfort" class="paper py-20 lg:py-24">
+  <div class="shell grid gap-10 lg:grid-cols-3">
+    <div class="lg:col-span-1">
+      <p class="text-xs font-extrabold uppercase tracking-[.22em] text-teal">Comfort + clarity</p>
+      <h2 class="mt-4 text-4xl font-extrabold tracking-[-.04em]">
+        Capable care.<br />Human delivery.
+      </h2>
+    </div>
+
+    {
+      cards.map((card) => (
+        <div class="border-t border-gold pt-5">
+          <h3 class="text-xl font-bold">{card.title}</h3>
+          <p class="mt-3 text-sm leading-6 text-navy/70">{card.body}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>

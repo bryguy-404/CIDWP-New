@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import practiceInterior from "../assets/practice-interior.jpg";
+
+const keywords = ["Preventive dentistry", "Hygiene", "Fillings", "Emergency care"];
+---
+
+<section id="care" class="paper py-20 lg:py-28">
+  <div class="shell grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
+    <div class="relative">
+      <div class="absolute -left-4 -top-4 h-24 w-24 border-l border-t border-gold"></div>
+      <Image
+        src={practiceInterior}
+        alt="A candid view of the Westport dental practice"
+        loading="lazy"
+        widths={[640, 1100, 1800]}
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        class="relative h-[390px] w-full object-cover sm:h-[520px]"
+      />
+    </div>
+
+    <div>
+      <p class="text-xs font-extrabold uppercase tracking-[.22em] text-teal">01 · General care</p>
+      <h2 class="mt-5 text-5xl font-light leading-[.98] tracking-[-.045em] sm:text-6xl">
+        Routine care,<br /><span class="font-extrabold">made personal.</span>
+      </h2>
+      <p class="mt-6 max-w-xl text-base leading-7 text-navy/70">
+        Keep everyday oral health moving forward with preventive dentistry, hygiene visits,
+        fillings, mouth guards, and care when something suddenly hurts.
+      </p>
+
+      <div class="mt-8 grid grid-cols-2 gap-3 text-sm font-bold">
+        {keywords.map((keyword) => <span class="border-t border-navy/20 pt-3">{keyword}</span>)}
+      </div>
+
+      <a href="#services" class="mt-9 inline-flex items-center gap-3 font-extrabold text-teal">
+        See all services <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>

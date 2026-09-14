@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+import { site } from "../lib/site";
+---
+
+<footer class="bg-navy text-white">
+  <div class="shell flex flex-col gap-7 py-10 md:flex-row md:items-center md:justify-between">
+    <!-- Ivory plate keeps the dark-on-light logo legible against navy. -->
+    <div class="inline-flex w-fit bg-ivory px-4 py-3">
+      <Image
+        src={logo}
+        alt={site.name}
+        widths={[192, 384]}
+        sizes="192px"
+        class="h-10 w-48 object-contain"
+      />
+    </div>
+
+    <div class="text-sm text-white/65 md:text-right">
+      <p>Full-service dental care in Westport, Kansas City, Missouri.</p>
+      <p class="mt-2">
+        <a href="#services" class="hover:text-aqua">Services</a><span class="mx-3">·</span><a
+          href={site.contactUrl}
+          class="hover:text-aqua">Contact &amp; calling details</a
+        >
+      </p>
+    </div>
+  </div>
+</footer>

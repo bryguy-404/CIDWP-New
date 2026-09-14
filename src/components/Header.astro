@@ -1,0 +1,107 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+import { site, navLinks } from "../lib/site";
+---
+
+<header class="absolute inset-x-0 top-0 z-50">
+  <!-- Utility topbar (lg and up only) -->
+  <div class="hidden bg-navy text-white lg:block">
+    <div
+      class="mx-auto flex h-9 max-w-7xl items-center justify-between px-6 text-[11px] font-semibold uppercase tracking-[.18em]"
+    >
+      <span>{site.tagline}</span>
+      <a href={site.contactUrl} class="transition hover:text-aqua"
+        >Westport, Kansas City, Missouri · Contact details</a
+      >
+    </div>
+  </div>
+
+  <nav class="border-b border-navy/10 bg-ivory/95 backdrop-blur-md">
+    <div
+      class="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 lg:h-[88px] lg:px-6"
+    >
+      <a href="#" class="flex shrink-0 items-center" aria-label={`${site.name} home`}>
+        <Image
+          src={logo}
+          alt={site.name}
+          widths={[208, 416]}
+          sizes="(min-width: 640px) 208px, 176px"
+          class="h-12 w-44 object-contain object-left sm:w-52"
+        />
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm font-semibold lg:flex">
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="border-b-2 border-transparent py-2 transition hover:border-aqua"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+        <a
+          href={site.contactUrl}
+          class="bg-aqua px-6 py-4 font-bold text-navy transition hover:bg-teal hover:text-white"
+          >Contact Us</a
+        >
+      </div>
+
+      <button
+        id="menuButton"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        aria-label="Open navigation"
+        class="grid h-11 w-11 place-items-center border border-navy/20 lg:hidden"
+      >
+        <span class="space-y-1.5">
+          <span class="block h-0.5 w-6 bg-navy"></span>
+          <span class="block h-0.5 w-6 bg-navy"></span>
+          <span class="block h-0.5 w-6 bg-navy"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-navy/10 bg-ivory px-5 pb-6 lg:hidden">
+      <div class="flex flex-col pt-3 text-sm font-semibold">
+        {
+          navLinks.map((link) => (
+            <a href={link.href} class="border-b border-navy/10 py-4">
+              {link.label}
+            </a>
+          ))
+        }
+        <a href={site.contactUrl} class="mt-5 bg-aqua px-5 py-4 text-center font-bold">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const button = document.getElementById("menuButton");
+  const menu = document.getElementById("mobileMenu");
+
+  if (button && menu) {
+    const setOpen = (open: boolean) => {
+      button.setAttribute("aria-expanded", String(open));
+      button.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      menu.classList.toggle("hidden", !open);
+    };
+
+    button.addEventListener("click", () => {
+      setOpen(button.getAttribute("aria-expanded") !== "true");
+    });
+
+    menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        button.focus();
+      }
+    });
+  }
+</script>
