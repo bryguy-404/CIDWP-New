@@ -1,0 +1,19 @@
+---
+import { site, serviceLinks } from "../lib/site";
+import Icon from "./Icon.astro";
+import SectionHeading from "./SectionHeading.astro";
+const faqs = [
+  { question: "How do I schedule my first visit?", answer: "Use our online appointment page to get started, or call our Westport team. We can help you choose the right kind of appointment and answer questions before you arrive.", link: { label: "Book your first visit", href: site.bookingUrl } },
+  { question: "What if I’m nervous about dental care?", answer: "Let us know when you schedule. We can talk through what would help you feel more comfortable and discuss the sedation options available for your care.", link: { label: "Learn about sedation", href: serviceLinks.sedation } },
+  { question: "Can I visit without dental insurance?", answer: "Yes. The practice offers a Smile Club. Explore the membership details and contact our team to discuss costs and options for the care you’re considering.", link: { label: "Explore Smile Club", href: site.smileClubUrl } },
+  { question: "What if I have an urgent dental concern?", answer: "Call the practice to describe what’s happening and ask about the earliest available appointment. Our team can help you with the next step.", link: { label: `Call ${site.phone}`, href: site.phoneUrl } },
+];
+---
+<section id="questions" class="faq-section section-space" aria-labelledby="faq-title">
+  <div class="shell faq-grid">
+    <div><p class="eyebrow">A little clarity before you arrive</p><SectionHeading id="faq-title" lines={["Good questions.", "Thoughtful answers."]} /><p class="body-copy">Something else on your mind?<br />We’re only a phone call away.</p><a href={site.phoneUrl} class="text-link">{site.phone} <Icon name="phone" /></a></div>
+    <div class="faq-list">
+      {faqs.map((faq) => <details name="patient-questions" class="faq-item"><summary>{faq.question}<Icon name="plus" /></summary><div class="faq-answer"><p>{faq.answer}</p><a href={faq.link.href} class="text-link">{faq.link.label}<Icon /></a></div></details>)}
+    </div>
+  </div>
+</section>

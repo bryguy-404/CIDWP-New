@@ -1,29 +1,11 @@
 ---
 import { site } from "../lib/site";
+import Icon from "./Icon.astro";
+import SectionHeading from "./SectionHeading.astro";
 ---
-
-<section id="contact" class="bg-aqua">
-  <div class="shell grid gap-8 py-16 lg:grid-cols-[1fr_auto] lg:items-center">
-    <div>
-      <p class="text-xs font-extrabold uppercase tracking-[.22em]">{site.locality}</p>
-      <h2 class="mt-3 text-4xl font-extrabold tracking-[-.04em] sm:text-6xl">
-        Ready when you are.
-      </h2>
-      <p class="mt-4 max-w-2xl text-navy/75">
-        Reach out about routine care, an urgent concern, or the next step in a cosmetic or
-        restorative plan.
-      </p>
-    </div>
-
-    <div class="flex flex-col gap-3 sm:flex-row">
-      <a
-        href={site.contactUrl}
-        class="bg-navy px-7 py-4 text-center text-sm font-extrabold text-white">Contact Us</a
-      >
-      <a
-        href="#services"
-        class="border border-navy px-7 py-4 text-center text-sm font-extrabold">Explore Services</a
-      >
-    </div>
+<section id="contact" class="contact-section" aria-labelledby="contact-title">
+  <div class="shell contact-grid">
+    <div><p class="eyebrow">Your next chapter starts here</p><SectionHeading id="contact-title" lines={["Let’s give you", "a reason to smile."]} /><p class="contact-description">A familiar face for everyday care.<br />A thoughtful partner for what comes next.</p></div>
+    <div class="contact-actions"><a href={site.bookingUrl} class="button button-navy">Book a visit <Icon /></a><span>Prefer a conversation?</span><a class="contact-phone" href={site.phoneUrl}>{site.phone}<Icon name="phone" /></a></div>
   </div>
 </section>

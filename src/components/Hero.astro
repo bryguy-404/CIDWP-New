@@ -2,57 +2,33 @@
 import { Image } from "astro:assets";
 import heroImage from "../assets/hero-care.jpg";
 import { site } from "../lib/site";
-
-const categories = ["General", "Cosmetic", "Implants", "Emergency"];
+import Icon from "./Icon.astro";
 ---
-
-<section class="hero-frame relative isolate flex items-center overflow-hidden">
-  <Image
-    src={heroImage}
-    alt="Dental professional providing attentive care at the Westport practice"
-    loading="eager"
-    fetchpriority="high"
-    widths={[900, 1400, 1800]}
-    sizes="100vw"
-    class="absolute inset-0 -z-20 h-full w-full object-cover object-center"
-  />
-  <div class="hero-wash absolute inset-0 -z-10"></div>
-
-  <div class="shell pb-12 pt-32 lg:pt-44">
-    <div class="max-w-4xl">
-      <div
-        class="mb-7 flex items-center gap-3 text-xs font-bold uppercase tracking-[.22em] text-teal"
-      >
-        <span class="h-px w-10 bg-gold"></span>Care for every stage
-      </div>
-
-      <h1 class="max-w-4xl text-[clamp(3.25rem,7.4vw,6.7rem)] font-light leading-[.89] tracking-[-.055em]">
-        One home for<br /><span class="font-extrabold">every smile.</span>
-      </h1>
-
-      <p class="mt-7 max-w-xl text-base leading-7 text-navy/80 sm:text-lg">
-        From preventive visits and urgent needs to veneers, dental implants, and full-mouth
-        restoration—find thoughtful, full-service care in Westport.
-      </p>
-
-      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-        <a
-          href="#services"
-          class="bg-aqua px-7 py-4 text-center text-sm font-extrabold transition hover:bg-teal hover:text-white"
-          >Explore Services</a
-        >
-        <a
-          href={site.contactUrl}
-          class="border border-navy bg-ivory/90 px-7 py-4 text-center text-sm font-extrabold transition hover:bg-navy hover:text-white"
-          >Contact Us</a
-        >
-      </div>
-
-      <div
-        class="mt-9 inline-flex flex-wrap gap-x-5 gap-y-2 border-l-2 border-gold bg-white/85 px-5 py-4 text-xs font-bold uppercase tracking-[.12em] shadow-sm backdrop-blur"
-      >
-        {categories.map((category) => <span>{category}</span>)}
-      </div>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="eyebrow-rule"></span>Your dentist in Westport, Kansas City</p>
+    <h1 id="hero-title">One home for<br /><strong>every smile.</strong></h1>
+    <p class="hero-description">Everyday care. Life-changing possibilities. A team that takes the time to know you.</p>
+    <div class="hero-actions">
+      <a href={site.bookingUrl} class="button button-navy">Book your first visit <Icon /></a>
+      <a href="#services" class="text-link">Explore our care <Icon /></a>
     </div>
+    <div class="hero-note"><span class="status-dot"></span>A warm welcome for new patients</div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-photo-wrap">
+      <Image src={heroImage} alt="The Cosmetic & Implant Dentistry Westport team together at the practice" loading="eager" fetchpriority="high" widths={[640, 960, 1400]} sizes="(min-width: 900px) 54vw, 100vw" class="hero-photo" />
+      <span class="photo-corner" aria-hidden="true"></span>
+    </div>
+    <div class="hero-caption"><span>Your neighborhood.<br /><strong>Your dental home.</strong></span><a href="#care" aria-label="Discover our approach"><Icon class="arrow-down" /></a></div>
   </div>
 </section>
+<div class="care-bar" aria-label="Our care at a glance">
+  <div class="shell care-bar-inner">
+    <span class="care-bar-label">A lifetime of care,<br /><strong>all in one place.</strong></span>
+    <a href="#general-care">General dentistry <Icon /></a>
+    <a href="#cosmetic-care">Cosmetic dentistry <Icon /></a>
+    <a href="#restorative-care">Dental implants <Icon /></a>
+    <a href={site.phoneUrl}>Need urgent care? <Icon name="phone" /></a>
+  </div>
+</div>

@@ -1,63 +1,28 @@
 ---
-import { Image } from "astro:assets";
-import teamMember from "../assets/team-member.jpg";
-import { site } from "../lib/site";
-
-const cards = [
-  {
-    title: "Cosmetic care",
-    body: "Veneers, whitening, and clear braces.",
-    accent: "border-aqua",
-  },
-  {
-    title: "Restorative care",
-    body: "Implants, crowns, bridges, and complex restoration.",
-    accent: "border-gold",
-  },
-];
+import { site, serviceLinks } from "../lib/site";
+import Icon from "./Icon.astro";
+import SectionHeading from "./SectionHeading.astro";
 ---
-
-<section class="bg-white py-20 lg:py-28">
-  <div class="shell grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
-    <div class="lg:order-2">
-      <Image
-        src={teamMember}
-        alt="Dental team member in the bright Westport practice"
-        loading="lazy"
-        widths={[640, 1100, 1800]}
-        sizes="(min-width: 1024px) 50vw, 100vw"
-        class="h-[390px] w-full object-cover sm:h-[540px]"
-      />
+<section class="transform-section section-space" aria-labelledby="transform-title">
+  <div class="shell">
+    <div class="section-intro">
+      <div><p class="eyebrow">02 / Confidence looks good on you</p><SectionHeading id="transform-title" lines={["Small refinements.", "New possibilities."]} /></div>
+      <p class="body-copy">A brighter smile. A more comfortable bite. The confidence to laugh without holding back. Let’s talk about what you have in mind.</p>
     </div>
-
-    <div class="lg:order-1">
-      <p class="text-xs font-extrabold uppercase tracking-[.22em] text-teal">
-        02 · Transform and restore
-      </p>
-      <h2 class="mt-5 text-5xl font-light leading-[.98] tracking-[-.045em] sm:text-6xl">
-        Refine a detail.<br /><span class="font-extrabold">Rebuild with care.</span>
-      </h2>
-      <p class="mt-6 text-base leading-7 text-navy/70">
-        Explore options ranging from whitening, veneers, and clear braces to crowns, bridges,
-        dental implants, and full-mouth restoration.
-      </p>
-
-      <div class="mt-8 grid gap-5 sm:grid-cols-2">
-        {
-          cards.map((card) => (
-            <div class:list={["border-l-2 pl-4", card.accent]}>
-              <h3 class="font-extrabold">{card.title}</h3>
-              <p class="mt-2 text-sm leading-6 text-navy/65">{card.body}</p>
-            </div>
-          ))
-        }
-      </div>
-
-      <a
-        href={site.contactUrl}
-        class="mt-9 inline-block bg-navy px-7 py-4 text-sm font-extrabold text-white transition hover:bg-teal"
-        >Discuss Your Needs</a
-      >
+    <div class="treatment-features">
+      <article class="treatment-feature" data-reveal>
+        <div class="feature-top"><span class="small-label">Refine your smile</span><span class="feature-symbol" aria-hidden="true">✳</span></div>
+        <h3>A smile that feels<br />like you.</h3>
+        <p>Explore veneers and professional whitening with your own features, preferences, and goals in mind.</p>
+        <a href={serviceLinks.veneers} class="text-link">Explore veneers <Icon /></a>
+      </article>
+      <article class="treatment-feature" data-reveal>
+        <div class="feature-top"><span class="small-label">Restore your confidence</span><span class="feature-symbol feature-symbol-ring" aria-hidden="true">◎</span></div>
+        <h3>More comfort.<br />More reasons to smile.</h3>
+        <p>Discover dental implants and restorative options for missing or damaged teeth, with a plan tailored to your needs.</p>
+        <a href={serviceLinks.implants} class="text-link">Explore dental implants <Icon /></a>
+      </article>
     </div>
+    <div class="consultation-note"><span>You don’t need to have it all figured out. That’s what a conversation is for.</span><a href={site.bookingUrl} class="text-link">Let’s talk <Icon /></a></div>
   </div>
 </section>

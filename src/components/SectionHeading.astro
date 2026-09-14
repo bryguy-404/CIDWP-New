@@ -1,0 +1,13 @@
+---
+interface Props {
+  lines: string[];
+  class?: string;
+  id?: string;
+}
+const { lines, class: className, id } = Astro.props;
+---
+<h2 id={id} class:list={["section-title", className]} data-reveal-heading>
+  {lines.map((line, index) => (
+    <span class="title-line"><span class:list={["line-inner", { "title-accent": index === lines.length - 1 }]} style={`--line: ${index}`}>{line}{index < lines.length - 1 ? " " : ""}</span></span>
+  ))}
+</h2>

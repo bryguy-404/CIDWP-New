@@ -1,49 +1,34 @@
 ---
+import { serviceLinks, site } from "../lib/site";
+import Icon from "./Icon.astro";
+import SectionHeading from "./SectionHeading.astro";
 const categories = [
-  {
-    kicker: "Maintain",
-    services: ["Preventive dentistry", "Hygiene visits", "Fillings", "Mouth guards"],
-  },
-  {
-    kicker: "Transform",
-    services: ["Veneers", "Teeth whitening", "Clear braces", "Cosmetic dentistry"],
-  },
-  {
-    kicker: "Restore",
-    services: ["Dental implants", "Crowns and bridges", "Root canals", "Full-mouth restoration"],
-  },
-  {
-    kicker: "Support",
-    services: ["Sedation dentistry", "Extractions", "TMJ/TMD care", "Sleep-apnea solutions"],
-  },
+  { id: "general-care", number: "01", title: "Keep your smile healthy.", label: "General dentistry", body: "Checkups, cleanings, fillings, and mouth guards. Thoughtful everyday care for every member of the family.", links: [{ label: "General dentistry", href: serviceLinks.general }] },
+  { id: "cosmetic-care", number: "02", title: "Make it feel more like you.", label: "Cosmetic dentistry", body: "Veneers, professional whitening, and clear braces. Explore the details that can make a difference to your smile.", links: [{ label: "Veneers", href: serviceLinks.veneers }, { label: "Teeth whitening", href: serviceLinks.whitening }] },
+  { id: "restorative-care", number: "03", title: "Get back to smiling.", label: "Restorative dentistry", body: "Dental implants, crowns, bridges, root canals, and full-mouth restoration. A considered approach to rebuilding health and function.", links: [{ label: "Dental implants", href: serviceLinks.implants }, { label: "Full-mouth restoration", href: serviceLinks.restoration }] },
+  { id: "supportive-care", number: "04", title: "Find the support you need.", label: "Comfort & additional care", body: "Sedation options, extractions, emergency visits, TMJ/TMD care, and sleep-apnea solutions. Start with a conversation about your concerns.", links: [{ label: "Sedation options", href: serviceLinks.sedation }, { label: "Emergency dentistry", href: serviceLinks.emergency }] },
 ];
 ---
-
-<section id="services" class="bg-navy py-20 text-white lg:py-28">
-  <div class="shell">
-    <div class="grid gap-8 border-b border-white/15 pb-12 lg:grid-cols-[1.1fr_.9fr] lg:items-end">
-      <h2 class="text-5xl font-light leading-none tracking-[-.04em] sm:text-7xl">
-        Care without<br /><span class="font-extrabold text-aqua">the runaround.</span>
-      </h2>
-      <p class="max-w-xl text-base leading-7 text-white/70 lg:justify-self-end">
-        A broad range of services helps patients address everyday health, comfort, appearance, and
-        more complex restorative needs in one welcoming practice.
-      </p>
+<section id="services" class="section-space services-section" aria-labelledby="services-title">
+  <div class="shell services-grid">
+    <div class="services-intro">
+      <p class="eyebrow">03 / Care for every chapter</p>
+      <SectionHeading id="services-title" lines={["Your smile.", "Your kind", "of care."]} />
+      <p class="body-copy">From the routine to the life-changing, find a thoughtful next step right here in Westport.</p>
+      <a href={site.phoneUrl} class="text-link">Not sure where to start? <Icon /></a>
     </div>
-
-    <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-      {
-        categories.map((category) => (
+    <div class="service-list">
+      {categories.map((category) => (
+        <article id={category.id} class="service-row" data-reveal>
+          <span class="service-number">{category.number}</span>
           <div>
-            <p class="text-xs font-bold uppercase tracking-[.2em] text-aqua">{category.kicker}</p>
-            <ul class="mt-5 space-y-3 text-sm text-white/80">
-              {category.services.map((service) => (
-                <li>{service}</li>
-              ))}
-            </ul>
+            <p class="small-label">{category.label}</p>
+            <h3>{category.title}</h3>
+            <p>{category.body}</p>
+            <div class="service-links">{category.links.map((link) => <a href={link.href}>{link.label}<Icon /></a>)}</div>
           </div>
-        ))
-      }
+        </article>
+      ))}
     </div>
   </div>
 </section>

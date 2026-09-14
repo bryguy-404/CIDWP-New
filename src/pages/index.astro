@@ -7,20 +7,23 @@ import CareSection from "../components/CareSection.astro";
 import TransformSection from "../components/TransformSection.astro";
 import ServicesDirectory from "../components/ServicesDirectory.astro";
 import ComfortSection from "../components/ComfortSection.astro";
+import FaqSection from "../components/FaqSection.astro";
 import ContactCta from "../components/ContactCta.astro";
 import Footer from "../components/Footer.astro";
+import Motion from "../components/Motion.astro";
 ---
-
 <Layout>
   <Header />
-  <main id="main">
+  <main id="main" tabindex="-1">
     <Hero />
-    <ReviewsBand />
     <CareSection />
     <TransformSection />
     <ServicesDirectory />
     <ComfortSection />
+    <ReviewsBand />
+    <FaqSection />
     <ContactCta />
   </main>
   <Footer />
+  <Motion />
 </Layout>

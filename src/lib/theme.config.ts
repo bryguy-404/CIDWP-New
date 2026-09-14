@@ -26,8 +26,6 @@ export const theme = {
   fonts: {
     heading: "'Manrope', sans-serif",
     body: "'Manrope', sans-serif",
-    /** Preloaded and mapped, but intentionally unused in the approved design. */
-    serif: "'Cormorant Garamond', serif",
   },
   radius: {
     sm: "0px",

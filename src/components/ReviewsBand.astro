@@ -1,23 +1,11 @@
 ---
 import { site } from "../lib/site";
+import Icon from "./Icon.astro";
+import SectionHeading from "./SectionHeading.astro";
 ---
-
-<section id="reviews" class="bg-navy text-white">
-  <div
-    class="shell flex flex-col gap-5 py-7 md:flex-row md:items-center md:justify-between"
-  >
-    <div>
-      <p class="text-xs font-bold uppercase tracking-[.2em] text-aqua">Patient perspectives</p>
-      <p class="mt-1 text-lg font-semibold">
-        See the latest independently published patient feedback.
-      </p>
-    </div>
-    <a
-      href={site.reviewsUrl}
-      target="_blank"
-      rel="noopener"
-      class="border border-white/40 px-5 py-3 text-center text-sm font-bold transition hover:border-aqua hover:text-aqua"
-      >View Current Google Reviews →</a
-    >
+<section id="reviews" class="reviews-section" aria-labelledby="reviews-title">
+  <div class="shell reviews-grid">
+    <div><p class="eyebrow">From the people who know us</p><SectionHeading id="reviews-title" lines={["Their smiles.", "Their stories."]} /></div>
+    <div class="reviews-copy"><p>Choosing a dentist is personal. Hear directly from patients about their experiences with our Westport team.</p><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer" class="text-link"><span class="google-letter" aria-hidden="true">G</span>Read our Google reviews <Icon /></a></div>
   </div>
 </section>

@@ -1,41 +1,23 @@
 ---
 import { Image } from "astro:assets";
 import practiceInterior from "../assets/practice-interior.jpg";
-
-const keywords = ["Preventive dentistry", "Hygiene", "Fillings", "Emergency care"];
+import { site } from "../lib/site";
+import Icon from "./Icon.astro";
+import SectionHeading from "./SectionHeading.astro";
 ---
-
-<section id="care" class="paper py-20 lg:py-28">
-  <div class="shell grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
-    <div class="relative">
-      <div class="absolute -left-4 -top-4 h-24 w-24 border-l border-t border-gold"></div>
-      <Image
-        src={practiceInterior}
-        alt="A candid view of the Westport dental practice"
-        loading="lazy"
-        widths={[640, 1100, 1800]}
-        sizes="(min-width: 1024px) 50vw, 100vw"
-        class="relative h-[390px] w-full object-cover sm:h-[520px]"
-      />
-    </div>
-
-    <div>
-      <p class="text-xs font-extrabold uppercase tracking-[.22em] text-teal">01 · General care</p>
-      <h2 class="mt-5 text-5xl font-light leading-[.98] tracking-[-.045em] sm:text-6xl">
-        Routine care,<br /><span class="font-extrabold">made personal.</span>
-      </h2>
-      <p class="mt-6 max-w-xl text-base leading-7 text-navy/70">
-        Keep everyday oral health moving forward with preventive dentistry, hygiene visits,
-        fillings, mouth guards, and care when something suddenly hurts.
-      </p>
-
-      <div class="mt-8 grid grid-cols-2 gap-3 text-sm font-bold">
-        {keywords.map((keyword) => <span class="border-t border-navy/20 pt-3">{keyword}</span>)}
-      </div>
-
-      <a href="#services" class="mt-9 inline-flex items-center gap-3 font-extrabold text-teal">
-        See all services <span aria-hidden="true">→</span>
-      </a>
+<section id="care" class="section-space approach-section" aria-labelledby="approach-title">
+  <div class="shell approach-grid">
+    <figure class="approach-photo" data-reveal>
+      <div class="image-frame"><Image src={practiceInterior} alt="A bright treatment room with large windows at our Westport dental office" loading="lazy" widths={[600, 900, 1200]} sizes="(min-width: 900px) 45vw, 100vw" /></div>
+      <figcaption><span class="small-label">A place to feel at home</span><span>Westport, Kansas City <Icon name="pin" /></span></figcaption>
+    </figure>
+    <div class="approach-copy">
+      <p class="eyebrow">01 / A more personal kind of dentistry</p>
+      <SectionHeading id="approach-title" lines={["Great care starts", "with listening."]} />
+      <p class="body-copy">Your smile is personal. Your dental care should be, too. Whether you’re here for a checkup or ready for a bigger change, we start with what matters to you.</p>
+      <p class="body-copy">At Cosmetic &amp; Implant Dentistry Westport, we bring everyday, cosmetic, and restorative care together in a welcoming space, with clear conversations at every step.</p>
+      <div class="approach-values"><span><Icon name="check" />Care for every stage of life</span><span><Icon name="check" />A plan built around you</span><span><Icon name="check" />Room for every question</span></div>
+      <a href={site.doctorsUrl} class="text-link">Get to know your dentist <Icon /></a>
     </div>
   </div>
 </section>
