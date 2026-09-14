@@ -22,7 +22,11 @@
     "esbuild": true
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.125.0",
     "@astrojs/check": "^0.9.10",
+    "pixelmatch": "^7.2.0",
+    "playwright": "^1.63.0",
+    "pngjs": "^7.0.0",
     "typescript": "^6.0.3"
   }
 }

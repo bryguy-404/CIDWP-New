@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # cloudflare local
 .wrangler/
+
+# visual-diff gate output
+.loop/
