@@ -70,7 +70,7 @@ img { display: block; max-width: 100%; }
 .brand { flex: 0 0 auto; }
 .brand-logo { width: 144px; height: 94px; object-fit: contain; }
 .desktop-links { display: flex; align-items: center; justify-content: center; gap: clamp(20px, 2.4vw, 36px); margin-left: auto; }
-.nav-link { position: relative; font-size: 12px; font-weight: 500; padding-block: 18px; white-space: nowrap; }
+.nav-link { position: relative; font-size: 15px; font-weight: 500; padding-block: 18px; white-space: nowrap; }
 .nav-link::after { content: ""; position: absolute; bottom: 9px; left: 0; width: 100%; height: 1px; background: var(--color-aqua); transform: scaleX(0); transform-origin: left; transition: transform .3s; }
 .nav-link:hover::after { transform: scaleX(1); }
 .nav-actions { display: flex; align-items: center; gap: 26px; margin-left: 20px; }
@@ -94,8 +94,6 @@ img { display: block; max-width: 100%; }
 .hero-description { max-width: 390px; color: var(--color-muted); line-height: 1.85; font-size: 16px; margin: 0; }
 .hero-actions { display: flex; align-items: center; gap: 23px; margin-top: 32px; flex-wrap: wrap; }
 .hero-actions .button { padding-inline: 21px; gap: 20px; }
-.hero-note { display: flex; align-items: center; gap: 9px; font-size: 10px; color: var(--color-muted); margin-top: 42px; }
-.status-dot { width: 5px; height: 5px; border-radius: 50%; background: #39806d; }
 .hero-visual { display: flex; flex-direction: column; min-width: 0; background: var(--color-navy); }
 .hero-photo-wrap { position: relative; flex: 1; min-height: 400px; overflow: hidden; }
 .hero-photo { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; filter: brightness(1.15); }
@@ -286,7 +284,6 @@ img { display: block; max-width: 100%; }
   .hero h1 { font-size: clamp(54px, 9.4vw, 82px); }
   .hero-description { max-width: 450px; }
   .hero-actions { flex-direction: row; align-items: center; gap: 25px; }
-  .hero-note { margin-top: 25px; }
   .hero-photo-wrap { min-height: 0; aspect-ratio: 1.6; }
   .hero-photo { object-position: center 38%; }
   .hero-caption { min-height: 82px; padding: 16px var(--page-gutter); }
@@ -336,7 +333,6 @@ img { display: block; max-width: 100%; }
   .hero h1 { font-size: clamp(43px, 10.5vw, 62px); margin-top: 0; margin-bottom: 22px; }
   .hero-description { font-size: 14px; max-width: 320px; }
   .hero-actions { align-items: flex-start; gap: 16px; flex-direction: column; margin-top: 24px; }
-  .hero-note { font-size: 9px; margin-top: 20px; }
   .hero-photo-wrap { aspect-ratio: 1.38; }
   .hero-caption { font-size: 12px; }
   .hero-caption a { width: 40px; height: 40px; }

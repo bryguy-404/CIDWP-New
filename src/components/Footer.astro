@@ -7,7 +7,7 @@ import Icon from "./Icon.astro";
 <footer class="site-footer">
   <div class="shell">
     <div class="footer-main">
-      <div class="footer-brand"><a href="/" aria-label={`${site.name} home`}><Image src={logo} alt={site.name} widths={[230, 460]} sizes="230px" class="footer-logo" /></a><p>Personal care.<br />For a lifetime of smiles.</p></div>
+      <div class="footer-brand"><a href="/" aria-label={`${site.name} home`}><Image src={logo} alt={site.name} widths={[230, 460]} sizes="230px" class="footer-logo" /></a><p>Here to care for your smile for years to come.</p></div>
       <div><h2 class="small-label">Find your care</h2><ul><li><a href={serviceLinks.general}>General dentistry</a></li><li><a href={serviceLinks.veneers}>Veneers &amp; cosmetic care</a></li><li><a href={serviceLinks.implants}>Dental implants</a></li><li><a href={serviceLinks.emergency}>Emergency dentistry</a></li><li><a href={serviceLinks.sedation}>Sedation options</a></li></ul></div>
       <div><h2 class="small-label">Make yourself at home</h2><ul><li><a href={site.doctorsUrl}>Meet your dentist</a></li><li><a href="#comfort">Your experience</a></li><li><a href={site.smileClubUrl}>Smile Club</a></li><li><a href="#questions">Common questions</a></li><li><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer">Patient reviews</a></li></ul></div>
       <div class="footer-visit"><h2 class="small-label">Visit us in Westport</h2><address>{site.address}<br />{site.city}</address><a href={site.directionsUrl} target="_blank" rel="noopener noreferrer" class="text-link">Get directions <Icon /></a><a href={site.phoneUrl} class="footer-phone">{site.phone}</a><a href={site.contactUrl}>Contact our team <Icon /></a></div>

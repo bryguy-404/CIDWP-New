@@ -13,13 +13,13 @@ const details = [
 <section id="comfort" class="comfort-section section-space" aria-labelledby="comfort-title">
   <div class="shell">
     <div class="section-intro">
-      <div><p class="eyebrow">04 / People first. Always.</p><SectionHeading id="comfort-title" lines={["A little less worry.", "A lot more you."]} /></div>
+      <div><SectionHeading id="comfort-title" lines={["Feel more at ease", "in the dentist’s chair."]} /></div>
       <p class="body-copy">Good dentistry is about more than teeth. It’s about feeling welcome, being heard, and knowing the people looking after you.</p>
     </div>
     <div class="comfort-grid">
       <figure class="comfort-photo" data-reveal>
         <Image src={team} alt="Our Westport dental team sharing a lighthearted moment together" loading="lazy" widths={[600, 960, 1400]} sizes="(min-width: 900px) 55vw, 100vw" />
-        <figcaption>Real people. A warm welcome. A team in your corner.</figcaption>
+        <figcaption>Get to know the people who’ll welcome you and care for you.</figcaption>
       </figure>
       <div class="comfort-details">
         {details.map((item) => <div class="comfort-detail"><span>{item.number}</span><div><h3>{item.title}</h3><p>{item.body}</p></div></div>)}
@@ -27,7 +27,7 @@ const details = [
       </div>
     </div>
     <div class="membership-band">
-      <div><p class="small-label">Another way to plan for your care</p><h3>No insurance? Let’s talk options.</h3><p>Explore the practice’s Smile Club and ask our team about your next steps.</p></div>
+      <div><p class="small-label">Another way to plan for your care</p><h3>Ask us about care without insurance.</h3><p>Explore the practice’s Smile Club and ask our team about your next steps.</p></div>
       <a href={site.smileClubUrl} class="button button-outline">Explore Smile Club <Icon /></a>
     </div>
   </div>

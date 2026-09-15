@@ -11,7 +11,7 @@ const faqs = [
 ---
 <section id="questions" class="faq-section section-space" aria-labelledby="faq-title">
   <div class="shell faq-grid">
-    <div><p class="eyebrow">A little clarity before you arrive</p><SectionHeading id="faq-title" lines={["Good questions.", "Thoughtful answers."]} /><p class="body-copy">Something else on your mind?<br />We’re only a phone call away.</p><a href={site.phoneUrl} class="text-link">{site.phone} <Icon name="phone" /></a></div>
+    <div><p class="eyebrow">A little clarity before you arrive</p><SectionHeading id="faq-title" lines={["What to know", "before your first visit."]} /><p class="body-copy">Something else on your mind?<br />We’re only a phone call away.</p><a href={site.phoneUrl} class="text-link">{site.phone} <Icon name="phone" /></a></div>
     <div class="faq-list">
       {faqs.map((faq) => <details name="patient-questions" class="faq-item"><summary>{faq.question}<Icon name="plus" /></summary><div class="faq-answer"><p>{faq.answer}</p><a href={faq.link.href} class="text-link">{faq.link.label}<Icon /></a></div></details>)}
     </div>
