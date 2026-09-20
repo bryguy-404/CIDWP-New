@@ -4,6 +4,6 @@ import { services } from "../lib/homepage";
 import Icon from "./Icon.astro";
 ---
 <section class="services-section" id="services" aria-labelledby="services-title" data-section="services">
-  <div class="shell"><h2 class="section-heading" id="services-title">let’s care for<br /><strong>your smile.</strong></h2></div>
+  <div class="shell"><h2 class="section-heading" id="services-title">Let’s Care For<br /><strong>Your Smile.</strong></h2></div>
   <div class="service-tiles">{services.map((service, index) => <article class:list={["service-tile", { "service-tile-reverse": index % 2 === 1 }]} id={service.id}><div class="service-photo"><Image src={service.image} alt={service.alt} widths={[650, 1000, 1400]} sizes="(min-width: 900px) 50vw, 100vw" loading="lazy" /></div><div class="service-copy"><p class="service-label">{service.label}</p><h3>{service.title}</h3><p>{service.description}</p><a href={service.href} class="button button-brand">{service.cta} <Icon /></a></div></article>)}</div>
 </section>

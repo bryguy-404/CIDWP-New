@@ -2,4 +2,4 @@
 import { expertise } from "../lib/homepage";
 import Icon from "./Icon.astro";
 ---
-<section class="expertise-section section-space" id="expertise" aria-labelledby="expertise-title" data-section="expertise"><div class="shell"><h2 class="section-heading" id="expertise-title">find the care<br /><strong>you’re looking for.</strong></h2><div class="expertise-grid">{expertise.map(service => <a href={service.href}><span>{service.label}</span><Icon /></a>)}</div></div></section>
+<section class="expertise-section section-space" id="expertise" aria-labelledby="expertise-title" data-section="expertise"><div class="shell"><h2 class="section-heading" id="expertise-title">Find The Care<br /><strong>You’re Looking For.</strong></h2><div class="expertise-grid">{expertise.map(service => <a href={service.href}><span>{service.label}</span><Icon /></a>)}</div></div></section>

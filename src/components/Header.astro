@@ -11,12 +11,12 @@ import Icon from "./Icon.astro";
       <Image class="brand-light" src={lightLogo} alt={site.name} widths={[220, 440]} sizes="(max-width: 700px) 150px, 210px" loading="eager" />
       <Image class="brand-color" src={colorLogo} alt="" aria-hidden="true" widths={[220, 440]} sizes="(max-width: 700px) 150px, 210px" loading="eager" />
     </a>
-    <button class="menu-toggle" type="button" id="menuButton" aria-expanded="false" aria-controls="navigationMenu"><span>menu</span><Icon name="menu" /></button>
+    <button class="menu-toggle" type="button" id="menuButton" aria-expanded="false" aria-controls="navigationMenu"><span>Menu</span><Icon name="menu" /></button>
     <div class="navigation-menu" id="navigationMenu">
       <div class="nav-groups">
         {navigation.map(group => <details class="nav-group"><summary>{group.label}<Icon name="chevron" /></summary><div class="nav-dropdown">{group.links.map(link => <a href={link.href}>{link.label}</a>)}</div></details>)}
       </div>
-      <div class="header-actions"><a class="header-phone" href={site.phoneUrl}><Icon name="phone" /><span>{site.phone}</span></a><a class="button button-brand" href={site.bookingUrl}>schedule now <Icon /></a></div>
+      <div class="header-actions"><a class="header-phone" href={site.phoneUrl}><Icon name="phone" /><span>{site.phone}</span></a><a class="button button-brand" href={site.bookingUrl}>Schedule Now <Icon /></a></div>
     </div>
   </nav>
 </header>

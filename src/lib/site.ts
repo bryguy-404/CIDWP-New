@@ -48,25 +48,25 @@ export const serviceLinks = {
 } as const;
 
 export const navigation = [
-  { label: "about", links: [
-    { label: "meet your dentist", href: "#doctors" },
-    { label: "our approach", href: "#care" },
-    { label: "your experience", href: "#comfort" },
+  { label: "About", links: [
+    { label: "Meet Your Dentist", href: "#doctors" },
+    { label: "Our Approach", href: "#care" },
+    { label: "Your Experience", href: "#comfort" },
     { label: "Smile Club", href: site.smileClubUrl },
-    { label: "visit our office", href: "#contact" },
+    { label: "Visit Our Office", href: "#contact" },
   ] },
-  { label: "services", links: [
-    { label: "general dentistry", href: "#general-care" },
-    { label: "restorative dentistry", href: "#restorative-care" },
-    { label: "cosmetic dentistry", href: "#cosmetic-care" },
-    { label: "dental implants", href: "#implants" },
-    { label: "all our services", href: "#expertise" },
+  { label: "Services", links: [
+    { label: "General Dentistry", href: "#general-care" },
+    { label: "Restorative Dentistry", href: "#restorative-care" },
+    { label: "Cosmetic Dentistry", href: "#cosmetic-care" },
+    { label: "Dental Implants", href: "#implants" },
+    { label: "All Our Services", href: "#expertise" },
   ] },
-  { label: "problems we treat", links: [
-    { label: "missing teeth", href: serviceLinks.implants },
-    { label: "damaged teeth", href: serviceLinks.restoration },
-    { label: "stained teeth", href: serviceLinks.whitening },
-    { label: "dental anxiety", href: serviceLinks.sedation },
-    { label: "urgent dental concerns", href: serviceLinks.emergency },
+  { label: "Problems We Treat", links: [
+    { label: "Missing Teeth", href: serviceLinks.implants },
+    { label: "Damaged Teeth", href: serviceLinks.restoration },
+    { label: "Stained Teeth", href: serviceLinks.whitening },
+    { label: "Dental Anxiety", href: serviceLinks.sedation },
+    { label: "Urgent Dental Concerns", href: serviceLinks.emergency },
   ] },
 ] as const;

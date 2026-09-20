@@ -10,9 +10,13 @@ Prepared September 20, 2026 from KO’s September 18 brief and Denea’s email.
 
 Bryan approved the local Round 2 preview and requested a commit and push to `main` on September 20, 2026. The review route has `noindex, nofollow`; that prevents intended indexing but does not provide access control when the route is deployed.
 
+## Capitalization Update
+
+Bryan requested Title Case for headings, navigation, service titles, and short UI labels on September 20, 2026. This replaces the original lowercase direction. Body paragraphs, the approved hero subhead, and patient quotations retain their original casing. The preference is recorded in `AGENTS.md` for future project work.
+
 ## What changed
 
-The homepage now follows the reference’s section sequence, full-width hero, large photography, alternating service rows, larger lowercase headings, and generous spacing. Light blue is the main surface/button color, with teal used for accents and dark teal for readable text. Work Sans is hosted locally. Pill buttons follow KO’s written brief.
+The homepage now follows the reference’s section sequence, full-width hero, large photography, alternating service rows, larger headings, and generous spacing. Light blue is the main surface/button color, with teal used for accents and dark teal for readable text. Work Sans is hosted locally. Pill buttons follow KO’s written brief.
 
 The exact Round 1 hero subhead is preserved:
 
@@ -68,7 +72,7 @@ Thank you!
 
 ## Copy overview
 
-Headings now read as connected phrases: “feel at home in our care,” “get to know your dental team,” “we make time for the details,” “let’s talk about dental implants,” “a closer look at your dental health,” “let’s care for your smile,” “find the care you’re looking for,” “make yourself comfortable,” “hear from our patients,” “let’s plan your first visit,” “what to know before you visit,” “come see us in Westport,” and “we’re ready when you are.”
+Headings now read as connected phrases: “Feel At Home In Our Care,” “Get To Know Your Dental Team,” “We Make Time For The Details,” “Let’s Talk About Dental Implants,” “A Closer Look At Your Dental Health,” “Let’s Care For Your Smile,” “Find The Care You’re Looking For,” “Make Yourself Comfortable,” “Hear From Our Patients,” “Let’s Plan Your First Visit,” “What To Know Before You Visit,” “Come See Us In Westport,” and “We’re Ready When You Are.”
 
 Supporting copy is concise and practice-specific. The CTAs use the existing phone and CareStack booking destination. There are no invented affiliations, treatment guarantees, review counts, or social posts.
 
