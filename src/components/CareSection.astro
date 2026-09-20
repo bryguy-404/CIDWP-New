@@ -1,22 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import practiceInterior from "../assets/practice-interior.jpg";
-import { site } from "../lib/site";
+import { photos } from "../lib/homepage";
 import Icon from "./Icon.astro";
-import SectionHeading from "./SectionHeading.astro";
+const details = ["care for every member of the family", "general, cosmetic, and restorative dentistry", "time to understand your options and ask questions", "sedation options for patients who feel anxious", "a familiar team in the heart of Westport"];
 ---
-<section id="care" class="section-space approach-section" aria-labelledby="approach-title">
-  <div class="shell approach-grid">
-    <figure class="approach-photo" data-reveal>
-      <div class="image-frame"><Image src={practiceInterior} alt="A bright treatment room with large windows at our Westport dental office" loading="lazy" widths={[600, 900, 1200]} sizes="(min-width: 900px) 45vw, 100vw" /></div>
-      <figcaption><span class="small-label">A place to feel at home</span><span>Westport, Kansas City <Icon name="pin" /></span></figcaption>
-    </figure>
-    <div class="approach-copy">
-      <SectionHeading id="approach-title" lines={["We start by", "listening to you."]} />
-      <p class="body-copy">Your smile is personal. Your dental care should be, too. Whether you’re here for a checkup or ready for a bigger change, we start with what matters to you.</p>
-      <p class="body-copy">At Cosmetic &amp; Implant Dentistry Westport, we bring everyday, cosmetic, and restorative care together in a welcoming space, with clear conversations at every step.</p>
-      <div class="approach-values"><span><Icon name="check" />Care for every stage of life</span><span><Icon name="check" />A plan built around you</span><span><Icon name="check" />Room for every question</span></div>
-      <a href={site.doctorsUrl} class="text-link">Get to know your dentist <Icon /></a>
-    </div>
-  </div>
+<section id="care" class="details-section" aria-labelledby="care-title" data-section="details">
+  <div class="details-photo"><Image src={photos.office} alt="Natural light fills a treatment room at our Westport office" widths={[600, 1000, 1400]} sizes="(min-width: 900px) 50vw, 100vw" loading="lazy" /></div>
+  <div class="section-copy"><h2 id="care-title">we make time<br />for <strong>the details.</strong></h2><p>Good care starts with listening. We want you to feel comfortable with the people looking after you and confident about your next step.</p><ul class="care-checklist">{details.map(detail => <li><Icon name="check" /><span>{detail}</span></li>)}</ul></div>
 </section>

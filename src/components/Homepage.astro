@@ -1,0 +1,43 @@
+---
+import Header from "./Header.astro";
+import Hero from "./Hero.astro";
+import DoctorsSection from "./DoctorsSection.astro";
+import CareSection from "./CareSection.astro";
+import MembershipBand from "./MembershipBand.astro";
+import TransformSection from "./TransformSection.astro";
+import TechnologySection from "./TechnologySection.astro";
+import ServicesDirectory from "./ServicesDirectory.astro";
+import ExpertiseGrid from "./ExpertiseGrid.astro";
+import ComfortSection from "./ComfortSection.astro";
+import ReviewsBand from "./ReviewsBand.astro";
+import ContactCta from "./ContactCta.astro";
+import FaqSection from "./FaqSection.astro";
+import OfficeSection from "./OfficeSection.astro";
+import TrustBadges from "./TrustBadges.astro";
+import SocialSection from "./SocialSection.astro";
+import Footer from "./Footer.astro";
+import { reviewNeeds } from "../lib/homepage";
+interface Props { reviewMode?: boolean }
+const { reviewMode = false } = Astro.props;
+---
+<Header />
+<main id="main" tabindex="-1">
+  <Hero />
+  <DoctorsSection reviewMode={reviewMode} />
+  <CareSection />
+  <MembershipBand />
+  <TransformSection />
+  <TechnologySection reviewMode={reviewMode} />
+  <ServicesDirectory />
+  <ExpertiseGrid />
+  <ComfortSection reviewMode={reviewMode} />
+  <ReviewsBand reviewMode={reviewMode} />
+  <ContactCta />
+  <FaqSection />
+  <OfficeSection reviewMode={reviewMode} />
+  <TrustBadges reviewMode={reviewMode} />
+  <SocialSection reviewMode={reviewMode} />
+  <ContactCta final />
+</main>
+<Footer reviewMode={reviewMode} />
+{reviewMode && <><a class="review-dock" href="#review-checklist">round 2 review · {reviewNeeds.length} content requests ↓</a><section class="review-checklist section-space" id="review-checklist" aria-labelledby="review-title"><div class="shell"><p class="review-kicker">internal preview · prepared for KO</p><h2 id="review-title">one list for the<br /><strong>finishing details.</strong></h2><p class="review-intro">The redesigned layout is ready for review. Outlined positions above identify the remaining client materials; they are not invented testimonials, badges, or social posts.</p><div class="review-request-grid">{reviewNeeds.map(item => <article><h3><a href={"#" + item.section}>{item.title} ↗</a></h3><p>{item.detail}</p></article>)}</div><a class="button button-outline" href="/">view without review notes</a></div></section></>}

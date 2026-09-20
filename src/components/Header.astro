@@ -1,57 +1,56 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/logo.png";
-import { site, navLinks } from "../lib/site";
+import lightLogo from "../assets/logo.png";
+import colorLogo from "../assets/round2/logo-color.png";
+import { site, navigation } from "../lib/site";
 import Icon from "./Icon.astro";
 ---
-<div class="utility-bar">
-  <div class="shell utility-content">
-    <span>Personal dental care here in Westport.</span>
-    <a href={site.directionsUrl} target="_blank" rel="noopener noreferrer">{site.address} · Kansas City, MO <Icon name="pin" /></a>
-  </div>
-</div>
-<header class="site-header">
-  <nav class="shell navigation" aria-label="Main navigation">
-    <a href="/" class="brand" aria-label={`${site.name} home`}>
-      <Image src={logo} alt={site.name} widths={[180, 360]} sizes="180px" class="brand-logo" loading="eager" />
+<header class="site-header" id="siteHeader">
+  <nav class="header-inner" aria-label="Main navigation">
+    <a class="brand" href="#main" aria-label={site.name + " home"}>
+      <Image class="brand-light" src={lightLogo} alt={site.name} widths={[220, 440]} sizes="(max-width: 700px) 150px, 210px" loading="eager" />
+      <Image class="brand-color" src={colorLogo} alt="" aria-hidden="true" widths={[220, 440]} sizes="(max-width: 700px) 150px, 210px" loading="eager" />
     </a>
-    <div class="desktop-links">
-      {navLinks.map((link) => <a class="nav-link" href={link.href}>{link.label}</a>)}
-    </div>
-    <div class="nav-actions">
-      <a class="header-phone" href={site.phoneUrl} aria-label={`Call ${site.phone}`}><Icon name="phone" /><span>{site.phone}</span></a>
-      <a href={site.bookingUrl} class="button button-aqua header-booking">Book a visit <Icon /></a>
-      <button id="menuButton" class="menu-button" type="button" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
-    </div>
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <div class="mobile-menu-inner">
-        {navLinks.map((link, index) => <a class="mobile-nav-link" href={link.href}><span class="menu-index">0{index + 1}</span>{link.label}<Icon /></a>)}
-        <a href={site.bookingUrl} class="button button-aqua">Book a visit <Icon /></a>
-        <a class="mobile-phone" href={site.phoneUrl}>Give us a call <span>{site.phone}</span></a>
+    <button class="menu-toggle" type="button" id="menuButton" aria-expanded="false" aria-controls="navigationMenu"><span>menu</span><Icon name="menu" /></button>
+    <div class="navigation-menu" id="navigationMenu">
+      <div class="nav-groups">
+        {navigation.map(group => <details class="nav-group"><summary>{group.label}<Icon name="chevron" /></summary><div class="nav-dropdown">{group.links.map(link => <a href={link.href}>{link.label}</a>)}</div></details>)}
       </div>
+      <div class="header-actions"><a class="header-phone" href={site.phoneUrl}><Icon name="phone" /><span>{site.phone}</span></a><a class="button button-brand" href={site.bookingUrl}>schedule now <Icon /></a></div>
     </div>
   </nav>
 </header>
 <script>
-  const button = document.getElementById("menuButton");
-  const menu = document.getElementById("mobileMenu");
-  if (button && menu) {
-    const setOpen = (open: boolean) => {
+  const header = document.querySelector<HTMLElement>("#siteHeader");
+  const menu = document.querySelector<HTMLElement>("#navigationMenu");
+  const button = document.querySelector<HTMLButtonElement>("#menuButton");
+  if (header && menu && button) {
+    const mobile = matchMedia("(max-width: 1100px)");
+    const groups = [...header.querySelectorAll<HTMLDetailsElement>(".nav-group")];
+    const closeGroups = () => groups.forEach(group => { group.open = false; });
+    const setMenu = (open: boolean) => {
       button.setAttribute("aria-expanded", String(open));
       button.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
-      menu.hidden = !open;
+      menu.hidden = mobile.matches && !open;
+      header.classList.toggle("menu-is-open", open && mobile.matches);
+      if (!open) closeGroups();
     };
-    button.addEventListener("click", () => setOpen(button.getAttribute("aria-expanded") !== "true"));
-    menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !menu.hidden) { setOpen(false); button.focus(); }
+    const updateScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 40);
+    setMenu(false); updateScroll();
+    button.addEventListener("click", () => setMenu(button.getAttribute("aria-expanded") !== "true"));
+    mobile.addEventListener("change", () => setMenu(false));
+    window.addEventListener("scroll", updateScroll, { passive: true });
+    groups.forEach(group => group.addEventListener("toggle", () => {
+      if (group.open) groups.forEach(other => { if (other !== group) other.open = false; });
+    }));
+    menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("click", event => { if (event.target instanceof Node && !header.contains(event.target)) setMenu(false); });
+    document.addEventListener("keydown", event => {
+      if (event.key !== "Escape") return;
+      const openGroup = groups.find(group => group.open);
+      if (openGroup) { openGroup.open = false; openGroup.querySelector("summary")?.focus(); }
+      else if (mobile.matches && !menu.hidden) { setMenu(false); button.focus(); }
     });
-    document.addEventListener("click", (event) => {
-      if (event.target instanceof Node && !menu.contains(event.target) && !button.contains(event.target)) setOpen(false);
-    });
-    document.addEventListener("focusin", (event) => {
-      if (event.target instanceof Node && !menu.contains(event.target) && !button.contains(event.target)) setOpen(false);
-    });
-    matchMedia("(min-width: 1100px)").addEventListener("change", () => setOpen(false));
+    document.addEventListener("focusin", event => { if (event.target instanceof Node && !header.contains(event.target)) setMenu(false); });
   }
 </script>

@@ -1,11 +1,12 @@
 ---
-import { site } from "../lib/site";
-import Icon from "./Icon.astro";
-import SectionHeading from "./SectionHeading.astro";
+import { Image } from "astro:assets";
+import { photos } from "../lib/homepage";
+import ActionPair from "./ActionPair.astro";
+interface Props { final?: boolean }
+const { final = false } = Astro.props;
+const titleId = final ? "final-cta-title" : "schedule-title";
 ---
-<section id="contact" class="contact-section" aria-labelledby="contact-title">
-  <div class="shell contact-grid">
-    <div><p class="eyebrow">Visit us in Westport</p><SectionHeading id="contact-title" lines={["Let’s plan", "your first visit."]} /><p class="contact-description">Get to know a team you can turn to for everyday care and whatever comes next.</p></div>
-    <div class="contact-actions"><a href={site.bookingUrl} class="button button-navy">Book a visit <Icon /></a><span>Prefer a conversation?</span><a class="contact-phone" href={site.phoneUrl}>{site.phone}<Icon name="phone" /></a></div>
-  </div>
+<section class:list={["contact-cta", { "final-cta": final }]} aria-labelledby={titleId} data-section={final ? "final-cta" : "schedule"}>
+  {!final && <Image src={photos.office} alt="" aria-hidden="true" widths={[750, 1400, 2000]} sizes="100vw" loading="lazy" class="cta-backdrop" />}
+  <div class="shell cta-content"><div><h2 id={titleId}>{final ? <>we’re ready<br /><strong>when you are.</strong></> : <>let’s plan<br /><strong>your first visit.</strong></>}</h2>{final && <p>Find a time that works for you and get to know our Westport team.</p>}</div><ActionPair /></div>
 </section>

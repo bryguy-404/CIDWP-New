@@ -15,6 +15,17 @@ export const site = {
   doctorsUrl: "https://cosmeticimplantdentistrywp.com/about/meet-the-doctors/",
   smileClubUrl: "https://smileclub.cosmeticimplantdentistrywp.com/",
   reviewsUrl: "https://www.google.com/search?q=Cosmetic+%26+Implant+Dentistry+Westport+Kansas+City+reviews",
+  teamUrl: "https://cosmeticimplantdentistrywp.com/about/meet-the-team/",
+  privacyUrl: "https://cosmeticimplantdentistrywp.com/privacy-policy/",
+  accessibilityUrl: "https://cosmeticimplantdentistrywp.com/accessibility/",
+  hours: "Monday–Thursday, 9:00 AM–4:00 PM",
+  // Confirm these with the practice before enabling them. See docs/round2-review.md.
+  textingEnabled: false,
+  heroVideoUrl: null as string | null,
+  instagramUrl: null as string | null,
+  facebookUrl: null as string | null,
+  hipaaUrl: null as string | null,
+  googleReviewCount: null as number | null,
 } as const;
 
 export const navLinks = [
@@ -32,4 +43,30 @@ export const serviceLinks = {
   restoration: "https://cosmeticimplantdentistrywp.com/full-mouth-restoration/",
   sedation: "https://cosmeticimplantdentistrywp.com/sedation/",
   emergency: "https://cosmeticimplantdentistrywp.com/services/emergency-dentist/",
+  crowns: "https://cosmeticimplantdentistrywp.com/services/crowns-bridges/",
+  clearBraces: "https://cosmeticimplantdentistrywp.com/services/braces/",
 } as const;
+
+export const navigation = [
+  { label: "about", links: [
+    { label: "meet your dentist", href: "#doctors" },
+    { label: "our approach", href: "#care" },
+    { label: "your experience", href: "#comfort" },
+    { label: "Smile Club", href: site.smileClubUrl },
+    { label: "visit our office", href: "#contact" },
+  ] },
+  { label: "services", links: [
+    { label: "general dentistry", href: "#general-care" },
+    { label: "restorative dentistry", href: "#restorative-care" },
+    { label: "cosmetic dentistry", href: "#cosmetic-care" },
+    { label: "dental implants", href: "#implants" },
+    { label: "all our services", href: "#expertise" },
+  ] },
+  { label: "problems we treat", links: [
+    { label: "missing teeth", href: serviceLinks.implants },
+    { label: "damaged teeth", href: serviceLinks.restoration },
+    { label: "stained teeth", href: serviceLinks.whitening },
+    { label: "dental anxiety", href: serviceLinks.sedation },
+    { label: "urgent dental concerns", href: serviceLinks.emergency },
+  ] },
+] as const;

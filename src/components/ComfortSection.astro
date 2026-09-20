@@ -1,34 +1,42 @@
 ---
 import { Image } from "astro:assets";
-import team from "../assets/team-member.jpg";
-import { site, serviceLinks } from "../lib/site";
+import { gallery, teamPortraits } from "../lib/homepage";
+import { site } from "../lib/site";
 import Icon from "./Icon.astro";
-import SectionHeading from "./SectionHeading.astro";
-const details = [
-  { number: "01", title: "Come as you are.", body: "It’s okay if it’s been a while. Tell us what’s on your mind, and we’ll work through the next step together." },
-  { number: "02", title: "Feel informed, never rushed.", body: "Understand your options, ask your questions, and feel involved in the decisions about your care." },
-  { number: "03", title: "A little extra reassurance.", body: "Nervous about a visit? Talk with our team about your concerns and the sedation options available." },
-];
+import ReviewNote from "./ReviewNote.astro";
+const { reviewMode = false } = Astro.props;
 ---
-<section id="comfort" class="comfort-section section-space" aria-labelledby="comfort-title">
+<section class="comfort-section section-space" id="comfort" aria-labelledby="comfort-title" data-section="comfort">
   <div class="shell">
-    <div class="section-intro">
-      <div><SectionHeading id="comfort-title" lines={["Feel more at ease", "in the dentist’s chair."]} /></div>
-      <p class="body-copy">Good dentistry is about more than teeth. It’s about feeling welcome, being heard, and knowing the people looking after you.</p>
+    <div class="comfort-intro"><h2 id="comfort-title">make yourself<br /><strong>comfortable.</strong></h2><p>Get to know the people and the place before you arrive. At our Westport office, we make room for questions, take time to listen, and help you feel more at ease with your care.</p></div>
+    <div class="office-gallery">
+      {gallery.map((photo, index) => <button class="gallery-photo" type="button" data-photo-src={photo.image.src} data-photo-alt={photo.alt} aria-label={"View photo: " + photo.alt}><Image src={photo.image} alt={photo.alt} widths={[450, 800, 1200]} sizes={index === 0 ? "(min-width: 900px) 48vw, 100vw" : "(min-width: 900px) 24vw, 50vw"} loading="lazy" /><span aria-hidden="true"><Icon name="plus" /></span></button>)}
+      {reviewMode && Array.from({length: 6}, (_, index) => <div class="asset-placeholder gallery-placeholder"><span class="placeholder-symbol" aria-hidden="true">+</span><strong>office photo {index + 5}</strong><small>client photo requested</small></div>)}
     </div>
-    <div class="comfort-grid">
-      <figure class="comfort-photo" data-reveal>
-        <Image src={team} alt="Our Westport dental team sharing a lighthearted moment together" loading="lazy" widths={[600, 960, 1400]} sizes="(min-width: 900px) 55vw, 100vw" />
-        <figcaption>Get to know the people who’ll welcome you and care for you.</figcaption>
-      </figure>
-      <div class="comfort-details">
-        {details.map((item) => <div class="comfort-detail"><span>{item.number}</span><div><h3>{item.title}</h3><p>{item.body}</p></div></div>)}
-        <a href={serviceLinks.sedation} class="text-link">Discover comfort options <Icon /></a>
-      </div>
-    </div>
-    <div class="membership-band">
-      <div><p class="small-label">Another way to plan for your care</p><h3>Ask us about care without insurance.</h3><p>Explore the practice’s Smile Club and ask our team about your next steps.</p></div>
-      <a href={site.smileClubUrl} class="button button-outline">Explore Smile Club <Icon /></a>
-    </div>
+    <ReviewNote show={reviewMode}>Four existing practice photos are available. Six additional office and amenity photos are reserved here to match the requested gallery.</ReviewNote>
+    <div class="team-portraits">{teamPortraits.map(person => <figure><Image src={person.image} alt={person.name + ", " + person.role} widths={[300, 500]} sizes="(min-width: 900px) 20vw, 44vw" loading="lazy" /><figcaption><strong>{person.name}</strong><span>{person.role}</span></figcaption></figure>)}</div>
+    <div class="section-action"><a class="button button-outline" href={site.teamUrl}>get to know our team <Icon /></a></div>
   </div>
 </section>
+<dialog class="photo-dialog" id="photoDialog" aria-label="Practice photo">
+  <button class="dialog-close" type="button" aria-label="Close photo"><Icon name="close" /></button>
+  <img alt="" width="1400" height="1000" />
+  <p class="photo-caption"></p>
+</dialog>
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("#photoDialog");
+  const image = dialog?.querySelector("img");
+  const caption = dialog?.querySelector(".photo-caption");
+  if (dialog && image && caption) {
+    document.querySelectorAll<HTMLButtonElement>("[data-photo-src]").forEach(button => {
+      button.addEventListener("click", () => {
+        image.src = button.dataset.photoSrc || "";
+        image.alt = button.dataset.photoAlt || "";
+        caption.textContent = image.alt;
+        dialog.showModal();
+      });
+    });
+    dialog.querySelector(".dialog-close")?.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+  }
+</script>

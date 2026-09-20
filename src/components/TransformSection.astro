@@ -1,28 +1,11 @@
 ---
-import { site, serviceLinks } from "../lib/site";
+import { Image } from "astro:assets";
+import { photos } from "../lib/homepage";
+import { serviceLinks } from "../lib/site";
 import Icon from "./Icon.astro";
-import SectionHeading from "./SectionHeading.astro";
+import ActionPair from "./ActionPair.astro";
 ---
-<section class="transform-section section-space" aria-labelledby="transform-title">
-  <div class="shell">
-    <div class="section-intro">
-      <div><SectionHeading id="transform-title" lines={["Let’s talk about", "the smile you want."]} /></div>
-      <p class="body-copy">Tell us what you’d like to change, whether it’s the look of your smile or how comfortably you bite and chew.</p>
-    </div>
-    <div class="treatment-features">
-      <article class="treatment-feature" data-reveal>
-        <div class="feature-top"><span class="small-label">Refine your smile</span><span class="feature-symbol" aria-hidden="true">✳</span></div>
-        <h3>Bring out what you<br />love about your smile.</h3>
-        <p>Explore veneers and professional whitening with your own features, preferences, and goals in mind.</p>
-        <a href={serviceLinks.veneers} class="text-link">Explore veneers <Icon /></a>
-      </article>
-      <article class="treatment-feature" data-reveal>
-        <div class="feature-top"><span class="small-label">Restore your confidence</span><span class="feature-symbol feature-symbol-ring" aria-hidden="true">◎</span></div>
-        <h3>Feel comfortable<br />chewing and smiling again.</h3>
-        <p>Discover dental implants and restorative options for missing or damaged teeth, with a plan tailored to your needs.</p>
-        <a href={serviceLinks.implants} class="text-link">Explore dental implants <Icon /></a>
-      </article>
-    </div>
-    <div class="consultation-note"><span>You don’t need to have it all figured out. That’s what a conversation is for.</span><a href={site.bookingUrl} class="text-link">Let’s talk <Icon /></a></div>
-  </div>
+<section class="implant-section section-space" id="implants" aria-labelledby="implant-title" data-section="implants">
+  <div class="shell split-layout"><div class="feature-photo"><Image src={photos.clinical} alt="Personal attention during a dental appointment at the practice" widths={[650, 1000, 1400]} sizes="(min-width: 900px) 48vw, 100vw" loading="lazy" /></div><div class="section-copy"><h2 id="implant-title">let’s talk about<br /><strong>dental implants.</strong></h2><p>If missing teeth are affecting how you eat or smile, we can help you explore your options. Dental implants and restorative care can be part of a plan shaped around your needs.</p><p>Start with a conversation about your concerns, your goals, and what the next step could look like.</p><a class="text-link" href={serviceLinks.implants}>explore dental implants <Icon /></a></div></div>
+  <div class="shell"><div class="second-opinion"><div><h3>we’re here to talk through<br /><strong>your implant options.</strong></h3><p>Considering treatment or looking for another perspective? Contact our team to arrange a consultation.</p></div><ActionPair /></div></div>
 </section>

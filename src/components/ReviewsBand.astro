@@ -1,11 +1,44 @@
 ---
+import { patientReviews } from "../lib/homepage";
 import { site } from "../lib/site";
 import Icon from "./Icon.astro";
-import SectionHeading from "./SectionHeading.astro";
+import ReviewNote from "./ReviewNote.astro";
+const { reviewMode = false } = Astro.props;
+const slides = [
+  ...patientReviews.map(review => ({ ...review, pending: false })),
+  ...(reviewMode ? Array.from({length: Math.max(0, 5 - patientReviews.length)}, (_, i) => ({ quote: "A further CIDWP patient review will appear here.", name: "review " + (patientReviews.length + i + 1) + " requested", source: "", pending: true })) : []),
+];
 ---
-<section id="reviews" class="reviews-section" aria-labelledby="reviews-title">
+<section class="reviews-section" id="reviews" aria-labelledby="reviews-title" data-section="reviews">
   <div class="shell reviews-grid">
-    <div><p class="eyebrow">From the people who know us</p><SectionHeading id="reviews-title" lines={["Hear from", "our patients."]} /></div>
-    <div class="reviews-copy"><p>Choosing a dentist is personal. Hear directly from patients about their experiences with our Westport team.</p><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer" class="text-link"><span class="google-letter" aria-hidden="true">G</span>Read our Google reviews <Icon /></a></div>
+    <div class="review-carousel" role="region" aria-roledescription="carousel" aria-label="Patient reviews" data-carousel>
+      <div id="reviewSlides">{slides.map((review, index) => <article class:list={["review-slide", { "pending-review": review.pending }]} data-slide role="group" aria-roledescription="slide" aria-label={(index + 1) + " of " + slides.length} hidden={index !== 0}><Icon name="quote" />{review.pending ? <p class="pending-label">client content needed</p> : null}<blockquote>{review.quote}</blockquote><p class="review-author">{review.name}</p>{!review.pending && <a href={review.source} target="_blank" rel="noopener noreferrer" class="review-source">read the published testimonial <Icon /></a>}</article>)}</div>
+      <div class="carousel-controls" hidden><button type="button" data-previous aria-label="Previous review" aria-controls="reviewSlides"><Icon class="arrow-back" /></button><span data-counter aria-live="polite" aria-atomic="true">1 / {slides.length}</span><button type="button" data-next aria-label="Next review" aria-controls="reviewSlides"><Icon /></button></div>
+    </div>
+    <div class="reviews-intro"><h2 id="reviews-title">hear from<br /><strong>our patients.</strong></h2><p>Choosing a dentist is personal. Read what patients have shared about their experience with our Westport team.</p><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer" class="text-link">{site.googleReviewCount ? site.googleReviewCount + " Google reviews" : "read our Google reviews"} <Icon /></a></div>
   </div>
+  <div class="shell"><ReviewNote show={reviewMode}>The first three slides are short excerpts from the official Smile Club testimonials. Two further Google reviews and a verified current count are requested.</ReviewNote></div>
 </section>
+<script>
+  document.querySelectorAll<HTMLElement>("[data-carousel]").forEach(carousel => {
+    const slides = [...carousel.querySelectorAll<HTMLElement>("[data-slide]")];
+    const controls = carousel.querySelector<HTMLElement>(".carousel-controls");
+    const counter = carousel.querySelector<HTMLElement>("[data-counter]");
+    if (!controls || !counter || slides.length < 2) return;
+    controls.hidden = false;
+    let active = 0;
+    const show = (index: number) => {
+      active = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => { slide.hidden = i !== active; });
+      counter.textContent = (active + 1) + " / " + slides.length;
+    };
+    carousel.querySelector("[data-previous]")?.addEventListener("click", () => show(active - 1));
+    carousel.querySelector("[data-next]")?.addEventListener("click", () => show(active + 1));
+    carousel.addEventListener("keydown", event => {
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        show(active + (event.key === "ArrowLeft" ? -1 : 1));
+      }
+    });
+  });
+</script>

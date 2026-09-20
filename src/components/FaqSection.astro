@@ -1,19 +1,13 @@
 ---
 import { site, serviceLinks } from "../lib/site";
 import Icon from "./Icon.astro";
-import SectionHeading from "./SectionHeading.astro";
 const faqs = [
-  { question: "How do I schedule my first visit?", answer: "Use our online appointment page to get started, or call our Westport team. We can help you choose the right kind of appointment and answer questions before you arrive.", link: { label: "Book your first visit", href: site.bookingUrl } },
-  { question: "What if I’m nervous about dental care?", answer: "Let us know when you schedule. We can talk through what would help you feel more comfortable and discuss the sedation options available for your care.", link: { label: "Learn about sedation", href: serviceLinks.sedation } },
-  { question: "Can I visit without dental insurance?", answer: "Yes. The practice offers a Smile Club. Explore the membership details and contact our team to discuss costs and options for the care you’re considering.", link: { label: "Explore Smile Club", href: site.smileClubUrl } },
-  { question: "What if I have an urgent dental concern?", answer: "Call the practice to describe what’s happening and ask about the earliest available appointment. Our team can help you with the next step.", link: { label: `Call ${site.phone}`, href: site.phoneUrl } },
+  { question: "How do I schedule my first visit?", answer: "Choose a time through our online appointment page or call our Westport team. We can help you decide which appointment to book and answer questions before you arrive.", label: "schedule your visit", href: site.bookingUrl },
+  { question: "What kinds of dental care do you offer?", answer: "Our services include general dentistry, cosmetic treatments, and restorative care. You can explore cleanings, fillings, veneers, whitening, dental implants, and more with our team.", label: "explore our services", href: "#services" },
+  { question: "Can I come in without dental insurance?", answer: "Yes. Our Smile Club offers a membership option with preventive care and savings on other treatments. Visit the membership page for current plans, benefits, and details.", label: "explore Smile Club", href: site.smileClubUrl },
+  { question: "What if I feel nervous about the dentist?", answer: "Tell us when you book your appointment. We can talk through your concerns, explain what to expect, and discuss the sedation options that may be appropriate for your care.", label: "learn about sedation", href: serviceLinks.sedation },
+  { question: "Can you help with missing or damaged teeth?", answer: "We offer options including dental implants, crowns, bridges, and full-mouth restoration. An appointment gives us a chance to understand your needs and explain the options available to you.", label: "explore restorative care", href: serviceLinks.restoration },
+  { question: "What should I do about an urgent dental concern?", answer: "Call the practice and describe what is happening. Our team can discuss the next step and the earliest available appointment.", label: "call our team", href: site.phoneUrl },
 ];
 ---
-<section id="questions" class="faq-section section-space" aria-labelledby="faq-title">
-  <div class="shell faq-grid">
-    <div><p class="eyebrow">A little clarity before you arrive</p><SectionHeading id="faq-title" lines={["What to know", "before your first visit."]} /><p class="body-copy">Something else on your mind?<br />We’re only a phone call away.</p><a href={site.phoneUrl} class="text-link">{site.phone} <Icon name="phone" /></a></div>
-    <div class="faq-list">
-      {faqs.map((faq) => <details name="patient-questions" class="faq-item"><summary>{faq.question}<Icon name="plus" /></summary><div class="faq-answer"><p>{faq.answer}</p><a href={faq.link.href} class="text-link">{faq.link.label}<Icon /></a></div></details>)}
-    </div>
-  </div>
-</section>
+<section class="faq-section section-space" id="questions" aria-labelledby="faq-title" data-section="faq"><div class="shell"><h2 class="section-heading" id="faq-title">what to know<br /><strong>before you visit.</strong></h2><div class="faq-list">{faqs.map(faq => <details class="faq-item"><summary>{faq.question}<Icon name="plus" /></summary><div class="faq-answer"><p>{faq.answer}</p><a href={faq.href} class="text-link">{faq.label}<Icon /></a></div></details>)}</div></div></section>

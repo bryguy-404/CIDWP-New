@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import { photos } from "../lib/homepage";
+import { site } from "../lib/site";
+import Icon from "./Icon.astro";
+import ReviewNote from "./ReviewNote.astro";
+const { reviewMode = false } = Astro.props;
+---
+<section class="doctors-section section-space" id="doctors" aria-labelledby="doctors-title" data-section="doctors">
+  <div class="shell doctors-grid">
+    <div class="doctor-portraits">
+      <figure><Image src={photos.hunter} alt="Dr. Hunter McAreavy pictured outdoors" widths={[400, 650]} sizes="(min-width: 900px) 22vw, 44vw" loading="lazy" class="hunter-photo" /><figcaption><strong>Dr. Hunter McAreavy</strong><span>DDS</span></figcaption></figure>
+      <figure><Image src={photos.team} alt="Our dental team at the Westport practice" widths={[450, 750]} sizes="(min-width: 900px) 22vw, 44vw" loading="lazy" /><figcaption><strong>your Westport team</strong><span>here to welcome you</span></figcaption></figure>
+    </div>
+    <div class="section-copy"><h2 id="doctors-title"><span class="text-brand">get to know</span><br />your dental team.</h2><p>Dr. Hunter McAreavy and our Westport team take the time to hear what matters to you. Whether you’re visiting for a checkup or considering a change to your smile, you’ll have people to talk it through with.</p><a href={site.doctorsUrl} class="button button-outline">meet us <Icon /></a></div>
+  </div>
+  <div class="shell"><ReviewNote show={reviewMode}>Please confirm the current doctor roster and provide professional headshots. These are Dr. Hunter’s published photo and an identified team photo.</ReviewNote></div>
+</section>

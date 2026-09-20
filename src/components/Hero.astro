@@ -1,33 +1,29 @@
 ---
 import { Image } from "astro:assets";
-import heroImage from "../assets/hero-care.jpg";
+import { photos } from "../lib/homepage";
 import { site } from "../lib/site";
-import Icon from "./Icon.astro";
+import ActionPair from "./ActionPair.astro";
 ---
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-copy">
-    <p class="eyebrow"><span class="eyebrow-rule"></span>Your dentist in Westport, Kansas City</p>
-    <h1 id="hero-title">Feel at home<br /><strong>in our care.</strong></h1>
-    <p class="hero-description">Everyday care. Caring Experience. A team that takes the time to get to know you.</p>
-    <div class="hero-actions">
-      <a href={site.bookingUrl} class="button button-navy">Book your first visit <Icon /></a>
-      <a href="#services" class="text-link">Explore our care <Icon /></a>
-    </div>
+<section class="hero" aria-labelledby="hero-title" data-section="hero">
+  <div class="hero-media">
+    <Image src={photos.hero} alt="The Cosmetic & Implant Dentistry Westport team at the practice" widths={[750, 1200, 1800, 2400]} sizes="100vw" loading="eager" fetchpriority="high" />
+    {site.heroVideoUrl && <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src={site.heroVideoUrl} type="video/mp4" /></video>}
   </div>
-  <div class="hero-visual">
-    <div class="hero-photo-wrap">
-      <Image src={heroImage} alt="The Cosmetic & Implant Dentistry Westport team together at the practice" loading="eager" fetchpriority="high" widths={[640, 960, 1400]} sizes="(min-width: 900px) 54vw, 100vw" class="hero-photo" />
-      <span class="photo-corner" aria-hidden="true"></span>
+  <div class="hero-shade"></div>
+  <div class="shell hero-content">
+    <div class="hero-copy">
+      <p class="hero-location">your dentist in westport, kansas city</p>
+      <h1 id="hero-title">feel at home<br /><strong>in our care.</strong></h1>
+      <p class="hero-description">Everyday care. Caring Experience. A team that takes the time to get to know you.</p>
     </div>
-    <div class="hero-caption"><span>Your dental home<br /><strong>in the neighborhood.</strong></span><a href="#care" aria-label="Discover our approach"><Icon class="arrow-down" /></a></div>
+    <ActionPair light />
   </div>
 </section>
-<div class="care-bar" aria-label="Our care at a glance">
-  <div class="shell care-bar-inner">
-    <span class="care-bar-label">Your dental care,<br /><strong>all in one place.</strong></span>
-    <a href="#general-care">General dentistry <Icon /></a>
-    <a href="#cosmetic-care">Cosmetic dentistry <Icon /></a>
-    <a href="#restorative-care">Dental implants <Icon /></a>
-    <a href={site.phoneUrl}>Need urgent care? <Icon name="phone" /></a>
-  </div>
-</div>
+<script>
+  const video = document.querySelector<HTMLVideoElement>(".hero-video");
+  if (video) {
+    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => { if (reducedMotion.matches) video.pause(); else video.play().catch(() => {}); };
+    reducedMotion.addEventListener("change", update); update();
+  }
+</script>

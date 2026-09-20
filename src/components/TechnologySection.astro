@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import { technology } from "../lib/homepage";
+import ReviewNote from "./ReviewNote.astro";
+const { reviewMode = false } = Astro.props;
+---
+<section class="technology-section section-space" id="technology" aria-labelledby="technology-title" data-section="technology"><div class="shell">
+  <h2 class="section-heading" id="technology-title">a closer look<br /><strong>at your dental health.</strong></h2>
+  <div class="technology-grid">{technology.map(item => <article class="technology-card"><div class="technology-photo"><Image src={item.image} alt={item.alt} widths={[400, 700, 1000]} sizes="(min-width: 900px) 30vw, 100vw" loading="lazy" /></div><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
+  <ReviewNote show={reviewMode}>Technology types are listed on CIDWP’s Smile Club site. Please confirm they are used at this location and supply equipment photos; these are general practice photos.</ReviewNote>
+</div></section>

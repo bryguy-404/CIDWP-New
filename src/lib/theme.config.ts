@@ -1,37 +1,24 @@
 /**
- * Canonical theme source for Cosmetic & Implant Dentistry Westport.
- *
- * The values here are mirrored into the Tailwind v4 `@theme` block in
- * `src/styles/global.css` (Tailwind v4 is CSS-first, so it cannot import this
- * file directly). If you change a value here, change it there too.
+ * Brand palette for the Round 2 homepage.
+ * #0D8AAA is sampled from CIDWP's official logo.
+ * #CCFFFF, #E3FBFF, #F5FFFF and #0E3647 are in the official Smile Club site.
+ * Mirrored in src/styles/global.css; see docs/round2-review.md for sources.
  */
 export const theme = {
   colors: {
-    // Semantic roles
-    primary: "#1B2A45",
+    primary: "#CCFFFF",
     secondary: "#0D8AAA",
-    accent: "#2AACD1",
-    background: "#F7F5F1",
-    foreground: "#1B2A45",
-    muted: "#5D6779",
-
-    // Brand aliases — the names used throughout the approved mockup.
-    // These are the names components reference.
-    navy: "#1B2A45",
-    teal: "#0D8AAA",
-    aqua: "#2AACD1",
-    gold: "#C6A15B",
-    ivory: "#F7F5F1",
+    accent: "#E3FBFF",
+    background: "#FFFFFF",
+    foreground: "#0E3647",
+    muted: "#50636C",
+    brand: "#0D8AAA",
+    blue: "#CCFFFF",
+    pale: "#E3FBFF",
+    mist: "#F5FFFF",
+    ink: "#0E3647",
   },
-  fonts: {
-    heading: "'Manrope', sans-serif",
-    body: "'Manrope', sans-serif",
-  },
-  radius: {
-    sm: "0px",
-    md: "0px",
-    lg: "0px",
-  },
+  fonts: { heading: "'Work Sans', sans-serif", body: "'Work Sans', sans-serif" },
+  radius: { sm: "0px", md: "4px", lg: "999px" },
 } as const;
-
 export type Theme = typeof theme;

@@ -1,18 +1,18 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/logo.png";
+import colorLogo from "../assets/round2/logo-color.png";
 import { site, serviceLinks } from "../lib/site";
 import Icon from "./Icon.astro";
+const { reviewMode = false } = Astro.props;
 ---
-<footer class="site-footer">
-  <div class="shell">
-    <div class="footer-main">
-      <div class="footer-brand"><a href="/" aria-label={`${site.name} home`}><Image src={logo} alt={site.name} widths={[230, 460]} sizes="230px" class="footer-logo" /></a><p>Here to care for your smile for years to come.</p></div>
-      <div><h2 class="small-label">Find your care</h2><ul><li><a href={serviceLinks.general}>General dentistry</a></li><li><a href={serviceLinks.veneers}>Veneers &amp; cosmetic care</a></li><li><a href={serviceLinks.implants}>Dental implants</a></li><li><a href={serviceLinks.emergency}>Emergency dentistry</a></li><li><a href={serviceLinks.sedation}>Sedation options</a></li></ul></div>
-      <div><h2 class="small-label">Make yourself at home</h2><ul><li><a href={site.doctorsUrl}>Meet your dentist</a></li><li><a href="#comfort">Your experience</a></li><li><a href={site.smileClubUrl}>Smile Club</a></li><li><a href="#questions">Common questions</a></li><li><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer">Patient reviews</a></li></ul></div>
-      <div class="footer-visit"><h2 class="small-label">Visit us in Westport</h2><address>{site.address}<br />{site.city}</address><a href={site.directionsUrl} target="_blank" rel="noopener noreferrer" class="text-link">Get directions <Icon /></a><a href={site.phoneUrl} class="footer-phone">{site.phone}</a><a href={site.contactUrl}>Contact our team <Icon /></a></div>
-    </div>
-    <div class="footer-bottom"><p>© {new Date().getFullYear()} {site.name}</p><a href="#main">Back to top <Icon class="arrow-up" /></a></div>
+<footer class="site-footer" data-section="footer"><div class="shell">
+  <div class="footer-top"><a href="#main" aria-label={site.name + " home"}><Image src={colorLogo} alt={site.name} widths={[210,420]} sizes="210px" class="footer-logo" loading="lazy" /></a><p>here to care for your smile<br /><strong>for years to come.</strong></p><div class="social-links">{site.facebookUrl && <a href={site.facebookUrl} aria-label="CIDWP on Facebook" target="_blank" rel="noopener noreferrer"><Icon name="facebook" /></a>}{site.instagramUrl && <a href={site.instagramUrl} aria-label="CIDWP on Instagram" target="_blank" rel="noopener noreferrer"><Icon name="instagram" /></a>}</div></div>
+  <div class="footer-columns">
+    <div><h2>services</h2><ul><li><a href={serviceLinks.general}>general dentistry</a></li><li><a href={serviceLinks.veneers}>cosmetic dentistry</a></li><li><a href={serviceLinks.implants}>dental implants</a></li><li><a href={serviceLinks.restoration}>restorative care</a></li><li><a href={serviceLinks.emergency}>emergency dentistry</a></li></ul></div>
+    <div><h2>practice info</h2><ul><li><a href={site.doctorsUrl}>meet your dentist</a></li><li><a href={site.teamUrl}>meet the team</a></li><li><a href="#comfort">your experience</a></li><li><a href={site.smileClubUrl}>Smile Club</a></li><li><a href="#questions">common questions</a></li></ul></div>
+    <div><h2>office</h2><address>{site.address}<br />{site.city}</address><a href={site.directionsUrl} class="footer-link" target="_blank" rel="noopener noreferrer">get directions <Icon /></a><a href={site.phoneUrl} class="footer-link">{site.phone}</a><a href={site.contactUrl} class="footer-link">contact us <Icon /></a></div>
+    <div><h2>review us</h2><p>We’d love to hear<br />about your visit.</p><a class="footer-link" href={site.reviewsUrl} target="_blank" rel="noopener noreferrer">Google <Icon /></a>{site.facebookUrl && <a class="footer-link" href={site.facebookUrl} target="_blank" rel="noopener noreferrer">Facebook <Icon /></a>}</div>
   </div>
-</footer>
-<div class="mobile-booking-bar"><a href={site.phoneUrl}><Icon name="phone" />Call the practice</a><a href={site.bookingUrl}>Book a visit <Icon /></a></div>
+  <div class="footer-bottom"><p>© {new Date().getFullYear()} {site.name}</p><nav aria-label="Policies"><a href={site.privacyUrl}>privacy policy</a><a href={site.accessibilityUrl}>accessibility</a>{site.hipaaUrl ? <a href={site.hipaaUrl}>HIPAA notice</a> : reviewMode && <span class="pending-policy">HIPAA notice URL needed</span>}</nav><a href="#main">back to top ↑</a></div>
+</div></footer>
+<nav class="mobile-booking-bar" aria-label="Quick contact" data-section="mobile-bar"><a href={site.phoneUrl}><Icon name="phone" />{site.textingEnabled ? "call or text" : "call our team"}</a><a href={site.contactUrl}><Icon name="arrow" />contact us</a></nav>

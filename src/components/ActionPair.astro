@@ -1,0 +1,10 @@
+---
+import { site } from "../lib/site";
+import Icon from "./Icon.astro";
+interface Props { light?: boolean; class?: string }
+const { light = false, class: className } = Astro.props;
+---
+<div class:list={["action-pair", className]}>
+  <a class="button button-brand" href={site.phoneUrl}><Icon name="phone" /><span>{site.textingEnabled ? "call or text" : "call"} {site.phone}</span></a>
+  <a class:list={["button", light ? "button-white" : "button-outline"]} href={site.bookingUrl}>schedule now <Icon /></a>
+</div>
