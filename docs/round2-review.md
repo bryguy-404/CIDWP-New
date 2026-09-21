@@ -22,7 +22,7 @@ The exact Round 1 hero subhead is preserved:
 
 > Everyday care. Caring Experience. A team that takes the time to get to know you.
 
-There are no numbered section labels. Photography uses the existing practice assets and additional images published by CIDWP. Jackson’s photos, wording, awards, and review count have not been reused.
+There are no numbered section labels. Practice photography uses existing assets and additional images published by CIDWP. The September 21 expertise update adds seven original AI-generated service illustrations, documented in [expertise-imagery.md](expertise-imagery.md). Jackson’s photos, wording, awards, and review count have not been reused.
 
 ## Section-by-section review
 
@@ -36,7 +36,7 @@ There are no numbered section labels. Photography uses the existing practice ass
 | 6. Implants | Photo feature plus second-opinion strip and paired CTAs | Treatment-specific photography/video if available |
 | 7. Technology | Three photo cards for technology named on the official Smile Club page | Confirm Westport equipment and send actual equipment photos; current photos show general practice scenes |
 | 8. Service tiles | Three large alternating photo/copy rows: routine, restorative, cosmetic | More distinct practice/patient photos will reduce reuse |
-| 9. Expertise | Nine existing services in a 3×3 desktop grid | None |
+| 9. Expertise | Nine existing services in an edge-to-edge 3×3 desktop photo grid, with white overlay labels, thin dividers, and responsive tablet/phone layouts; updated September 21 | Seven generated service illustrations plus two existing practice photos; see imagery provenance |
 | 10. Comfort | Gallery opens photos in a keyboard-accessible dialog; four team portraits underneath | About ten distinct office/amenity photos. Four existing practice scenes are shown; six additional positions appear in the review view |
 | 11. Reviews | Manual carousel with quote icon, first name/last initial, arrows, keyboard controls, Google link | Five selected Google reviews and verified count/rating. Three short Smile Club excerpts are provisional; two additional positions appear in review mode |
 | 12. Schedule strip | Large heading and paired call/schedule buttons | None |

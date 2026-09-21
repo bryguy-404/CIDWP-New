@@ -8,6 +8,13 @@ import rianne from "../assets/round2/rianne-chisum.png";
 import rachel from "../assets/round2/rachel-converse.jpg";
 import chrissy from "../assets/round2/chrissy.jpg";
 import konner from "../assets/round2/konner-lawson.png";
+import veneers from "../assets/expertise/veneers.png";
+import implants from "../assets/expertise/implants.png";
+import crowns from "../assets/expertise/crowns.png";
+import whitening from "../assets/expertise/whitening.png";
+import aligners from "../assets/expertise/aligners.png";
+import restoration from "../assets/expertise/restoration.png";
+import emergency from "../assets/expertise/emergency.png";
 import { serviceLinks, site } from "./site";
 
 export const photos = { hero, team, office, clinical, hunter };
@@ -32,16 +39,18 @@ export const services = [
   { id: "cosmetic-care", title: "Make Your Smile Feel More Like You", label: "Cosmetic Dentistry", description: "Tell us what you’d like to change about your smile. We’ll walk through options such as veneers and whitening, with your preferences and goals in mind.", image: team, alt: "Our Westport dental team sharing a lighthearted moment", href: serviceLinks.veneers, cta: "Explore Cosmetic Care" },
 ];
 
-export const expertise = [
-  { label: "Veneers", href: serviceLinks.veneers },
-  { label: "Dental Implants", href: serviceLinks.implants },
-  { label: "Crowns & Bridges", href: serviceLinks.crowns },
-  { label: "Teeth Whitening", href: serviceLinks.whitening },
-  { label: "Clear Braces", href: serviceLinks.clearBraces },
-  { label: "Full-Mouth Restoration", href: serviceLinks.restoration },
-  { label: "General Dentistry", href: serviceLinks.general },
-  { label: "Sedation Options", href: serviceLinks.sedation },
-  { label: "Emergency Dentistry", href: serviceLinks.emergency },
+// Original illustrative service imagery plus two existing practice photos.
+// Generation prompts and provenance: docs/expertise-imagery.md.
+export const expertise: { label: string; href: string; image: ImageMetadata; position: string }[] = [
+  { label: "Veneers", href: serviceLinks.veneers, image: veneers, position: "50% 50%" },
+  { label: "Dental Implants", href: serviceLinks.implants, image: implants, position: "50% 50%" },
+  { label: "Crowns & Bridges", href: serviceLinks.crowns, image: crowns, position: "50% 50%" },
+  { label: "Teeth Whitening", href: serviceLinks.whitening, image: whitening, position: "50% 50%" },
+  { label: "Clear Braces", href: serviceLinks.clearBraces, image: aligners, position: "50% 50%" },
+  { label: "Full-Mouth Restoration", href: serviceLinks.restoration, image: restoration, position: "50% 50%" },
+  { label: "General Dentistry", href: serviceLinks.general, image: clinical, position: "50% 44%" },
+  { label: "Sedation Options", href: serviceLinks.sedation, image: office, position: "50% 50%" },
+  { label: "Emergency Dentistry", href: serviceLinks.emergency, image: emergency, position: "50% 45%" },
 ];
 
 export const gallery = [

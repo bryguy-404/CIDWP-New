@@ -16,6 +16,8 @@ Work Sans was identified on the rendered reference. Font files come from Google 
 
 ## Practice photography
 
+The September 21 expertise photo grid also uses seven original AI-generated service illustrations. Files, intended use, and the complete prompts are recorded in [expertise-imagery.md](expertise-imagery.md). They represent service concepts, not actual CIDWP patients or treatment outcomes. General Dentistry and Sedation Options use existing practice photos listed below.
+
 | Local asset | Source | Use / limitation |
 | --- | --- | --- |
 | `src/assets/hero-care.jpg` | Existing project practice photography | Team hero and gallery |
