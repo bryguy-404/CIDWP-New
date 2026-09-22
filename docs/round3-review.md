@@ -31,7 +31,7 @@ Google’s visible listing provided relative ages, not exact publication dates. 
 
 - **Pam’s photo batch:** Keep existing imagery for now. Replace repeats across the homepage before reusing images, expand the comfort gallery to roughly ten distinct photos, and collect any remaining photo needs into one follow-up list after the batch is applied.
 - **3D printer:** Replace one technology card once its photo, placement notes, and description of the practice’s use arrive. Do not guess equipment capabilities.
-- **Google API:** Select the API and arrange access last. Adapt its response into the `PatientReview` fields in `src/lib/reviews.ts`, then pass the resulting array to `ReviewsBand`. Keep credentials server-side and implement the selected service’s attribution requirements at integration time. This change does not implement API fetching, scheduling, or credential setup.
+- **Google API:** Implemented in the September 22 follow-up described below. Deployment requires the two Cloudflare variables; Google billing and quotas are managed in the Google Cloud project.
 - **Secondary pages:** Dental Implants, Veneers, and Emergency Dentistry remain on hold until KO confirms priorities against traffic data. Build and preview each separately once authorized.
 
 ## Preview And Validation
@@ -46,3 +46,16 @@ Verified September 22, 2026:
 - Emergency Dentistry appears in desktop and mobile navigation with the original emergency-dentist URL.
 - Review next/previous buttons, wraparound, and Home/End keyboard navigation work. All four slides reserve the same height at both widths; only the active review is visible and the other three are inert.
 - The public homepage contains no internal review notes; the internal preview retains six gallery photo placeholders and six follow-ups.
+
+## September 22 Google Places Integration
+
+- Added `/api/google-reviews` as a Cloudflare Pages Function. It uses only `GOOGLE_PLACES_API_KEY` and `GOOGLE_PLACE_ID` from server bindings; neither is accepted from visitor input.
+- The public Place ID was confirmed by Bryan in Google's Place ID Finder: `ChIJUywCm23vwIcRoV5FtFAqW3A`, Cosmetic & Implant Dentistry Westport, 638 W 39th St, Kansas City, MO 64111.
+- The browser requests reviews once when the section approaches the viewport. The endpoint requests only `reviews,attributions`. No scheduled refresh, persistent review storage, or browser/CDN response caching is used.
+- Displays up to five written reviews in Google relevance order, without selecting by rating. Original-language text, author names, profile links, avatars, source links, and publication dates are preserved when available. Unusable records are omitted.
+- Keeps the manually checked excerpts when configuration is missing, Google fails or times out, or no usable reviews are returned. The fallback stays explicitly labeled as selected excerpts. API content is never substituted into the checked-in fallback.
+- Added the official unmodified Google Maps attribution logo, ordering notice, and a public `/google-reviews/` terms and privacy supplement. Long reviews expand inline; keyboard controls and inactive-slide accessibility remain supported.
+- Removed the API content request from the internal review checklist, leaving five follow-ups. Photos and other deferred work are unchanged.
+- `public/_routes.json` limits Function invocations to the review endpoint; the rest of the site stays static.
+
+Validation: eight endpoint tests cover configuration, methods, fixed upstream requests, source order, attribution, malformed records, secret redaction, Google errors, empty results, and timeout behavior. Wrangler successfully compiles the Pages Function. Browser tests use clearly marked synthetic reviews locally to test API success and fallback behavior without exposing a key or spending Google quota. See `docs/google-reviews-setup.md` for deployment and runtime verification.

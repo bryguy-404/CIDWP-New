@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../lib/site";
+---
+<Layout title="Google Reviews Terms And Privacy | CIDWP" description="How Google reviews are displayed on the CIDWP website, with Google Maps terms and privacy information.">
+  <main id="main" class="shell reviews-policy-page" tabindex="-1">
+    <a href="/">Back To CIDWP</a>
+    <h1>Google Reviews Terms And Privacy</h1>
+    <p>This notice applies to the Google reviews feature on the {site.name} website.</p>
+    <h2>Terms Of Use</h2>
+    <p>By using the Google Maps content on this website, you agree to the <a href="https://maps.google.com/help/terms_maps/">Google Maps/Google Earth Additional Terms Of Service</a>, which are incorporated into these terms for this feature.</p>
+    <p>The carousel displays up to five written reviews supplied by Google Maps, ordered by Google relevance. Reviews without written feedback or the information needed to display and attribute them are omitted. We do not select the API results by star rating. Review dates, names, and text reflect the information supplied by Google.</p>
+    <p>Long reviews can be expanded with Read More. Each review links to its source on Google Maps. If the service is unavailable, selected excerpts previously checked against the practice’s Google listing appear with an excerpt label. Reviews describe individual experiences and do not guarantee treatment outcomes.</p>
+    <h2>Privacy</h2>
+    <p>The feature requests reviews through our hosting provider, Cloudflare, when you approach the review section. It does not request access to your Google account. The API key remains on the server, and the feature does not save review responses in cookies, browser storage, or a review database.</p>
+    <p>When reviewer profile images load, your browser connects to Google’s image service. Opening a review or author profile also takes you to Google. Google may receive information such as your IP address and browser details through these connections. The <a href="https://policies.google.com/privacy">Google Privacy Policy</a> is incorporated into this privacy notice for the feature.</p>
+    <p>For the practice’s broader privacy information, read our <a href={site.privacyUrl}>Privacy Policy</a>. You can <a href={site.contactUrl}>Contact Us</a> with questions about this website.</p>
+  </main>
+</Layout>

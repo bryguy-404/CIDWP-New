@@ -210,6 +210,20 @@ p { margin-bottom: 22px; }
 .review-source .icon { width: 13px; height: 13px; }
 .review-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px; }
 .review-meta time { font-size: 12px; color: var(--color-muted); }
+.review-slide.review-slide-live blockquote { font-size: clamp(22px, 2vw, 28px); line-height: 1.45; letter-spacing: -.015em; white-space: pre-line; overflow-wrap: anywhere; }
+.review-text.is-collapsed { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; overflow: hidden; }
+.review-expand { display: block; padding: 4px 0; margin: -14px 0 18px; min-height: 36px; border: 0; background: transparent; font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
+.review-author-row { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.review-author-row .review-author { margin: 0; overflow-wrap: anywhere; }
+.review-author a { text-decoration: underline; text-underline-offset: 4px; }
+.review-avatar { width: 40px; height: 40px; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
+.review-attribution { margin-top: 20px; }
+.google-maps-logo { display: block; height: 18px; width: auto; margin: 10px 10px 8px; }
+.review-attribution p, .review-selection-note, .review-policy-link { font-size: 12px; line-height: 1.6; }
+.review-attribution p { margin: 10px 0 0; }
+.review-selection-note { margin: 20px 0 0; }
+.review-policy-link { align-self: flex-start; margin-top: 8px; text-decoration: underline; text-underline-offset: 3px; }
+.review-attribution a { text-decoration: underline; }
 .carousel-controls { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-top: 30px; }
 .carousel-controls button { display: grid; place-items: center; width: 44px; height: 44px; background: transparent; border: 1px solid #71a8b0; border-radius: 50%; }
 .carousel-controls button:hover { background: white; }
@@ -218,6 +232,10 @@ p { margin-bottom: 22px; }
 .reviews-intro p { max-width: 470px; color: var(--color-muted); }
 .reviews-empty { grid-template-columns: 1fr; }
 .reviews-empty .reviews-intro { padding: 0; }
+.reviews-policy-page { max-width: 780px; padding-block: 60px 90px; }
+.reviews-policy-page h1 { font-size: clamp(34px, 5vw, 52px); margin-block: 40px 26px; }
+.reviews-policy-page h2 { font-size: 26px; margin-top: 36px; }
+.reviews-policy-page a { text-decoration: underline; text-underline-offset: 4px; }
 
 /* Appointment strips, questions, and office information. */
 .contact-cta { position: relative; padding-block: 95px; overflow: hidden; background: var(--color-pale); }

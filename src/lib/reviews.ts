@@ -8,6 +8,17 @@ export interface PatientReview {
   isExcerpt?: boolean;
 }
 
+export interface LivePatientReview extends PatientReview {
+  authorUrl: string | null;
+  avatarUrl: string | null;
+  languageCode: string | null;
+}
+
+export interface GoogleReviewsResponse {
+  reviews: LivePatientReview[];
+  attributions: { name: string; uri: string | null }[];
+}
+
 // Manually checked on the practice's Google Maps listing on September 22, 2026.
 // Google exposed relative ages, not exact dates; do not invent publication dates.
 // Source links, observed ages, and API handoff notes: docs/round3-review.md.
