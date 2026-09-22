@@ -19,7 +19,7 @@ Production and Preview settings are separate. Preview deployments without these 
 
 The endpoint keeps only usable five-star written reviews from Google's selection of up to five relevance-ranked reviews, then sorts by publication date from newest to oldest. Missing or invalid dates go last; equal dates retain Google's order. This can produce fewer than five reviews and cannot guarantee the five newest five-star reviews across the practice's full review history.
 
-The carousel and public terms explain the selection. If no reviews qualify or the request fails, the original four manually checked five-star excerpts remain visible with their excerpt label. They have no exact publication dates and are not described as the newest reviews. The site does not mix excerpts into a nonempty live response to fill empty slots.
+The carousel retains Google's attribution and a short selection notice. The full terms and privacy supplement is linked from the site footer rather than repeated beneath the carousel. If no reviews qualify or the request fails, the original four manually checked five-star excerpts remain visible with their excerpt label. They have no exact publication dates and are not described as the newest reviews. The site does not mix excerpts into a nonempty live response to fill empty slots.
 
 ## Usage And Availability
 
