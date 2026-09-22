@@ -32,8 +32,10 @@ test("uses only configured place and headers; preserves low ratings, original te
     assert.equal(url, `https://places.googleapis.com/v1/places/${env.GOOGLE_PLACE_ID}?languageCode=en`);
     assert.equal(options.headers["X-Goog-Api-Key"], env.GOOGLE_PLACES_API_KEY);
     assert.equal(options.headers["X-Goog-FieldMask"], "reviews,attributions");
-    assert.equal(options.redirect, "error");
-    assert.equal(options.cache, "no-store");
+    assert.equal(options.redirect, "manual");
+    assert.equal(options.cache, undefined);
+    assert.equal(options.headers["Cache-Control"], "no-store");
+    assert.deepEqual(options.cf, { cacheTtlByStatus: { "100-599": -1 } });
     return Response.json({ reviews: [review(), review({ rating: 5 })], attributions: [{ provider: "Test provider", providerUri: "https://example.com/source" }] });
   });
   const result = await onRequest({ request: request("?place_id=attacker&key=other&fields=*"), env });
@@ -78,7 +80,7 @@ test("empty Google response allows the client to keep its static fallback", asyn
 });
 
 test("API errors never expose upstream bodies or credentials", async () => {
-  for (const status of [403, 429, 500]) {
+  for (const status of [302, 403, 429, 500]) {
     mock.method(globalThis, "fetch", async () => new Response(env.GOOGLE_PLACES_API_KEY, { status }));
     const result = await onRequest({ request: request(), env });
     assert.equal(result.status, 503);

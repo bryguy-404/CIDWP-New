@@ -75,15 +75,22 @@ export async function onRequest({ request, env }: Context): Promise<Response> {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 6000);
   try {
-    const result = await fetch(`https://places.googleapis.com/v1/places/${placeId}?languageCode=en`, {
+    const options = {
       headers: {
         "X-Goog-Api-Key": apiKey,
         "X-Goog-FieldMask": "reviews,attributions",
+        "Cache-Control": "no-store",
+        "Pragma": "no-cache",
       },
       signal: controller.signal,
-      redirect: "error",
-      cache: "no-store",
-    });
+      // Never forward the key to a redirect destination. Workers supports
+      // "manual" across compatibility dates; a 3xx response fails below.
+      redirect: "manual" as const,
+      // Older Pages compatibility dates throw on RequestInit.cache. A negative
+      // Cloudflare cache TTL bypasses storage without requiring that API flag.
+      cf: { cacheTtlByStatus: { "100-599": -1 } },
+    };
+    const result = await fetch(`https://places.googleapis.com/v1/places/${placeId}?languageCode=en`, options);
     if (!result.ok) {
       // Log only the status; never log credentials, response bodies, or reviews.
       console.warn(`Google reviews unavailable: upstream HTTP ${result.status}.`);

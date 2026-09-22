@@ -23,6 +23,10 @@ Before enabling this on a high-traffic site, set a suitable Place Details quota 
 
 Google Places review content is not stored in the repository, a database, KV, browser storage, or a CDN cache. Both upstream requests and endpoint responses use `no-store`. The existing manual excerpt source file remains separate from API content. Only the public Place ID is retained as configuration.
 
+The upstream request uses `Cache-Control: no-store` and Cloudflare's negative `cacheTtlByStatus` setting to disable caching across compatibility dates. It intentionally omits the `RequestInit.cache` option, which throws in Workers configured before November 11, 2024 without the `cache_option_enabled` flag.
+
+Redirect handling uses `manual` and rejects 3xx responses, so the API key is never forwarded to a redirect destination. This also works on Workers runtimes that reject the `error` redirect mode.
+
 ## Verification
 
 ```sh
