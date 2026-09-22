@@ -15,6 +15,12 @@ The key should be restricted to **Places API (New)**. Requests come from the ser
 
 Production and Preview settings are separate. Preview deployments without these variables display the static excerpts. A new deployment is required to use updated bindings. Keep the existing `npm run build` build command and `dist` output directory. Cloudflare's Git integration also compiles the root `functions` directory.
 
+## Review Selection
+
+The endpoint keeps only usable five-star written reviews from Google's selection of up to five relevance-ranked reviews, then sorts by publication date from newest to oldest. Missing or invalid dates go last; equal dates retain Google's order. This can produce fewer than five reviews and cannot guarantee the five newest five-star reviews across the practice's full review history.
+
+The carousel and public terms explain the selection. If no reviews qualify or the request fails, the original four manually checked five-star excerpts remain visible with their excerpt label. They have no exact publication dates and are not described as the newest reviews. The site does not mix excerpts into a nonempty live response to fill empty slots.
+
 ## Usage And Availability
 
 Google Cloud billing must be enabled. Requesting the `reviews` field uses the **Place Details Enterprise + Atmosphere** SKU. One successful browser visit to the review section triggers one Place Details request; visits that do not approach the section make no review request. There is no polling or automatic retry.
@@ -40,7 +46,7 @@ Astro's local dev server serves the static site but does not execute Pages Funct
 
 After deployment, open `/api/google-reviews`: success is JSON with `reviews` and `attributions`. Errors are 503 responses with a generic message plus a diagnostic code: `CONFIGURATION_MISSING`, `GOOGLE_REQUEST_FAILED`, `GOOGLE_TIMEOUT`, or `GOOGLE_UNAVAILABLE`. Failed Google responses also expose their HTTP status and, when available, the uppercase ErrorInfo reason enum (for example, `BILLING_DISABLED`). Error messages and metadata from Google are never returned. Cloudflare Function logs include only the upstream HTTP status or failure category. A Google 403 usually means billing, API enablement, or key restrictions need checking; 429 indicates a quota limit. No credentials or Google error bodies are logged.
 
-On the homepage, scroll to the reviews. The section's `data-review-state` becomes `live` for an API result and stays `fallback` when static excerpts are used. A live result displays Google Maps attribution, review dates, and author/profile links. Confirm that next/previous, keyboard navigation, and Read More work on desktop and mobile. A successful static build alone does not verify the deployed Google connection.
+On the homepage, scroll to the reviews. The section's `data-review-state` becomes `live` for an API result and stays `fallback` when static excerpts are used. A live result displays Google Maps attribution, review dates, and author/profile links. Confirm that every live review has a rating of five, valid dates are newest first, and the selection notice matches that behavior. Confirm that next/previous, keyboard navigation, and Read More work on desktop and mobile. A successful static build alone does not verify the deployed Google connection.
 
 ## Sources
 

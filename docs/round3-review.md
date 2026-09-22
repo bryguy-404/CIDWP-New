@@ -59,3 +59,10 @@ Verified September 22, 2026:
 - `public/_routes.json` limits Function invocations to the review endpoint; the rest of the site stays static.
 
 Validation: nine endpoint tests cover configuration, methods, fixed upstream requests, source order, attribution, malformed records, secret redaction, safe diagnostic codes, Google errors, empty results, and timeout behavior. Wrangler successfully compiles the Pages Function. Browser tests use clearly marked synthetic reviews locally to test API success and fallback behavior without exposing a key or spending Google quota. See `docs/google-reviews-setup.md` for deployment and runtime verification.
+
+## September 22 Review Selection Follow-Up
+
+- At Bryan's request, the endpoint now keeps only five-star written reviews and orders them by publication date, newest first. Undated reviews appear last; equal dates retain Google's source order.
+- Selection is limited to the up to five reviews Google supplies by relevance. It can display fewer than five reviews and does not promise the newest reviews across the full listing.
+- Updated the public selection notice, terms, and internal preview notes. The four manually checked five-star excerpts remain the explicitly labeled fallback if the API fails or no reviews qualify; they are not used to fill a partial live result.
+- Endpoint tests now cover mixed ratings, no qualifying reviews, date ordering across time zones, undated records, and ties in addition to the existing request and error handling checks.

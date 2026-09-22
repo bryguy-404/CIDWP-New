@@ -103,8 +103,18 @@ export async function onRequest({ request, env }: Context): Promise<Response> {
       return json({ error: "Reviews are temporarily unavailable.", code: "GOOGLE_REQUEST_FAILED", upstreamStatus: result.status, ...(reason ? { reason } : {}) }, 503);
     }
     const place = record(await result.json());
+    // Google supplies at most five relevance-selected reviews. Filter and sort
+    // that selection only; this is not the practice's complete review history.
     const reviews = (Array.isArray(place.reviews) ? place.reviews : [])
-      .slice(0, 5).map(normalizeReview).filter((review): review is LivePatientReview => review !== null);
+      .slice(0, 5)
+      .map(normalizeReview)
+      .filter((review): review is LivePatientReview => review !== null && review.rating === 5)
+      .sort((a, b) => {
+        // Undated reviews follow dated ones. Ties retain Google's source order.
+        if (!a.date) return b.date ? 1 : 0;
+        if (!b.date) return -1;
+        return Date.parse(b.date) - Date.parse(a.date);
+      });
     const attributions = (Array.isArray(place.attributions) ? place.attributions : []).flatMap(value => {
       const attribution = record(value);
       const name = text(attribution.provider);

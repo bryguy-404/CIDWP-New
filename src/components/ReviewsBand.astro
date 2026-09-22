@@ -46,10 +46,10 @@ const slides = reviews.map(review => {
       </div>
       <div class="review-attribution" data-live-attribution hidden>
         <img src="/google-maps-attribution.svg" alt="Google Maps" class="google-maps-logo" width="98" height="18" loading="lazy" />
-        <p>Up to five reviews, ordered by Google relevance. Reviews without written feedback are omitted.</p>
+        <p>Five-star written reviews, newest first within Google’s selection of up to five reviews.</p>
         <p data-provider-attributions hidden></p>
       </div>
-      <p class="review-selection-note" data-fallback-note>Selected Google review excerpts.</p>
+      <p class="review-selection-note" data-fallback-note>Selected five-star Google review excerpts.</p>
       <a class="review-policy-link" href="/google-reviews/">Google Reviews Terms And Privacy</a>
     </div>
     <div class="reviews-intro"><h2 id={titleId}>Hear From<br /><strong>Our Patients.</strong></h2><p>Choosing a dentist is personal. Read what patients have shared about their experience with our Westport team.</p><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer" class="text-link">Read Our Google Reviews <Icon /></a></div>
@@ -70,7 +70,7 @@ const slides = reviews.map(review => {
       </div>
     </article>
   </template>
-  <div class="shell"><ReviewNote show={reviewMode}>Reviews load through the Cloudflare Pages function when this section approaches the viewport. Google supplies up to five reviews by relevance. The original four manually checked excerpts remain as a fallback if the API is unavailable or returns no usable written reviews. Dates, author profiles, and avatars come from the API when available.</ReviewNote></div>
+  <div class="shell"><ReviewNote show={reviewMode}>Reviews load through the Cloudflare Pages function when this section approaches the viewport. Google supplies up to five reviews by relevance; the site keeps only five-star written reviews and orders them by publication date, newest first, with undated reviews last. This can show fewer than five reviews and does not select from the full review history. The original four manually checked five-star excerpts remain as a fallback if the API is unavailable or returns no matching reviews. Dates, author profiles, and avatars come from the API when available.</ReviewNote></div>
 </section>
 <script>
   import { initializeReviewCarousels } from "../scripts/reviews";
