@@ -66,7 +66,7 @@ export async function onRequest({ request, env }: Context): Promise<Response> {
   const apiKey = env.GOOGLE_PLACES_API_KEY?.trim();
   if (!apiKey || !placeId || !/^[A-Za-z0-9_-]+$/.test(placeId)) {
     console.warn("Google reviews unavailable: missing or invalid server configuration.");
-    return json({ error: "Reviews are temporarily unavailable." }, 503);
+    return json({ error: "Reviews are temporarily unavailable.", code: "CONFIGURATION_MISSING" }, 503);
   }
   if (request.headers.get("Sec-Fetch-Site") === "cross-site") {
     return json({ error: "Cross-site requests are not supported." }, 403);
@@ -87,7 +87,13 @@ export async function onRequest({ request, env }: Context): Promise<Response> {
     if (!result.ok) {
       // Log only the status; never log credentials, response bodies, or reviews.
       console.warn(`Google reviews unavailable: upstream HTTP ${result.status}.`);
-      return json({ error: "Reviews are temporarily unavailable." }, 503);
+      // Google's ErrorInfo reason is a machine-readable enum. Return only that
+      // restricted code, never its message/metadata (which may contain a key).
+      const failure = record(await result.json().catch(() => null));
+      const details = record(failure.error).details;
+      const reason = (Array.isArray(details) ? details : []).map(value => record(value).reason)
+        .find((value): value is string => typeof value === "string" && /^[A-Z][A-Z_]{2,63}$/.test(value));
+      return json({ error: "Reviews are temporarily unavailable.", code: "GOOGLE_REQUEST_FAILED", upstreamStatus: result.status, ...(reason ? { reason } : {}) }, 503);
     }
     const place = record(await result.json());
     const reviews = (Array.isArray(place.reviews) ? place.reviews : [])
@@ -101,7 +107,7 @@ export async function onRequest({ request, env }: Context): Promise<Response> {
     return json(body);
   } catch {
     console.warn("Google reviews unavailable: upstream request failed or timed out.");
-    return json({ error: "Reviews are temporarily unavailable." }, 503);
+    return json({ error: "Reviews are temporarily unavailable.", code: controller.signal.aborted ? "GOOGLE_TIMEOUT" : "GOOGLE_UNAVAILABLE" }, 503);
   } finally {
     clearTimeout(timeout);
   }

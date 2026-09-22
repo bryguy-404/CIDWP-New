@@ -82,7 +82,7 @@ test("API errors never expose upstream bodies or credentials", async () => {
     mock.method(globalThis, "fetch", async () => new Response(env.GOOGLE_PLACES_API_KEY, { status }));
     const result = await onRequest({ request: request(), env });
     assert.equal(result.status, 503);
-    assert.deepEqual(await result.json(), { error: "Reviews are temporarily unavailable." });
+    assert.deepEqual(await result.json(), { error: "Reviews are temporarily unavailable.", code: "GOOGLE_REQUEST_FAILED", upstreamStatus: status });
     mock.restoreAll();
   }
   for (const implementation of [async () => { throw new Error(env.GOOGLE_PLACES_API_KEY); }, async () => new Response("malformed JSON")]) {
@@ -90,6 +90,17 @@ test("API errors never expose upstream bodies or credentials", async () => {
     assert.equal((await onRequest({ request: request(), env })).status, 503);
     mock.restoreAll();
   }
+});
+
+test("exposes only a safe diagnostic reason, never Google error messages or metadata", async () => {
+  mock.method(globalThis, "fetch", async () => Response.json({ error: {
+    message: env.GOOGLE_PLACES_API_KEY,
+    details: [{ reason: "BILLING_DISABLED", metadata: { key: env.GOOGLE_PLACES_API_KEY } }],
+  } }, { status: 403 }));
+  const body = await (await onRequest({ request: request(), env })).json();
+  assert.equal(body.reason, "BILLING_DISABLED");
+  assert.equal(body.upstreamStatus, 403);
+  assert.ok(!JSON.stringify(body).includes(env.GOOGLE_PLACES_API_KEY));
 });
 
 test("aborts a stalled upstream request", async (t) => {
