@@ -14,9 +14,9 @@ import ContactCta from "./ContactCta.astro";
 import FaqSection from "./FaqSection.astro";
 import OfficeSection from "./OfficeSection.astro";
 import TrustBadges from "./TrustBadges.astro";
-import SocialSection from "./SocialSection.astro";
 import Footer from "./Footer.astro";
 import { reviewNeeds } from "../lib/homepage";
+import { patientReviews } from "../lib/reviews";
 interface Props { reviewMode?: boolean }
 const { reviewMode = false } = Astro.props;
 ---
@@ -31,13 +31,12 @@ const { reviewMode = false } = Astro.props;
   <ServicesDirectory />
   <ExpertiseGrid />
   <ComfortSection reviewMode={reviewMode} />
-  <ReviewsBand reviewMode={reviewMode} />
+  <ReviewsBand reviews={patientReviews} reviewMode={reviewMode} />
   <ContactCta />
   <FaqSection />
   <OfficeSection reviewMode={reviewMode} />
   <TrustBadges reviewMode={reviewMode} />
-  <SocialSection reviewMode={reviewMode} />
   <ContactCta final />
 </main>
 <Footer reviewMode={reviewMode} />
-{reviewMode && <><a class="review-dock" href="#review-checklist">Round 2 Review · {reviewNeeds.length} Content Requests ↓</a><section class="review-checklist section-space" id="review-checklist" aria-labelledby="review-title"><div class="shell"><p class="review-kicker">Internal Preview · Prepared For KO</p><h2 id="review-title">One List For The<br /><strong>Finishing Details.</strong></h2><p class="review-intro">The redesigned layout is ready for review. Outlined positions above identify the remaining client materials; they are not invented testimonials, badges, or social posts.</p><div class="review-request-grid">{reviewNeeds.map(item => <article><h3><a href={"#" + item.section}>{item.title} ↗</a></h3><p>{item.detail}</p></article>)}</div><a class="button button-outline" href="/">View Without Review Notes</a></div></section></>}
+{reviewMode && <><a class="review-dock" href="#review-checklist">Round 3 Review · {reviewNeeds.length} Follow-Ups ↓</a><section class="review-checklist section-space" id="review-checklist" aria-labelledby="review-title"><div class="shell"><p class="review-kicker">Internal Preview · Prepared For KO</p><h2 id="review-title">One List For The<br /><strong>Finishing Details.</strong></h2><p class="review-intro">The approved homepage layout and light blue palette are retained. Homepage cleanup is ready for review; Pam’s photo batch and the final Google Reviews API connection are pending. Secondary pages remain on hold until KO confirms the priorities against traffic data.</p><div class="review-request-grid">{reviewNeeds.map(item => <article><h3><a href={"#" + item.section}>{item.title} ↗</a></h3><p>{item.detail}</p></article>)}</div><a class="button button-outline" href="/">View Without Review Notes</a></div></section></>}

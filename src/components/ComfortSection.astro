@@ -13,7 +13,7 @@ const { reviewMode = false } = Astro.props;
       {gallery.map((photo, index) => <button class="gallery-photo" type="button" data-photo-src={photo.image.src} data-photo-alt={photo.alt} aria-label={"View photo: " + photo.alt}><Image src={photo.image} alt={photo.alt} widths={[450, 800, 1200]} sizes={index === 0 ? "(min-width: 900px) 48vw, 100vw" : "(min-width: 900px) 24vw, 50vw"} loading="lazy" /><span aria-hidden="true"><Icon name="plus" /></span></button>)}
       {reviewMode && Array.from({length: 6}, (_, index) => <div class="asset-placeholder gallery-placeholder"><span class="placeholder-symbol" aria-hidden="true">+</span><strong>Office Photo {index + 5}</strong><small>client photo requested</small></div>)}
     </div>
-    <ReviewNote show={reviewMode}>Four existing practice photos are available. Six additional office and amenity photos are reserved here to match the requested gallery.</ReviewNote>
+    <ReviewNote show={reviewMode}>Pam’s updated photos and placement notes are pending. Four existing practice photos remain; six extra positions are reserved for a gallery of roughly ten. Replace repeated photos across the homepage first, then flag any remaining photo needs together.</ReviewNote>
     <div class="team-portraits">{teamPortraits.map(person => <figure><Image src={person.image} alt={person.name + ", " + person.role} widths={[300, 500]} sizes="(min-width: 900px) 20vw, 44vw" loading="lazy" /><figcaption><strong>{person.name}</strong><span>{person.role}</span></figcaption></figure>)}</div>
     <div class="section-action"><a class="button button-outline" href={site.teamUrl}>Get To Know Our Team <Icon /></a></div>
   </div>

@@ -60,27 +60,15 @@ export const gallery = [
   { image: hero, alt: "The Cosmetic & Implant Dentistry Westport team" },
 ];
 
-export interface PatientReview { quote: string; name: string; source: string }
-// Short verbatim excerpts from the practice's published Smile Club testimonials.
-// Two further Google reviews and a current count are requested for final review.
-export const patientReviews: PatientReview[] = [
-  { quote: "Would recommend to anyone in midtown.", name: "Laura S.", source: site.smileClubUrl },
-  { quote: "Thanks for a GREAT first visit!", name: "Allan B.", source: site.smileClubUrl },
-  { quote: "Customer service was amazing from the time I step through the door.", name: "Arteshia W.", source: site.smileClubUrl },
-];
-
 export interface TrustBadge { name: string; image: ImageMetadata; href?: string }
-export interface InstagramPost { image: ImageMetadata; alt: string; href: string }
-// The review view reserves these positions without inventing affiliations/posts.
+// The review view reserves these positions without inventing affiliations.
 export const trustBadges: TrustBadge[] = [];
-export const instagramPosts: InstagramPost[] = [];
 
 export const reviewNeeds = [
   { section: "doctors", title: "Current Doctor Roster + Headshots", detail: "The current doctors page identifies Dr. Hunter McAreavy. Please confirm which doctors should appear and supply their current professional headshots. The preview uses Dr. Hunter’s published photo and a clearly identified team photo." },
-  { section: "technology", title: "Three Equipment Photos", detail: "Smile Club lists digital X-rays, intraoral cameras, and cone beam CT. Please confirm these are used at the Westport location and send one photo of each. Current cards use general practice photography." },
-  { section: "comfort", title: "Office + Amenity Photography", detail: "Please send around ten distinct reception, treatment-room, exterior, amenity, and candid practice photos. Four existing practice photos are shown; six extra positions are reserved in the review view." },
-  { section: "reviews", title: "Five Current Google Reviews", detail: "Please provide five selected Google review links and the current rating/count. Three short excerpts are available from Smile Club. Two further quotes are needed; no unverified review count is displayed." },
+  { section: "technology", title: "3D Printer + Equipment Photos", detail: "Pam’s equipment photos are pending. Please include the 3D printer photo, its intended card placement, and a brief description of how the practice uses it. One current technology card will be replaced when those details arrive; the cards still use general practice photography." },
+  { section: "comfort", title: "Office + Team Photography", detail: "Pam’s photo batch and placement notes are pending. Replace repeated images across the homepage and fill the comfort gallery to roughly ten distinct photos. Four existing gallery photos remain for now. After the batch arrives, send KO one consolidated list of any remaining photo placeholders." },
+  { section: "reviews", title: "Google Reviews API · Final Connection", detail: "Four real Google review excerpts were verified manually on September 22, 2026. The carousel accepts review data, including ratings and publication dates when available. Choose the API and arrange access for the final connection; no live feed or live review count is claimed." },
   { section: "credentials", title: "Association + Award Logos", detail: "Please confirm the memberships and awards CIDWP may display and provide the approved logo files. No associations have been assumed." },
-  { section: "instagram", title: "Instagram Account + Four Recent Posts", detail: "Please send the official account URL and four post links/images, or details of the existing feed integration. The review view shows the four intended positions." },
   { section: "contact", title: "Hours, Texting + Policy Links", detail: "The homepage and Smile Club list Mon–Thu 9–4; the contact page also lists Friday. Please confirm Friday hours, whether the phone accepts texts, and the HIPAA notice URL. Privacy and accessibility links come from the current site." },
 ];

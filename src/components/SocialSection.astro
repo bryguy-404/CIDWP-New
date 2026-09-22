@@ -1,9 +1,0 @@
----
-import { Image } from "astro:assets";
-import { instagramPosts } from "../lib/homepage";
-import { site } from "../lib/site";
-import Icon from "./Icon.astro";
-import ReviewNote from "./ReviewNote.astro";
-const { reviewMode = false } = Astro.props;
----
-{((instagramPosts.length > 0 && site.instagramUrl) || reviewMode) && <section class="social-section" id="instagram" aria-label="Instagram feed" data-section="instagram"><div class="shell"><div class="social-grid">{instagramPosts.length ? instagramPosts.slice(0,4).map(post => <a href={post.href} target="_blank" rel="noopener noreferrer"><Image src={post.image} alt={post.alt} widths={[350,600]} sizes="(min-width: 900px) 24vw, 50vw" loading="lazy" /><span><Icon name="instagram" /></span></a>) : Array.from({length: 4}, (_, i) => <div class="asset-placeholder post-placeholder"><Icon name="instagram" /><strong>Instagram Post {i+1}</strong><small>client post requested</small></div>)}</div>{site.instagramUrl && <div class="section-action"><a href={site.instagramUrl} target="_blank" rel="noopener noreferrer" class="button button-brand"><Icon name="instagram" />Follow Us</a></div>}<ReviewNote show={reviewMode && !instagramPosts.length}>Please provide the official Instagram account and four recent post links/images, or the practice’s feed integration.</ReviewNote></div></section>}

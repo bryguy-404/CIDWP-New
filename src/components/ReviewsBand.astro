@@ -1,23 +1,53 @@
 ---
-import { patientReviews } from "../lib/homepage";
+import type { PatientReview } from "../lib/reviews";
 import { site } from "../lib/site";
 import Icon from "./Icon.astro";
 import ReviewNote from "./ReviewNote.astro";
-const { reviewMode = false } = Astro.props;
-const slides = [
-  ...patientReviews.map(review => ({ ...review, pending: false })),
-  ...(reviewMode ? Array.from({length: Math.max(0, 5 - patientReviews.length)}, (_, i) => ({ quote: "A further CIDWP patient review will appear here.", name: "review " + (patientReviews.length + i + 1) + " requested", source: "", pending: true })) : []),
-];
+interface Props {
+  reviews: PatientReview[];
+  reviewMode?: boolean;
+  id?: string;
+}
+const { reviews, reviewMode = false, id = "reviews" } = Astro.props;
+const slidesId = `${id}-slides`;
+const titleId = `${id}-title`;
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
+});
+const slides = reviews.map(review => {
+  const date = review.date ? new Date(review.date) : null;
+  const validDate = date && !Number.isNaN(date.getTime()) ? date : null;
+  return {
+    ...review,
+    dateLabel: validDate ? dateFormatter.format(validDate) : null,
+    dateTime: validDate?.toISOString(),
+  };
+});
 ---
-<section class="reviews-section" id="reviews" aria-labelledby="reviews-title" data-section="reviews">
-  <div class="shell reviews-grid">
-    <div class="review-carousel" role="region" aria-roledescription="carousel" aria-label="Patient reviews" data-carousel>
-      <div id="reviewSlides">{slides.map((review, index) => <article class:list={["review-slide", { "pending-review": review.pending }]} data-slide role="group" aria-roledescription="slide" aria-label={(index + 1) + " of " + slides.length} hidden={index !== 0}><Icon name="quote" />{review.pending ? <p class="pending-label">client content needed</p> : null}<blockquote>{review.quote}</blockquote><p class="review-author">{review.name}</p>{!review.pending && <a href={review.source} target="_blank" rel="noopener noreferrer" class="review-source">Read The Published Testimonial <Icon /></a>}</article>)}</div>
-      <div class="carousel-controls" hidden><button type="button" data-previous aria-label="Previous review" aria-controls="reviewSlides"><Icon class="arrow-back" /></button><span data-counter aria-live="polite" aria-atomic="true">1 / {slides.length}</span><button type="button" data-next aria-label="Next review" aria-controls="reviewSlides"><Icon /></button></div>
-    </div>
-    <div class="reviews-intro"><h2 id="reviews-title">Hear From<br /><strong>Our Patients.</strong></h2><p>Choosing a dentist is personal. Read what patients have shared about their experience with our Westport team.</p><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer" class="text-link">{site.googleReviewCount ? site.googleReviewCount + " Google Reviews" : "Read Our Google Reviews"} <Icon /></a></div>
+<section class="reviews-section" id={id} aria-labelledby={titleId} data-section="reviews">
+  <div class:list={["shell reviews-grid", { "reviews-empty": !slides.length }]}>
+    {slides.length > 0 && <div class="review-carousel" role="region" aria-roledescription="carousel" aria-label="Patient reviews" tabindex="0" data-carousel>
+      <div class="review-slides" id={slidesId}>{slides.map((review, index) => (
+        <article class="review-slide" data-slide role="group" aria-roledescription="slide" aria-label={(index + 1) + " of " + slides.length} aria-hidden={index !== 0} inert={index !== 0}>
+          <Icon name="quote" />
+          <p class="review-rating" role="img" aria-label={`${review.rating} out of 5 stars`}><span aria-hidden="true">{"★".repeat(review.rating)}{"☆".repeat(5 - review.rating)}</span></p>
+          <blockquote cite={review.sourceUrl}>{review.text}</blockquote>
+          <p class="review-author">{review.name}</p>
+          <div class="review-meta">
+            <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer" class="review-source" aria-label={`Read ${review.name}’s full review on Google`}>{review.isExcerpt ? "Google Review Excerpt" : "Google Review"} <Icon /></a>
+            {review.dateLabel && <time datetime={review.dateTime}>{review.dateLabel}</time>}
+          </div>
+        </article>
+      ))}</div>
+      <div class="carousel-controls" hidden>
+        <button type="button" data-previous aria-label="Previous review" aria-controls={slidesId}><Icon class="arrow-back" /></button>
+        <span data-counter aria-live="polite" aria-atomic="true">1 / {slides.length}</span>
+        <button type="button" data-next aria-label="Next review" aria-controls={slidesId}><Icon /></button>
+      </div>
+    </div>}
+    <div class="reviews-intro"><h2 id={titleId}>Hear From<br /><strong>Our Patients.</strong></h2><p>Choosing a dentist is personal. Read what patients have shared about their experience with our Westport team.</p><a href={site.reviewsUrl} target="_blank" rel="noopener noreferrer" class="text-link">Read Our Google Reviews <Icon /></a></div>
   </div>
-  <div class="shell"><ReviewNote show={reviewMode}>The first three slides are short excerpts from the official Smile Club testimonials. Two further Google reviews and a verified current count are requested.</ReviewNote></div>
+  <div class="shell"><ReviewNote show={reviewMode}>These four excerpts and individual ratings were verified on the practice’s Google listing on September 22, 2026. Each links to the full review. Google showed relative ages only, so exact publication dates are omitted. The component supports dated reviews when the API is connected later.</ReviewNote></div>
 </section>
 <script>
   document.querySelectorAll<HTMLElement>("[data-carousel]").forEach(carousel => {
@@ -29,15 +59,21 @@ const slides = [
     let active = 0;
     const show = (index: number) => {
       active = (index + slides.length) % slides.length;
-      slides.forEach((slide, i) => { slide.hidden = i !== active; });
+      slides.forEach((slide, i) => {
+        slide.setAttribute("aria-hidden", String(i !== active));
+        slide.inert = i !== active;
+      });
       counter.textContent = (active + 1) + " / " + slides.length;
     };
     carousel.querySelector("[data-previous]")?.addEventListener("click", () => show(active - 1));
     carousel.querySelector("[data-next]")?.addEventListener("click", () => show(active + 1));
     carousel.addEventListener("keydown", event => {
-      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      if (event.target instanceof Element && event.target.closest("a")) return;
+      if (["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
         event.preventDefault();
-        show(active + (event.key === "ArrowLeft" ? -1 : 1));
+        if (event.key === "Home") show(0);
+        else if (event.key === "End") show(slides.length - 1);
+        else show(active + (event.key === "ArrowLeft" ? -1 : 1));
       }
     });
   });

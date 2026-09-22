@@ -14,7 +14,7 @@ export const site = {
   directionsUrl: "https://www.google.com/maps/search/?api=1&query=Cosmetic+%26+Implant+Dentistry+Westport+638+W+39th+St+Kansas+City+MO",
   doctorsUrl: "https://cosmeticimplantdentistrywp.com/about/meet-the-doctors/",
   smileClubUrl: "https://smileclub.cosmeticimplantdentistrywp.com/",
-  reviewsUrl: "https://www.google.com/search?q=Cosmetic+%26+Implant+Dentistry+Westport+Kansas+City+reviews",
+  reviewsUrl: "https://www.google.com/maps/place/Cosmetic+%26+Implant+Dentistry+Westport/@39.0570643,-94.5950211,17z/data=!4m17!1m8!3m7!1s0x87c0efd0ee797cc7:0x97b8da6d79428aab!2s638+W+39th+St,+Kansas+City,+MO+64111!3b1!8m2!3d39.0570643!4d-94.5950211!16s%2Fg%2F11bw3zyctt!3m7!1s0x87c0ef6d9b022c53:0x705b2a50b4455ea1!8m2!3d39.057042!4d-94.5949824!9m1!1b1!16s%2Fg%2F11l34b22xf",
   teamUrl: "https://cosmeticimplantdentistrywp.com/about/meet-the-team/",
   privacyUrl: "https://cosmeticimplantdentistrywp.com/privacy-policy/",
   accessibilityUrl: "https://cosmeticimplantdentistrywp.com/accessibility/",
@@ -67,6 +67,6 @@ export const navigation = [
     { label: "Damaged Teeth", href: serviceLinks.restoration },
     { label: "Stained Teeth", href: serviceLinks.whitening },
     { label: "Dental Anxiety", href: serviceLinks.sedation },
-    { label: "Urgent Dental Concerns", href: serviceLinks.emergency },
+    { label: "Emergency Dentistry", href: serviceLinks.emergency },
   ] },
 ] as const;
