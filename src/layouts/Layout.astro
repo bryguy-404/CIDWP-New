@@ -7,9 +7,10 @@ interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  robots?: string;
 }
 
-const { title = site.title, description = site.description, noindex = false } = Astro.props;
+const { title = site.title, description = site.description, noindex = false, robots = '' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const socialImageUrl = new URL(socialImage.src, site.url).href;
 ---
@@ -21,7 +22,7 @@ const socialImageUrl = new URL(socialImage.src, site.url).href;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {(noindex || robots) && <meta name="robots" content={noindex ? 'noindex, nofollow' : robots} />}
 
     <title>{title}</title>
     <meta name="description" content={description} />

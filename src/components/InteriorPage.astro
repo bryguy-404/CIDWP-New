@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import AppointmentForm from './AppointmentForm.astro';
+import FinancingWidget from './FinancingWidget.astro';
+import heroPhoto from '../assets/round2/clinical-care.jpg';
+import '../styles/interior.css';
+interface Section { html: string; kind: string; sourceIndex: number }
+interface Props {
+  page: { path: string; title: string; headingHtml: string; category: string; sections: Section[] }
+}
+const { page } = Astro.props;
+const isPolicy = ['/privacy-policy/', '/accessibility/', '/ai-assistant/', '/sitemap/'].includes(page.path);
+const isProfile = page.path.includes('meet-the-');
+---
+<Header interior />
+<main id="main" tabindex="-1" class:list={['interior-page', { 'interior-policy': isPolicy, 'interior-profiles': isProfile }]} data-source-page={page.path}>
+  <section class="interior-hero">
+    <div class="shell interior-hero-grid">
+      <div class="interior-hero-copy">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span>{page.category === 'Services' && page.path !== '/services/' ? <><a href="/services/">Services</a><span aria-hidden="true">/</span></> : page.category === 'About' && page.path !== '/about/' ? <><a href="/about/">About</a><span aria-hidden="true">/</span></> : null}<span aria-current="page">{page.title}</span></nav>
+        <h1 data-original-heading set:html={page.headingHtml} />
+      </div>
+      {!isPolicy && <div class="interior-hero-photo"><Image src={heroPhoto} alt="Care at Cosmetic & Implant Dentistry Westport" widths={[480, 800, 1200]} sizes="(max-width: 760px) 100vw, 45vw" loading="eager" /></div>}
+    </div>
+  </section>
+  <div data-original-content>
+    {page.sections.map((section, index) => <section class:list={['interior-section', `interior-section-${section.kind}`, { 'interior-section-first': index === 0 }]}>
+      <div class="shell interior-content">
+        {section.html.split(/(<!--APPOINTMENT_FORM-->|<!--FINANCING_WIDGET-->)/).map(part => part === '<!--APPOINTMENT_FORM-->' ? <AppointmentForm /> : part === '<!--FINANCING_WIDGET-->' ? <FinancingWidget /> : <Fragment set:html={part} />)}
+      </div>
+    </section>)}
+  </div>
+</main>
+<Footer />

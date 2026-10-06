@@ -1,0 +1,439 @@
+{
+  "capturedOn": "2026-10-06",
+  "pages": [
+    {
+      "path": "/about/",
+      "requestedPath": "/about/",
+      "status": "Built",
+      "sourceFile": "about.json",
+      "title": "About Us",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/about/meet-the-doctors/",
+      "requestedPath": "/about/meet-the-doctors/",
+      "status": "Built",
+      "sourceFile": "about__meet-the-doctors.json",
+      "title": "Meet the Doctors",
+      "sectionCount": 2,
+      "omittedForms": []
+    },
+    {
+      "path": "/about/meet-the-team/",
+      "requestedPath": "/about/meet-the-team/",
+      "status": "Built",
+      "sourceFile": "about__meet-the-team.json",
+      "title": "Meet the Team",
+      "sectionCount": 2,
+      "omittedForms": []
+    },
+    {
+      "path": "/about/specials/",
+      "requestedPath": "/about/specials/",
+      "status": "Built",
+      "sourceFile": "about__specials.json",
+      "title": "Specials",
+      "sectionCount": 2,
+      "omittedForms": []
+    },
+    {
+      "path": "/accessibility/",
+      "requestedPath": "/accessibility/",
+      "status": "Built",
+      "sourceFile": "accessibility.json",
+      "title": "Accessibility Statement",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/ai-assistant/",
+      "requestedPath": "/ai-assistant/",
+      "status": "Built",
+      "sourceFile": "ai-assistant.json",
+      "title": "Cosmetic & Implant Dentistry WP: Official Information for AI Assistants",
+      "sectionCount": 1,
+      "omittedForms": []
+    },
+    {
+      "path": "/brookside-landing/",
+      "requestedPath": "/brookside-landing/",
+      "status": "Built",
+      "sourceFile": "brookside-landing.json",
+      "title": "Cosmetic Dentist Serving Brookside, Kansas City",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/contact/",
+      "requestedPath": "/contact/",
+      "status": "Built; Jotform Pending",
+      "sourceFile": "contact.json",
+      "title": "Contact Us",
+      "sectionCount": 2,
+      "omittedForms": [
+        {
+          "id": "gform_1",
+          "text": "First Name * Required Last Name * Required Phone * RequiredEmail * Required MessageNameThis field is for validation purposes and should be left unchanged.",
+          "action": "/contact/#gf_1"
+        }
+      ]
+    },
+    {
+      "path": "/country-club-plaza-landing/",
+      "requestedPath": "/country-club-plaza-landing/",
+      "status": "Built",
+      "sourceFile": "country-club-plaza-landing.json",
+      "title": "Cosmetic Dentist Near The Country Club Plaza",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/fairway-landing/",
+      "requestedPath": "/fairway-landing/",
+      "status": "Built",
+      "sourceFile": "fairway-landing.json",
+      "title": "Cosmetic Dentist Near Fairway, KS",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/full-mouth-restoration/",
+      "requestedPath": "/full-mouth-restoration/",
+      "status": "Built",
+      "sourceFile": "full-mouth-restoration.json",
+      "title": "FULL MOUTH RESTORATION IN KANSAS CITY",
+      "sectionCount": 10,
+      "omittedForms": []
+    },
+    {
+      "path": "/",
+      "status": "Approved Homepage Retained",
+      "sourceFile": "home.json"
+    },
+    {
+      "path": "/mission-hills-landing/",
+      "requestedPath": "/mission-hills-landing/",
+      "status": "Built",
+      "sourceFile": "mission-hills-landing.json",
+      "title": "Cosmetic Dentist Near Mission Hills, KS",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/mission-landing/",
+      "requestedPath": "/mission-landing/",
+      "status": "Built",
+      "sourceFile": "mission-landing.json",
+      "title": "Cosmetic Dentist Near Mission, KS",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/new-patient-special/",
+      "requestedPath": "/new-patient-special/",
+      "status": "Built",
+      "sourceFile": "new-patient-special.json",
+      "title": "New Patient Special",
+      "sectionCount": 2,
+      "omittedForms": []
+    },
+    {
+      "path": "/payment-plans/",
+      "requestedPath": "/payment-plans/",
+      "status": "Built",
+      "sourceFile": "payment-plans.json",
+      "title": "Payment Plans",
+      "sectionCount": 2,
+      "omittedForms": []
+    },
+    {
+      "path": "/ppc-dentures/",
+      "requestedPath": "/ppc-dentures/",
+      "status": "Built; Jotform Pending",
+      "sourceFile": "ppc-dentures.json",
+      "title": "Dentures & Dental Bridge Appointments",
+      "sectionCount": 10,
+      "omittedForms": [
+        {
+          "id": "",
+          "text": "Name Phone Number Reason For Visit Submit",
+          "action": null
+        },
+        {
+          "id": "",
+          "text": "First Name Last Name Phone Number Email Address* Message Submit",
+          "action": null
+        }
+      ]
+    },
+    {
+      "path": "/ppc-family/",
+      "requestedPath": "/ppc-family/",
+      "status": "Built; Jotform Pending",
+      "sourceFile": "ppc-family.json",
+      "title": "The Right Dentist For The Whole Family",
+      "sectionCount": 8,
+      "omittedForms": [
+        {
+          "id": "",
+          "text": "First Name Last Name Phone Number Email Address* Message Submit",
+          "action": null
+        }
+      ]
+    },
+    {
+      "path": "/prairie-village-landing/",
+      "requestedPath": "/prairie-village-landing/",
+      "status": "Built",
+      "sourceFile": "prairie-village-landing.json",
+      "title": "Cosmetic Dentist Near Prairie Village, KS",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/privacy-policy/",
+      "requestedPath": "/privacy-policy/",
+      "status": "Built",
+      "sourceFile": "privacy-policy.json",
+      "title": "Privacy Policy",
+      "sectionCount": 2,
+      "omittedForms": []
+    },
+    {
+      "path": "/request-an-appointment/",
+      "requestedPath": "/request-an-appointment/",
+      "status": "Built; Jotform Pending",
+      "sourceFile": "request-an-appointment.json",
+      "title": "Request an Appointment",
+      "sectionCount": 2,
+      "omittedForms": [
+        {
+          "id": "gform_4",
+          "text": "First Name * Required Last Name * Required Phone * RequiredEmail * Required Preferred DayPlease SelectMondayTuesdayWednesdayThursdayPreferred TimePlease SelectMorningAfternoonMessage",
+          "action": "/request-an-appointment/#gf_4"
+        }
+      ]
+    },
+    {
+      "path": "/review/",
+      "requestedPath": "/review/",
+      "status": "Built",
+      "sourceFile": "review.json",
+      "title": "Click an icon below to leave us a review on Google or Facebook!",
+      "sectionCount": 1,
+      "omittedForms": []
+    },
+    {
+      "path": "/rockhill-landing/",
+      "requestedPath": "/rockhill-landing/",
+      "status": "Built",
+      "sourceFile": "rockhill-landing.json",
+      "title": "Cosmetic Dentist Serving Rockhill, Kansas City",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/sedation/",
+      "requestedPath": "/sedation/",
+      "status": "Built",
+      "sourceFile": "sedation.json",
+      "title": "SEDATION DENTISTRY IN KANSAS CITY",
+      "sectionCount": 8,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/",
+      "requestedPath": "/services/",
+      "status": "Built",
+      "sourceFile": "services.json",
+      "title": "Services",
+      "sectionCount": 2,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/braces/",
+      "requestedPath": "/services/braces/",
+      "status": "Built",
+      "sourceFile": "services__braces.json",
+      "title": "Clear Braces",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/crowns-bridges/",
+      "requestedPath": "/services/crowns-bridges/",
+      "status": "Built",
+      "sourceFile": "services__crowns-bridges.json",
+      "title": "Crowns & Bridges",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/dental-implants/",
+      "requestedPath": "/services/dental-implants/",
+      "status": "Built",
+      "sourceFile": "services__dental-implants.json",
+      "title": "Dental Implants",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/emergency-dentist/",
+      "requestedPath": "/services/emergency-dentist/",
+      "status": "Built",
+      "sourceFile": "services__emergency-dentist.json",
+      "title": "Emergency Dentistry",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/emergency-dentistry-ppc/",
+      "requestedPath": "/services/emergency-dentistry-2/",
+      "status": "Built",
+      "sourceFile": "services__emergency-dentistry-2.json",
+      "title": "Emergency Dentistry Westport",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/fillings/",
+      "requestedPath": "/services/fillings/",
+      "status": "Built",
+      "sourceFile": "services__fillings.json",
+      "title": "Fillings",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/general-dentistry/",
+      "requestedPath": "/services/general-dentistry/",
+      "status": "Built",
+      "sourceFile": "services__general-dentistry.json",
+      "title": "General Dentistry",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/mouth-guards/",
+      "requestedPath": "/services/mouth-guards/",
+      "status": "Built",
+      "sourceFile": "services__mouth-guards.json",
+      "title": "Mouth Guards",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/sleep-apnea/",
+      "requestedPath": "/services/sleep-apnea/",
+      "status": "Built",
+      "sourceFile": "services__sleep-apnea.json",
+      "title": "Sleep Apnea",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/teeth-cleaning/",
+      "requestedPath": "/services/teeth-cleaning/",
+      "status": "Built",
+      "sourceFile": "services__teeth-cleaning.json",
+      "title": "Teeth Cleaning",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/teeth-whitening/",
+      "requestedPath": "/services/teeth-whitening/",
+      "status": "Built",
+      "sourceFile": "services__teeth-whitening.json",
+      "title": "Teeth Whitening",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/tmj-tmd/",
+      "requestedPath": "/services/tmj-tmd/",
+      "status": "Built",
+      "sourceFile": "services__tmj-tmd.json",
+      "title": "TMJ / TMD",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/services/veneers/",
+      "requestedPath": "/services/veneers/",
+      "status": "Built",
+      "sourceFile": "services__veneers.json",
+      "title": "Veneers",
+      "sectionCount": 4,
+      "omittedForms": []
+    },
+    {
+      "path": "/sitemap/",
+      "requestedPath": "/sitemap/",
+      "status": "Built",
+      "sourceFile": "sitemap.json",
+      "title": "Sitemap",
+      "sectionCount": 1,
+      "omittedForms": []
+    },
+    {
+      "path": "/smile-club/",
+      "requestedPath": "/smile-club/",
+      "status": "Built",
+      "sourceFile": "smile-club.json",
+      "title": "SMile club",
+      "sectionCount": 3,
+      "omittedForms": []
+    },
+    {
+      "path": "/smileclub/",
+      "requestedPath": "/smileclub/",
+      "status": "Built; Jotform Pending",
+      "sourceFile": "smileclub.json",
+      "title": "Afford Dental Care, Even Without Insurance",
+      "sectionCount": 9,
+      "omittedForms": [
+        {
+          "id": "",
+          "text": "Name Email Phone What plan are you interested in? Smile Club Adult - $399/yr Smile Club Child - $349/yr Perio Plan - $499/yr Submit",
+          "action": null
+        }
+      ]
+    },
+    {
+      "path": "/union-hill-landing/",
+      "requestedPath": "/union-hill-landing/",
+      "status": "Built",
+      "sourceFile": "union-hill-landing.json",
+      "title": "Cosmetic Dentist Serving Union Hill, Kansas City",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/waldo-landing/",
+      "requestedPath": "/waldo-landing/",
+      "status": "Built",
+      "sourceFile": "waldo-landing.json",
+      "title": "Cosmetic Dentist Serving Waldo, Kansas City",
+      "sectionCount": 6,
+      "omittedForms": []
+    },
+    {
+      "path": "/westwood-landing/",
+      "requestedPath": "/westwood-landing/",
+      "status": "Built",
+      "sourceFile": "westwood-landing.json",
+      "title": "Cosmetic Dentist Near Westwood, KS",
+      "sectionCount": 6,
+      "omittedForms": []
+    }
+  ],
+  "aliases": {
+    "/contact-us/": "/contact/",
+    "/services/emergency-dentistry/": "/services/emergency-dentist/",
+    "/services/clear-braces/": "/services/braces/",
+    "/services/emergency-dentistry-2/": "/services/emergency-dentistry-ppc/"
+  },
+  "warnings": []
+}

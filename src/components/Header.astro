@@ -4,14 +4,16 @@ import lightLogo from "../assets/logo.png";
 import colorLogo from "../assets/round2/logo-color.png";
 import { site, navigation } from "../lib/site";
 import Icon from "./Icon.astro";
+interface Props { interior?: boolean }
+const { interior = false } = Astro.props;
 ---
-<header class="site-header" id="siteHeader">
+<header class:list={["site-header", { 'is-interior': interior }]} id="siteHeader">
   <nav class="header-inner" aria-label="Main navigation">
-    <a class="brand" href="#main" aria-label={site.name + " home"}>
+    <a class="brand" href="/" aria-label={site.name + " home"}>
       <Image class="brand-light" src={lightLogo} alt={site.name} widths={[220, 440]} sizes="(max-width: 700px) 150px, 210px" loading="eager" />
       <Image class="brand-color" src={colorLogo} alt="" aria-hidden="true" widths={[220, 440]} sizes="(max-width: 700px) 150px, 210px" loading="eager" />
     </a>
-    <button class="menu-toggle" type="button" id="menuButton" aria-expanded="false" aria-controls="navigationMenu"><span>Menu</span><Icon name="menu" /></button>
+    <button class="menu-toggle" type="button" id="menuButton" aria-expanded="false" aria-controls="navigationMenu"><span>Menu</span><Icon name="menu" class="menu-icon-open" /><Icon name="close" class="menu-icon-close" /></button>
     <div class="navigation-menu" id="navigationMenu">
       <div class="nav-groups">
         {navigation.map(group => <details class="nav-group"><summary>{group.label}<Icon name="chevron" /></summary><div class="nav-dropdown">{group.links.map(link => <a href={link.href}>{link.label}</a>)}</div></details>)}

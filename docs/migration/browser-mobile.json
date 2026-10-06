@@ -1,0 +1,373 @@
+[
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/about/",
+    "title": "About Us",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/about/meet-the-doctors/",
+    "title": "Meet the Doctors",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/about/meet-the-team/",
+    "title": "Meet the Team",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/about/specials/",
+    "title": "Specials",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/accessibility/",
+    "title": "Accessibility Statement",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/ai-assistant/",
+    "title": "Cosmetic & Implant Dentistry WP: Official Information for AI Assistants",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/brookside-landing/",
+    "title": "Cosmetic Dentist ServingBrookside, Kansas City",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/contact/",
+    "title": "Contact Us",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/country-club-plaza-landing/",
+    "title": "Cosmetic Dentist Near TheCountry Club Plaza",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/fairway-landing/",
+    "title": "Cosmetic Dentist NearFairway, KS",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/full-mouth-restoration/",
+    "title": "FULL MOUTH RESTORATIONIN KANSAS CITY",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/mission-hills-landing/",
+    "title": "Cosmetic Dentist NearMission Hills, KS",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/mission-landing/",
+    "title": "Cosmetic Dentist NearMission, KS",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/new-patient-special/",
+    "title": "New Patient Special",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [
+      {
+        "cls": "testimony-card-2aOuS",
+        "tag": "DIV",
+        "text": "Alex“Cherry was really easy to use and super fast."
+      },
+      {
+        "cls": "testimony-card_image_container-3qBEP",
+        "tag": "DIV",
+        "text": "Alex"
+      },
+      {
+        "cls": "testimony-card_info_container-1yw9W",
+        "tag": "DIV",
+        "text": "“Cherry was really easy to use and super fast. I c"
+      },
+      {
+        "cls": "",
+        "tag": "SPAN",
+        "text": "“Cherry was really easy to use and super fast. I c"
+      },
+      {
+        "cls": "testimony-card-2aOuS",
+        "tag": "DIV",
+        "text": "Marie“I used this on Monday and it was great. Low "
+      }
+    ],
+    "path": "/payment-plans/",
+    "title": "Payment Plans",
+    "viewport": 390,
+    "widgetLoaded": false,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/ppc-dentures/",
+    "title": "Dentures & Dental\nBridge Appointments",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/ppc-family/",
+    "title": "The Right Dentist For The Whole Family",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/prairie-village-landing/",
+    "title": "Cosmetic Dentist NearPrairie Village, KS",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/privacy-policy/",
+    "title": "Privacy Policy",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/request-an-appointment/",
+    "title": "Request an Appointment",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/review/",
+    "title": "Click an icon below to leave us a review on Google or Facebook!",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/rockhill-landing/",
+    "title": "Cosmetic Dentist ServingRockhill, Kansas City",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/sedation/",
+    "title": "SEDATION DENTISTRYIN KANSAS CITY",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/",
+    "title": "Services",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/braces/",
+    "title": "Clear Braces",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/crowns-bridges/",
+    "title": "Crowns & Bridges",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/dental-implants/",
+    "title": "Dental Implants",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/emergency-dentist/",
+    "title": "Emergency Dentistry",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/emergency-dentistry-ppc/",
+    "title": "Emergency Dentistry Westport",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/fillings/",
+    "title": "Fillings",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/general-dentistry/",
+    "title": "General Dentistry",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/mouth-guards/",
+    "title": "Mouth Guards",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/sleep-apnea/",
+    "title": "Sleep Apnea",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/teeth-cleaning/",
+    "title": "Teeth Cleaning",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/teeth-whitening/",
+    "title": "Teeth Whitening",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/tmj-tmd/",
+    "title": "TMJ / TMD",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/services/veneers/",
+    "title": "Veneers",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/sitemap/",
+    "title": "Sitemap",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/smile-club/",
+    "title": "SMile club",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/smileclub/",
+    "title": "Afford Dental Care, Even Without Insurance",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/union-hill-landing/",
+    "title": "Cosmetic Dentist ServingUnion Hill, Kansas City",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/waldo-landing/",
+    "title": "Cosmetic Dentist ServingWaldo, Kansas City",
+    "viewport": 390,
+    "width": 375
+  },
+  {
+    "broken": [],
+    "overflow": [],
+    "path": "/westwood-landing/",
+    "title": "Cosmetic Dentist NearWestwood, KS",
+    "viewport": 390,
+    "width": 375
+  }
+]

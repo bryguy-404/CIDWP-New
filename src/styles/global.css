@@ -93,6 +93,9 @@ p { margin-bottom: 22px; }
 .header-phone .icon { color: var(--color-blue); width: 17px; height: 17px; }
 .header-actions .button { padding-inline: 24px; }
 .menu-toggle { display: none; }
+.menu-toggle .menu-icon-close { display: none; }
+.menu-toggle[aria-expanded="true"] .menu-icon-open { display: none; }
+.menu-toggle[aria-expanded="true"] .menu-icon-close { display: block; }
 .site-header.is-scrolled, .site-header.menu-is-open { background: rgb(255 255 255 / .98); color: var(--color-ink); box-shadow: 0 1px 0 rgb(14 54 71 / .08); }
 .is-scrolled .brand-light, .menu-is-open .brand-light { opacity: 0; }
 .is-scrolled .brand-color, .menu-is-open .brand-color { opacity: 1; }

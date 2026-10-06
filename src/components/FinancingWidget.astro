@@ -1,0 +1,17 @@
+<!-- Existing Cherry integration, using the practice's captured public widget configuration. -->
+<div class="financing-widget" id="all"></div>
+<script is:inline>
+  (function (w, d) {
+    w._hw = w._hw || function () { (w._hw.q = w._hw.q || []).push(arguments); };
+    const script = d.createElement('script');
+    script.id = '_hw';
+    script.src = 'https://files.withcherry.com/widgets/widget.js';
+    script.async = true;
+    d.head.appendChild(script);
+    w._hw('init', {
+      debug: false,
+      variables: { slug: 'cosmeticimplantdentistrywp', name: 'Cosmetic Implant Dentistry of Westport ' },
+      styles: { primaryColor: '#08657c', secondaryColor: '#e4f8f9', fontFamily: 'Work Sans' },
+    }, ['all']);
+  })(window, document);
+</script>

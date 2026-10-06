@@ -1,0 +1,38 @@
+{
+  "canonical": "https://cosmeticimplantdentistrywp.com/review/",
+  "description": "",
+  "forms": [],
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "Click an icon below to leave us a review on Google or Facebook!"
+    }
+  ],
+  "html": "\n\t\t\t\t<div class=\"elementor-element elementor-element-3f4012c e-con-full e-flex e-con e-parent e-lazyloaded\" data-id=\"3f4012c\" data-element_type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t<div class=\"elementor-element elementor-element-504e1087 e-con-full e-flex e-con e-child\" data-id=\"504e1087\" data-element_type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-340c0b9 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading\" data-id=\"340c0b9\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Click an icon below to leave us a review on Google or Facebook!</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-25e0f0eb elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-text-editor\" data-id=\"25e0f0eb\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p class=\"p1\">We value your feedback! At Cosmetic &amp; Implant Dentistry Westport, our mission is to provide exceptional dental care to our Westport, Kansas community. Your reviews not only help us improve but also help others discover the quality care we strive to deliver.</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-3ea13893 e-con-full e-flex e-con e-child\" data-id=\"3ea13893\" data-element_type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-3f58e0a8 e-con-full e-flex elementor-invisible e-con e-child\" data-id=\"3f58e0a8\" data-element_type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;200&quot;}\">\n\t\t\t\t<div class=\"elementor-element elementor-element-05fc097 elementor-widget elementor-widget-image\" data-id=\"05fc097\" data-element_type=\"widget\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://g.page/r/CaFeRbRQKltwEBM/review\">\n\t\t\t\t\t\t\t<img fetchpriority=\"high\" decoding=\"async\" width=\"500\" height=\"500\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/01/Google-Logo.png\" class=\"attachment-large size-large wp-image-1714\" alt=\"\" srcset=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/01/Google-Logo.png 500w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/01/Google-Logo-300x300.png 300w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/01/Google-Logo-150x150.png 150w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/01/Google-Logo-100x100.png 100w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/01/Google-Logo-50x50.png 50w\" sizes=\"(max-width: 500px) 100vw, 500px\">\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-d4efc81 elementor-widget elementor-widget-text-editor\" data-id=\"d4efc81\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p style=\"text-align: center;\">Click here to leave a Google review</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-439485c4 e-con-full e-flex elementor-invisible e-con e-child\" data-id=\"439485c4\" data-element_type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;400&quot;}\">\n\t\t\t\t<div class=\"elementor-element elementor-element-7b558c7 elementor-view-default elementor-widget elementor-widget-icon\" data-id=\"7b558c7\" data-element_type=\"widget\" data-widget_type=\"icon.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-wrapper\">\n\t\t\t<a class=\"elementor-icon\" href=\"https://www.facebook.com/profile.php?id=61567353295741&amp;sk=reviews\">\n\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fab-facebook\" viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z\"></path></svg>\t\t\t</a>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-e7749c0 elementor-widget elementor-widget-text-editor\" data-id=\"e7749c0\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p style=\"text-align: center;\">Click here to leave a Facebook review</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t",
+  "iframes": [],
+  "images": [
+    {
+      "alt": "",
+      "height": 500,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/01/Google-Logo.png",
+      "width": 500
+    }
+  ],
+  "links": [
+    {
+      "href": "https://g.page/r/CaFeRbRQKltwEBM/review",
+      "text": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+    },
+    {
+      "href": "https://www.facebook.com/profile.php?id=61567353295741&sk=reviews",
+      "text": "\n\t\t\t\t\t\t"
+    }
+  ],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "text": "Click an icon below to leave us a review on Google or Facebook!\n\nWe value your feedback! At Cosmetic & Implant Dentistry Westport, our mission is to provide exceptional dental care to our Westport, Kansas community. Your reviews not only help us improve but also help others discover the quality care we strive to deliver.",
+  "title": "Review | Cosmetic & Implant Dentistry Westport",
+  "url": "https://cosmeticimplantdentistrywp.com/review/",
+  "requestedUrl": "https://cosmeticimplantdentistrywp.com/review/",
+  "label": "Review",
+  "capturedAt": "2026-10-06T17:09:57.053Z"
+}

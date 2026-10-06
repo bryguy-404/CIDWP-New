@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/services/",
+    "viewport": 320,
+    "width": 305
+  },
+  {
+    "path": "/services/dental-implants/",
+    "viewport": 320,
+    "width": 305
+  },
+  {
+    "path": "/smileclub/",
+    "viewport": 320,
+    "width": 305
+  },
+  {
+    "path": "/ppc-dentures/",
+    "viewport": 320,
+    "width": 305
+  },
+  {
+    "path": "/sedation/",
+    "viewport": 320,
+    "width": 305
+  },
+  {
+    "path": "/migration-review/",
+    "viewport": 320,
+    "width": 305
+  },
+  {
+    "path": "/services/",
+    "viewport": 768,
+    "width": 753
+  },
+  {
+    "path": "/services/dental-implants/",
+    "viewport": 768,
+    "width": 753
+  },
+  {
+    "path": "/smileclub/",
+    "viewport": 768,
+    "width": 753
+  },
+  {
+    "path": "/ppc-dentures/",
+    "viewport": 768,
+    "width": 753
+  },
+  {
+    "path": "/sedation/",
+    "viewport": 768,
+    "width": 753
+  },
+  {
+    "path": "/migration-review/",
+    "viewport": 768,
+    "width": 753
+  }
+]

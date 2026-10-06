@@ -1,6 +1,6 @@
 # Cosmetic & Implant Dentistry Westport
 
-An Astro homepage for the Westport, Kansas City dental practice, styled with Tailwind CSS and custom responsive layouts.
+An Astro website for the Westport, Kansas City dental practice, using the approved homepage design across 43 interior pages.
 
 ## Local development
 
@@ -24,6 +24,7 @@ npx astro dev stop
 ```sh
 npx astro check
 npm run build
+npm run content:verify
 ```
 
 The static website is generated in `dist/`. Build output and installed dependencies are excluded from Git.
@@ -33,9 +34,13 @@ Google reviews load through the Cloudflare Pages Function at `/api/google-review
 ## Editing the website
 
 - `src/pages/index.astro`: homepage section order.
-- `src/components/`: homepage sections, navigation, FAQs, and scroll reveals.
+- `src/components/`: shared navigation, homepage sections, and the interior-page layout.
+- `src/data/pages.json`: imported interior content, generated from the dated source captures.
+- `src/styles/interior.css`: interior layouts using the approved homepage design.
 - `src/styles/global.css`: styles, responsive layouts, and motion preferences.
 - `src/lib/site.ts`: practice details and link destinations.
 - `src/assets/`: practice photography and logo.
 
-Booking and service-detail links currently connect to the practice’s existing external pages. The project does not handle appointment submissions itself.
+Interior links now use local routes. External appointment booking, membership, financing, and other source destinations remain available. The project does not handle appointment submissions itself; Jotform is pending Bryan's final embed.
+
+See [Migration Notes](docs/migration/README.md) for scope, source comparisons, remaining integrations, and validation. Visit `/migration-review/` locally for links to all rebuilt pages alongside their originals. The homepage's internal review route is now `/design-review/`; `/review/` contains the practice's original patient-review page.

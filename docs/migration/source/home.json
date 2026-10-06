@@ -1,0 +1,633 @@
+{
+  "canonical": "https://cosmeticimplantdentistrywp.com/",
+  "description": "Located in Kansas City, MO, Cosmetic & Implant Dentistry is the top-rated dentist in Westport. Schedule a visit today!",
+  "forms": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Dentist in Westport, Kansas City"
+    },
+    {
+      "tag": "H2",
+      "text": "FAMILY DENTIST IN WESTPORT, KANSAS CITY"
+    },
+    {
+      "tag": "H3",
+      "text": "Cutting-Edge Technology"
+    },
+    {
+      "tag": "H3",
+      "text": "Full-Service Dental for Individuals and Families"
+    },
+    {
+      "tag": "H4",
+      "text": "General Dentistry"
+    },
+    {
+      "tag": "H4",
+      "text": "Full Mouth Restoration"
+    },
+    {
+      "tag": "H4",
+      "text": "Sedation"
+    },
+    {
+      "tag": "H4",
+      "text": "Emergency Dentistry"
+    },
+    {
+      "tag": "H4",
+      "text": "Hygiene"
+    },
+    {
+      "tag": "H4",
+      "text": "Fillings"
+    },
+    {
+      "tag": "H4",
+      "text": "Mouth Guards"
+    },
+    {
+      "tag": "H4",
+      "text": "Dental Implants"
+    },
+    {
+      "tag": "H4",
+      "text": "Crowns & Bridges"
+    },
+    {
+      "tag": "H4",
+      "text": "Veneers"
+    },
+    {
+      "tag": "H4",
+      "text": "Sleep Apnea"
+    },
+    {
+      "tag": "H4",
+      "text": "TMJ / TMD"
+    },
+    {
+      "tag": "H4",
+      "text": "Clear Braces"
+    },
+    {
+      "tag": "H4",
+      "text": "General Dentistry"
+    },
+    {
+      "tag": "H4",
+      "text": "Full Mouth Restoration"
+    },
+    {
+      "tag": "H4",
+      "text": "Sedation"
+    },
+    {
+      "tag": "H4",
+      "text": "Emergency Dentistry"
+    },
+    {
+      "tag": "H4",
+      "text": "Hygiene"
+    },
+    {
+      "tag": "H4",
+      "text": "Fillings"
+    },
+    {
+      "tag": "H4",
+      "text": "Mouth Guards"
+    },
+    {
+      "tag": "H4",
+      "text": "Dental Implants"
+    },
+    {
+      "tag": "H4",
+      "text": "Crowns & Bridges"
+    },
+    {
+      "tag": "H4",
+      "text": "Veneers"
+    },
+    {
+      "tag": "H4",
+      "text": "Sleep Apnea"
+    },
+    {
+      "tag": "H4",
+      "text": "TMJ / TMD"
+    },
+    {
+      "tag": "H4",
+      "text": "Clear Braces"
+    },
+    {
+      "tag": "H4",
+      "text": "General Dentistry"
+    },
+    {
+      "tag": "H4",
+      "text": "Full Mouth Restoration"
+    },
+    {
+      "tag": "H4",
+      "text": "Sedation"
+    },
+    {
+      "tag": "H4",
+      "text": "Emergency Dentistry"
+    },
+    {
+      "tag": "H4",
+      "text": "Hygiene"
+    },
+    {
+      "tag": "H4",
+      "text": "Fillings"
+    },
+    {
+      "tag": "H4",
+      "text": "Mouth Guards"
+    },
+    {
+      "tag": "H4",
+      "text": "Dental Implants"
+    },
+    {
+      "tag": "H4",
+      "text": "Crowns & Bridges"
+    },
+    {
+      "tag": "H4",
+      "text": "Veneers"
+    },
+    {
+      "tag": "H4",
+      "text": "Sleep Apnea"
+    },
+    {
+      "tag": "H4",
+      "text": "TMJ / TMD"
+    },
+    {
+      "tag": "H4",
+      "text": "Clear Braces"
+    },
+    {
+      "tag": "H3",
+      "text": "Choose Us for the Perfect Smile"
+    },
+    {
+      "tag": "H2",
+      "text": "Cosmetic and Implant Dentistry Westport"
+    }
+  ],
+  "html": "<div class=\"x-section e6-e1 m6-0 m6-1\"><div class=\"x-row e6-e2 m6-7 m6-8 m6-9 m6-a m6-f m6-g\"><div class=\"x-row-inner\"><div class=\"x-col e6-e3 m6-n\"><style>\n  .wp-hero-section {\n    position: relative;\n    width: 100%;\n    min-height: 85vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    overflow: hidden;\n    font-family: 'Montserrat', sans-serif;\n  }\n\n  .wp-hero-bg {\n    position: absolute;\n    inset: 0;\n    background-image: url('https://cosmeticimplantdentistrywp.com/wp-content/uploads/2026/01/IMG_0535-dark-scaled.jpg');\n    background-size: cover;\n    background-position: center 50%;\n    background-repeat: no-repeat;\n    z-index: 0;\n  }\n\n  /* Subtle dark gradient overlay for text legibility */\n  .wp-hero-bg::after {\n    content: '';\n    position: absolute;\n    inset: 0;\n    background: linear-gradient(\n      to bottom,\n      rgba(0,0,0,0.08) 0%,\n      rgba(0,0,0,0.30) 40%,\n      rgba(0,0,0,0.50) 75%,\n      rgba(0,0,0,0.60) 100%\n    );\n  }\n\n  .wp-hero-content {\n    position: relative;\n    z-index: 1;\n    text-align: center;\n    padding: 80px 20px 40px;\n    width: 100%;\n    max-width: 900px;\n    margin: 0 auto;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  .wp-hero-heading {\n    font-family: 'Montserrat', sans-serif;\n    font-size: clamp(28px, 5vw, 58px);\n    font-weight: 800;\n    color: #ffffff;\n    text-transform: uppercase;\n    letter-spacing: 0.04em;\n    line-height: 1.15;\n    margin: 0 0 32px 0;\n    text-shadow: 0 2px 20px rgba(0,0,0,0.4);\n  }\n\n  .wp-hero-btn {\n    display: inline-block;\n    background-color: #2aacd1;\n    color: #ffffff;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 15px;\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    text-decoration: none;\n    padding: 16px 44px;\n    border-radius: 4px;\n    margin-bottom: 48px;\n    transition: background-color 0.2s ease, transform 0.2s ease;\n    border: none;\n    cursor: pointer;\n  }\n\n  .wp-hero-btn:hover {\n    background-color: #1d95bc;\n    transform: translateY(-1px);\n    color: #ffffff;\n    text-decoration: none;\n  }\n\n  .wp-hero-rating {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    flex-wrap: wrap;\n    justify-content: center;\n  }\n\n  .wp-hero-stars {\n    display: flex;\n    gap: 4px;\n  }\n\n  .wp-hero-stars span {\n    font-size: 22px;\n    color: #f5a623;\n    line-height: 1;\n  }\n\n  .wp-hero-rating-text {\n    color: #ffffff;\n    font-size: 15px;\n    font-weight: 500;\n    letter-spacing: 0.02em;\n    opacity: 0.95;\n  }\n\n  .wp-hero-rating-text strong {\n    color: #f5a623;\n  }\n\n  /* Mobile */\n  @media (max-width: 767px) {\n    .wp-hero-section {\n      min-height: 480px;\n    }\n\n    .wp-hero-content {\n      padding: 160px 20px 32px;\n    }\n\n    .wp-hero-heading {\n      font-size: clamp(20px, 6vw, 18px);\n      margin-bottom: 24px;\n    }\n\n    .wp-hero-btn {\n      padding: 14px 36px;\n      font-size: 14px;\n      margin-bottom: 32px;\n    }\n\n    .wp-hero-rating-text {\n      font-size: 13px;\n    }\n  }\n\n  @media (max-width: 480px) {\n    .wp-hero-section {\n      min-height: 420px;\n    }\n\n  }\n\n</style>\n\n<style type=\"text/css\">@font-face {font-family:'Montserrat';font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:500;src:url(/cf-fonts/v/montserrat/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:700;src:url(/cf-fonts/v/montserrat/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Montserrat';font-style:normal;font-weight:800;src:url(/cf-fonts/v/montserrat/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>\n\n<section class=\"wp-hero-section\">\n  <div class=\"wp-hero-bg\"></div>\n  <div class=\"wp-hero-content\">\n    <h1 class=\"wp-hero-heading\">Dentist in Westport, <br>Kansas City</h1>\n    <a href=\"/contact-us/\" class=\"wp-hero-btn\">Contact Us</a>\n    <div class=\"wp-hero-rating\">\n<!--       <div class=\"wp-hero-stars\">\n        <span>★</span>\n        <span>★</span>\n        <span>★</span>\n        <span>★</span>\n        <span>★</span>\n      </div> -->\n      <p class=\"wp-hero-rating-text\">5.0 from our patients on Google <strong>★★★★★</strong></p>\n    </div>\n  </div>\n</section></div></div></div></div><div class=\"x-section e6-e5 m6-0 m6-2 m6-3\"><div class=\"x-row x-container max width e6-e6 m6-7 m6-8 m6-a m6-b m6-f m6-h\"><div class=\"x-row-inner\"><div class=\"x-col e6-e7 m6-n m6-o m6-p m6-q m6-r\"><div class=\"x-text x-text-headline e6-e8 m6-u m6-v m6-w m6-x m6-y m6-z m6-10 m6-11 m6-12\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h2 class=\"x-text-content-text-primary\">FAMILY DENTIST IN WESTPORT, KANSAS CITY</h2></div></div></div><div class=\"x-text x-content e6-e9 m6-19 m6-1a m6-1b m6-1c\"><p class=\"p1\">At Cosmetic &amp; Implant Dentistry, we proudly serve patients of all ages and oral health backgrounds. As a trusted dentist in Westport, we offer a wide range of services, including crowns, bridges, teeth whitening, and dental fillings in Kansas City, MO.</p>\n<p class=\"p1\">Whether you need a routine check-up or more urgent care like root canals or extractions, we’re here to help. Our friendly team is committed to making sure every patient feels comfortable and cared for in a warm, welcoming environment. We focus on personalized care, ensuring that both new and returning patients receive treatment that meets their unique needs and goals. Let us help you achieve a healthy, beautiful smile!</p></div><a class=\"x-anchor x-anchor-button e6-e10 m6-1f\" tabindex=\"0\" href=\"/about-us/\"><div class=\"x-anchor-content\"><div class=\"x-anchor-text\"><span class=\"x-anchor-text-primary\">About Us</span></div></div></a></div></div></div></div><div class=\"x-section e6-e11 m6-0 m6-2 m6-3 m6-4\"><div class=\"x-row x-container max width e6-e12 m6-7 m6-8 m6-9 m6-c m6-d m6-i m6-j\"><div class=\"x-row-inner\"><div class=\"x-col e6-e13 m6-n m6-o m6-q m6-s\"><span class=\"x-image e6-e14 m6-1g m6-1h\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-scaled.jpg\" srcset=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-scaled.jpg 2560w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-300x200.jpg 300w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-1024x683.jpg 1024w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-768x512.jpg 768w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-1536x1024.jpg 1536w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-2048x1366.jpg 2048w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-100x67.jpg 100w, https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-1280x854.jpg 1280w\" sizes=\"(max-width: 2560px) 100vw, 2560px\" alt=\"patient at dentist in westport\"></span></div><div class=\"x-col e6-e15 m6-n m6-o m6-s m6-t\"><div class=\"x-div e6-e16 m6-1j m6-1k m6-1l m6-1m m6-1n m6-1o m6-1p m6-1q\"><div class=\"x-text x-text-headline e6-e17 m6-u m6-v m6-w m6-x m6-11 m6-12 m6-13 m6-14\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><span class=\"x-text-content-text-subheadline\">Convenient dental services</span><h3 class=\"x-text-content-text-primary\">Cutting-Edge Technology</h3></div></div></div><div class=\"x-text x-content e6-e18 m6-19 m6-1a\">Our dental office has the most innovative equipment, technology, treatments, and solutions. We aim to continuously upgrade our services with the latest developments in the dental industry. From state-of-the-art X-rays to cleaning and whitening solutions, you can expect top-tier quality. We conduct treatments to make the smile brighter, straighter, and more natural. Whether you want to correct misaligned teeth, trauma, or discoloration, our team will provide the treatments you need to leave the office quickly and satisfied. Patients return to us for all their dental work because they can rely on our fast yet quality service and dedication to excellence.</div><a class=\"x-anchor x-anchor-button e6-e19 m6-1f\" tabindex=\"0\" href=\"/services/\"><div class=\"x-anchor-content\"><div class=\"x-anchor-text\"><span class=\"x-anchor-text-primary\">Our Services</span></div></div></a></div></div></div></div></div><div class=\"x-section e6-e20 m6-0 m6-2\"><div class=\"x-row x-container max width e6-e21 m6-7 m6-a m6-b m6-e m6-f m6-k\"><div class=\"x-row-inner\"><div class=\"x-col e6-e22 m6-n m6-r\"><div class=\"x-text x-text-headline e6-e23 m6-u m6-v m6-w m6-x m6-z m6-11 m6-12 m6-13\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h3 class=\"x-text-content-text-primary\">Full-Service Dental for Individuals and Families</h3></div></div></div><div class=\"x-text x-content e6-e24 m6-19 m6-1a m6-1b m6-1d\">No dental issue is too complex or challenging for our team to treat. From routine checkups to major procedures, you can depend on us to personalize your treatments and enhance your smile. Our services include</div></div></div></div><div class=\"x-row x-container max width e6-e25 m6-7 m6-8 m6-9 m6-c m6-i m6-l\"><div class=\"x-row-inner\"><div class=\"x-col e6-e26 m6-n\"><div class=\"x-slide-container-viewport is-loading e6-e27 m6-25 m6-5 is-ready\" data-x-slide-container=\"{&quot;snap&quot;:true,&quot;scrollBySlide&quot;:true,&quot;wrapAround&quot;:true,&quot;contain&quot;:true,&quot;startingSlide&quot;:1}\" style=\"--x-slide-current: 1; --x-slide-total: 13;\"><div class=\"x-slide-container-content\"><div class=\"x-slide-container is-inline is-paged\" style=\"transition: none;\"><a class=\"x-slide e6-e28 m6-26 m6-5 m6-6 is-virtual is-current-slide\" data-x-slide=\"\" href=\"/services/general-dentistry/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 0; --x-slide-balance: 0;\"><span class=\"x-image e6-e29 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-01.svg\" width=\"0\" height=\"0\" alt=\"tooth icon\"></span><div class=\"x-text x-text-headline e6-e30 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">General Dentistry</h4></div></div></div><div class=\"x-text x-content e6-e31 m6-19 m6-1e\">Our general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth.</div></a><a class=\"x-slide e6-e32 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/full-mouth-restoration/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: 1;\"><span class=\"x-image e6-e33 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg\" width=\"0\" height=\"0\" alt=\"braces icon\"></span><div class=\"x-text x-text-headline e6-e34 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Full Mouth Restoration</h4></div></div></div><div class=\"x-text x-content e6-e35 m6-19 m6-1e\">If multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance</div></a><a class=\"x-slide e6-e36 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/sedation/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 2; --x-slide-balance: 1;\"><span class=\"x-image e6-e37 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg\" width=\"0\" height=\"0\" alt=\"sleep icon\"></span><div class=\"x-text x-text-headline e6-e38 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Sedation</h4></div></div></div><div class=\"x-text x-content e6-e39 m6-19 m6-1e\">Dental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment.</div></a><a class=\"x-slide e6-e40 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/emergency-dentistry/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 3; --x-slide-balance: 1;\"><span class=\"x-image e6-e41 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-02.svg\" width=\"0\" height=\"0\" alt=\"cracked tooth icon\"></span><div class=\"x-text x-text-headline e6-e42 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Emergency Dentistry</h4></div></div></div><div class=\"x-text x-content e6-e43 m6-19 m6-1e\">When sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies.</div></a><a class=\"x-slide e6-e44 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/teeth-cleaning/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 4; --x-slide-balance: 1;\"><span class=\"x-image e6-e45 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-03.svg\" width=\"0\" height=\"0\" alt=\"toothbrush icon\"></span><div class=\"x-text x-text-headline e6-e46 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Hygiene</h4></div></div></div><div class=\"x-text x-content e6-e47 m6-19 m6-1e\">We use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth.</div></a><a class=\"x-slide e6-e48 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/fillings/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 5; --x-slide-balance: 1;\"><span class=\"x-image e6-e49 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-04.svg\" width=\"0\" height=\"0\" alt=\"tooth inspection icon\"></span><div class=\"x-text x-text-headline e6-e50 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Fillings</h4></div></div></div><div class=\"x-text x-content e6-e51 m6-19 m6-1e\">If you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape.</div></a><a class=\"x-slide e6-e52 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/mouth-guards/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 6; --x-slide-balance: 1;\"><span class=\"x-image e6-e53 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-05.svg\" width=\"0\" height=\"0\" alt=\"shield icon\"></span><div class=\"x-text x-text-headline e6-e54 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Mouth Guards</h4></div></div></div><div class=\"x-text x-content e6-e55 m6-19 m6-1e\">We develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely.</div></a><a class=\"x-slide e6-e56 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/dental-implants/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 6; --x-slide-balance: -1;\"><span class=\"x-image e6-e57 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-06.svg\" width=\"0\" height=\"0\" alt=\"tooth implant icon\"></span><div class=\"x-text x-text-headline e6-e58 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Dental Implants</h4></div></div></div><div class=\"x-text x-content e6-e59 m6-19 m6-1e\">If you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal.</div></a><a class=\"x-slide e6-e60 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/crowns-bridges/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 5; --x-slide-balance: -1;\"><span class=\"x-image e6-e61 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-08.svg\" width=\"0\" height=\"0\" alt=\"clean tooth icon\"></span><div class=\"x-text x-text-headline e6-e62 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Crowns &amp; Bridges</h4></div></div></div><div class=\"x-text x-content e6-e63 m6-19 m6-1e\">Our cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps.</div></a><a class=\"x-slide e6-e64 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/veneers/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 4; --x-slide-balance: -1;\"><span class=\"x-image e6-e65 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-07.svg\" width=\"0\" height=\"0\" alt=\"tooth shield icon\"></span><div class=\"x-text x-text-headline e6-e66 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Veneers</h4></div></div></div><div class=\"x-text x-content e6-e67 m6-19 m6-1e\">Make your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again.</div></a><a class=\"x-slide e6-e68 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/sleep-apnea/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 3; --x-slide-balance: -1;\"><span class=\"x-image e6-e69 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg\" width=\"0\" height=\"0\" alt=\"sleep icon\"></span><div class=\"x-text x-text-headline e6-e70 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Sleep Apnea</h4></div></div></div><div class=\"x-text x-content e6-e71 m6-19 m6-1e\">We provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions.</div></a><a class=\"x-slide e6-e72 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/tmj-tmd/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 2; --x-slide-balance: -1;\"><span class=\"x-image e6-e73 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-11.svg\" width=\"0\" height=\"0\" alt=\"tooth chart icon\"></span><div class=\"x-text x-text-headline e6-e74 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">TMJ / TMD</h4></div></div></div><div class=\"x-text x-content e6-e75 m6-19 m6-1e\">TMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep.</div></a><a class=\"x-slide e6-e76 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/clear-braces/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: -1;\"><span class=\"x-image e6-e77 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg\" width=\"0\" height=\"0\" alt=\"braces icon\"></span><div class=\"x-text x-text-headline e6-e78 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Clear Braces</h4></div></div></div><div class=\"x-text x-content e6-e79 m6-19 m6-1e\">Our clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth.</div></a><a class=\"x-slide e6-e28 m6-26 m6-5 m6-6 is-current-slide\" data-x-slide=\"\" href=\"/services/general-dentistry/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 0; --x-slide-balance: 0;\"><span class=\"x-image e6-e29 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-01.svg\" width=\"0\" height=\"0\" alt=\"tooth icon\"></span><div class=\"x-text x-text-headline e6-e30 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">General Dentistry</h4></div></div></div><div class=\"x-text x-content e6-e31 m6-19 m6-1e\">Our general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth.</div></a><a class=\"x-slide e6-e32 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/full-mouth-restoration/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 1; --x-slide-balance: 1;\"><span class=\"x-image e6-e33 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg\" width=\"0\" height=\"0\" alt=\"braces icon\"></span><div class=\"x-text x-text-headline e6-e34 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Full Mouth Restoration</h4></div></div></div><div class=\"x-text x-content e6-e35 m6-19 m6-1e\">If multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance</div></a><a class=\"x-slide e6-e36 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/sedation/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 2; --x-slide-balance: 1;\"><span class=\"x-image e6-e37 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg\" width=\"0\" height=\"0\" alt=\"sleep icon\"></span><div class=\"x-text x-text-headline e6-e38 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Sedation</h4></div></div></div><div class=\"x-text x-content e6-e39 m6-19 m6-1e\">Dental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment.</div></a><a class=\"x-slide e6-e40 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/emergency-dentistry/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 3; --x-slide-balance: 1;\"><span class=\"x-image e6-e41 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-02.svg\" width=\"0\" height=\"0\" alt=\"cracked tooth icon\"></span><div class=\"x-text x-text-headline e6-e42 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Emergency Dentistry</h4></div></div></div><div class=\"x-text x-content e6-e43 m6-19 m6-1e\">When sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies.</div></a><a class=\"x-slide e6-e44 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/teeth-cleaning/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 4; --x-slide-balance: 1;\"><span class=\"x-image e6-e45 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-03.svg\" width=\"0\" height=\"0\" alt=\"toothbrush icon\"></span><div class=\"x-text x-text-headline e6-e46 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Hygiene</h4></div></div></div><div class=\"x-text x-content e6-e47 m6-19 m6-1e\">We use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth.</div></a><a class=\"x-slide e6-e48 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/fillings/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 5; --x-slide-balance: 1;\"><span class=\"x-image e6-e49 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-04.svg\" width=\"0\" height=\"0\" alt=\"tooth inspection icon\"></span><div class=\"x-text x-text-headline e6-e50 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Fillings</h4></div></div></div><div class=\"x-text x-content e6-e51 m6-19 m6-1e\">If you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape.</div></a><a class=\"x-slide e6-e52 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/mouth-guards/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 6; --x-slide-balance: 1;\"><span class=\"x-image e6-e53 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-05.svg\" width=\"0\" height=\"0\" alt=\"shield icon\"></span><div class=\"x-text x-text-headline e6-e54 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Mouth Guards</h4></div></div></div><div class=\"x-text x-content e6-e55 m6-19 m6-1e\">We develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely.</div></a><a class=\"x-slide e6-e56 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/dental-implants/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 6; --x-slide-balance: -1;\"><span class=\"x-image e6-e57 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-06.svg\" width=\"0\" height=\"0\" alt=\"tooth implant icon\"></span><div class=\"x-text x-text-headline e6-e58 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Dental Implants</h4></div></div></div><div class=\"x-text x-content e6-e59 m6-19 m6-1e\">If you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal.</div></a><a class=\"x-slide e6-e60 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/crowns-bridges/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 5; --x-slide-balance: -1;\"><span class=\"x-image e6-e61 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-08.svg\" width=\"0\" height=\"0\" alt=\"clean tooth icon\"></span><div class=\"x-text x-text-headline e6-e62 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Crowns &amp; Bridges</h4></div></div></div><div class=\"x-text x-content e6-e63 m6-19 m6-1e\">Our cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps.</div></a><a class=\"x-slide e6-e64 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/veneers/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 4; --x-slide-balance: -1;\"><span class=\"x-image e6-e65 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-07.svg\" width=\"0\" height=\"0\" alt=\"tooth shield icon\"></span><div class=\"x-text x-text-headline e6-e66 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Veneers</h4></div></div></div><div class=\"x-text x-content e6-e67 m6-19 m6-1e\">Make your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again.</div></a><a class=\"x-slide e6-e68 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/sleep-apnea/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 3; --x-slide-balance: -1;\"><span class=\"x-image e6-e69 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg\" width=\"0\" height=\"0\" alt=\"sleep icon\"></span><div class=\"x-text x-text-headline e6-e70 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Sleep Apnea</h4></div></div></div><div class=\"x-text x-content e6-e71 m6-19 m6-1e\">We provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions.</div></a><a class=\"x-slide e6-e72 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/tmj-tmd/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 2; --x-slide-balance: -1;\"><span class=\"x-image e6-e73 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-11.svg\" width=\"0\" height=\"0\" alt=\"tooth chart icon\"></span><div class=\"x-text x-text-headline e6-e74 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">TMJ / TMD</h4></div></div></div><div class=\"x-text x-content e6-e75 m6-19 m6-1e\">TMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep.</div></a><a class=\"x-slide e6-e76 m6-26 m6-5 m6-6\" data-x-slide=\"\" href=\"/services/clear-braces/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" style=\"--x-slide-distance: 1; --x-slide-balance: -1;\"><span class=\"x-image e6-e77 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg\" width=\"0\" height=\"0\" alt=\"braces icon\"></span><div class=\"x-text x-text-headline e6-e78 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Clear Braces</h4></div></div></div><div class=\"x-text x-content e6-e79 m6-19 m6-1e\">Our clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth.</div></a><a class=\"x-slide e6-e28 m6-26 m6-5 m6-6 is-virtual is-current-slide\" data-x-slide=\"\" href=\"/services/general-dentistry/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 0; --x-slide-balance: 0;\"><span class=\"x-image e6-e29 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-01.svg\" width=\"0\" height=\"0\" alt=\"tooth icon\"></span><div class=\"x-text x-text-headline e6-e30 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">General Dentistry</h4></div></div></div><div class=\"x-text x-content e6-e31 m6-19 m6-1e\">Our general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth.</div></a><a class=\"x-slide e6-e32 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/full-mouth-restoration/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: 1;\"><span class=\"x-image e6-e33 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg\" width=\"0\" height=\"0\" alt=\"braces icon\"></span><div class=\"x-text x-text-headline e6-e34 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Full Mouth Restoration</h4></div></div></div><div class=\"x-text x-content e6-e35 m6-19 m6-1e\">If multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance</div></a><a class=\"x-slide e6-e36 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/sedation/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 2; --x-slide-balance: 1;\"><span class=\"x-image e6-e37 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg\" width=\"0\" height=\"0\" alt=\"sleep icon\"></span><div class=\"x-text x-text-headline e6-e38 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Sedation</h4></div></div></div><div class=\"x-text x-content e6-e39 m6-19 m6-1e\">Dental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment.</div></a><a class=\"x-slide e6-e40 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/emergency-dentistry/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 3; --x-slide-balance: 1;\"><span class=\"x-image e6-e41 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-02.svg\" width=\"0\" height=\"0\" alt=\"cracked tooth icon\"></span><div class=\"x-text x-text-headline e6-e42 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Emergency Dentistry</h4></div></div></div><div class=\"x-text x-content e6-e43 m6-19 m6-1e\">When sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies.</div></a><a class=\"x-slide e6-e44 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/teeth-cleaning/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 4; --x-slide-balance: 1;\"><span class=\"x-image e6-e45 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-03.svg\" width=\"0\" height=\"0\" alt=\"toothbrush icon\"></span><div class=\"x-text x-text-headline e6-e46 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Hygiene</h4></div></div></div><div class=\"x-text x-content e6-e47 m6-19 m6-1e\">We use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth.</div></a><a class=\"x-slide e6-e48 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/fillings/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 5; --x-slide-balance: 1;\"><span class=\"x-image e6-e49 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-04.svg\" width=\"0\" height=\"0\" alt=\"tooth inspection icon\"></span><div class=\"x-text x-text-headline e6-e50 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Fillings</h4></div></div></div><div class=\"x-text x-content e6-e51 m6-19 m6-1e\">If you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape.</div></a><a class=\"x-slide e6-e52 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/mouth-guards/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 6; --x-slide-balance: 1;\"><span class=\"x-image e6-e53 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-05.svg\" width=\"0\" height=\"0\" alt=\"shield icon\"></span><div class=\"x-text x-text-headline e6-e54 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Mouth Guards</h4></div></div></div><div class=\"x-text x-content e6-e55 m6-19 m6-1e\">We develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely.</div></a><a class=\"x-slide e6-e56 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/dental-implants/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 6; --x-slide-balance: -1;\"><span class=\"x-image e6-e57 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-06.svg\" width=\"0\" height=\"0\" alt=\"tooth implant icon\"></span><div class=\"x-text x-text-headline e6-e58 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Dental Implants</h4></div></div></div><div class=\"x-text x-content e6-e59 m6-19 m6-1e\">If you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal.</div></a><a class=\"x-slide e6-e60 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/crowns-bridges/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 5; --x-slide-balance: -1;\"><span class=\"x-image e6-e61 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-08.svg\" width=\"0\" height=\"0\" alt=\"clean tooth icon\"></span><div class=\"x-text x-text-headline e6-e62 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Crowns &amp; Bridges</h4></div></div></div><div class=\"x-text x-content e6-e63 m6-19 m6-1e\">Our cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps.</div></a><a class=\"x-slide e6-e64 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/veneers/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 4; --x-slide-balance: -1;\"><span class=\"x-image e6-e65 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-07.svg\" width=\"0\" height=\"0\" alt=\"tooth shield icon\"></span><div class=\"x-text x-text-headline e6-e66 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Veneers</h4></div></div></div><div class=\"x-text x-content e6-e67 m6-19 m6-1e\">Make your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again.</div></a><a class=\"x-slide e6-e68 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/sleep-apnea/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 3; --x-slide-balance: -1;\"><span class=\"x-image e6-e69 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg\" width=\"0\" height=\"0\" alt=\"sleep icon\"></span><div class=\"x-text x-text-headline e6-e70 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Sleep Apnea</h4></div></div></div><div class=\"x-text x-content e6-e71 m6-19 m6-1e\">We provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions.</div></a><a class=\"x-slide e6-e72 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/tmj-tmd/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 2; --x-slide-balance: -1;\"><span class=\"x-image e6-e73 m6-1g m6-1i\"><img loading=\"lazy\" decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-11.svg\" width=\"0\" height=\"0\" alt=\"tooth chart icon\"></span><div class=\"x-text x-text-headline e6-e74 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">TMJ / TMD</h4></div></div></div><div class=\"x-text x-content e6-e75 m6-19 m6-1e\">TMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep.</div></a><a class=\"x-slide e6-e76 m6-26 m6-5 m6-6 is-virtual\" data-x-slide=\"\" href=\"/services/clear-braces/\" data-x-effect-provider=\"colors particles effects\" data-x-effect=\"{&quot;durationBase&quot;:&quot;300ms&quot;}\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: -1;\"><span class=\"x-image e6-e77 m6-1g m6-1i\"><img decoding=\"async\" src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg\" width=\"0\" height=\"0\" alt=\"braces icon\"></span><div class=\"x-text x-text-headline e6-e78 m6-w m6-x m6-y m6-11 m6-15\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h4 class=\"x-text-content-text-primary\">Clear Braces</h4></div></div></div><div class=\"x-text x-content e6-e79 m6-19 m6-1e\">Our clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth.</div></a></div></div></div></div></div></div><div class=\"x-div x-container max width e6-e80 m6-1j m6-1k m6-1n m6-1q m6-1r m6-1s m6-1t m6-1u m6-1v m6-1w\"><div class=\"x-div e6-e81 m6-1j m6-1n m6-1q m6-1s m6-1v m6-1w m6-1x m6-1y m6-1z button-navigation\"><div class=\"x-div e6-e82 m6-1j m6-1n m6-1p m6-1q m6-1w m6-20\"><a class=\"x-div e6-e83 m6-1j m6-1k m6-1l m6-1n m6-1p m6-1s m6-1w m6-21\" href=\"#prev\" data-x-slide-prev=\"\" aria-label=\"previous slide\"><i class=\"x-icon e6-e84 m6-27\" aria-hidden=\"true\" data-x-icon-l=\"\"></i></a><a class=\"x-div e6-e85 m6-1j m6-1k m6-1l m6-1n m6-1s m6-1w m6-1y m6-1z m6-21 m6-22\" href=\"#next\" data-x-slide-next=\"\" aria-label=\"next slide\"><i class=\"x-icon e6-e86 m6-27\" aria-hidden=\"true\" data-x-icon-l=\"\"></i></a></div></div></div></div><div class=\"x-section e6-e87 m6-0 m6-1\"><div class=\"cs-content x-global-block x-global-block-1208 e6-e88\"><div class=\"x-section e1208-e2 mxk-0\"><div class=\"x-bg\" aria-hidden=\"true\"><div class=\"x-bg-layer-lower-image\" style=\" background-image: url(https://cosmeticimplantdentistrywp.com/wp-content/uploads/2026/01/IMG_0562-scaled.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;\"></div><div class=\"x-bg-layer-upper-color\" style=\" background-color: rgba(0, 0, 0, 0.55);\"></div></div><div class=\"x-row x-container max width e1208-e3 mxk-1 mxk-2\"><div class=\"x-row-inner\"><div class=\"x-col e1208-e4 mxk-3\"><div class=\"x-text x-text-headline e1208-e5 mxk-4\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h3 class=\"x-text-content-text-primary\">Choose Us for the Perfect Smile</h3></div></div></div><a class=\"x-anchor x-anchor-button e1208-e6 mxk-5\" tabindex=\"0\" href=\"tel:816-388-0985\"><div class=\"x-anchor-content\"><div class=\"x-anchor-text\"><span class=\"x-anchor-text-primary\">Call Now</span></div></div></a></div></div></div></div></div><style> .mxk-0.x-section{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;padding-top:150px;padding-right:0px;padding-bottom:150px;padding-left:0px;background-color:rgba(0,0,0,0.82);z-index:1;}.mxk-1.x-row{z-index:auto;margin-right:auto;margin-left:auto;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;padding-top:1px;padding-right:1px;padding-bottom:1px;padding-left:1px;font-size:1em;}.mxk-1 > .x-row-inner{flex-direction:row;justify-content:flex-start;align-items:stretch;align-content:stretch;margin-top:calc(((20px / 2) + 1px) * -1);margin-right:calc(((20px / 2) + 1px) * -1);margin-bottom:calc(((20px / 2) + 1px) * -1);margin-left:calc(((20px / 2) + 1px) * -1);}.mxk-1 > .x-row-inner > *{margin-top:calc(20px / 2);margin-bottom:calc(20px / 2);margin-right:calc(20px / 2);margin-left:calc(20px / 2);}.mxk-2{--gap:20px;}.mxk-2 > .x-row-inner > *:nth-child(1n - 0) {flex-basis:calc(100% - clamp(0px,var(--gap),9999px));}.mxk-3.x-col{z-index:1;max-width:40%;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;font-size:1em;}.mxk-4.x-text{border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;font-size:1em;}.mxk-4.x-text .x-text-content-text-primary{font-family:\"Karla\",sans-serif;font-size:45px;font-style:normal;font-weight:400;line-height:1.2;letter-spacing:0em;text-transform:uppercase;color:#fff;}.mxk-5.x-anchor {min-width:180px;margin-top:30px;margin-right:0px;margin-bottom:0px;margin-left:0px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;font-size:1em;background-color:#84c2d3;}.mxk-5.x-anchor .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;padding-top:0.575em;padding-right:1em;padding-bottom:0.575em;padding-left:1em;}.mxk-5.x-anchor:hover,.mxk-5.x-anchor[class*=\"active\"],[data-x-effect-provider*=\"colors\"]:hover .mxk-5.x-anchor {background-color:#0d8aaa;}.mxk-5.x-anchor .x-anchor-text {margin-top:5px;margin-right:5px;margin-bottom:5px;margin-left:5px;}.mxk-5.x-anchor .x-anchor-text-primary {font-family:\"Karla\",sans-serif;font-size:1em;font-style:normal;font-weight:700;line-height:1.4;text-transform:uppercase;color:#fff;}@media screen and (min-width:979px) and (max-width:1199.98px){.mxk-4.x-text .x-text-content-text-primary{font-size:40px;}}@media screen and (min-width:767px) and (max-width:978.98px){.mxk-0.x-section{padding-top:120px;padding-bottom:120px;}.mxk-4.x-text .x-text-content-text-primary{font-size:35px;}}@media screen and (max-width:766.98px){.mxk-0.x-section{padding-top:65px;padding-bottom:65px;}}@media screen and (min-width:480px) and (max-width:766.98px){.mxk-3.x-col{max-width:60%;}.mxk-4.x-text .x-text-content-text-primary{font-size:30px;}}@media screen and (max-width:479.98px){.mxk-3.x-col{max-width:70%;}.mxk-4.x-text .x-text-content-text-primary{font-size:25px;}}</style><style> </style><style></style></div><div class=\"x-section e6-e89 m6-0 m6-1\"><div class=\"x-row e6-e90 m6-7 m6-8 m6-9 m6-c m6-i m6-m\"><div class=\"x-row-inner\"><div class=\"x-col e6-e91 m6-n\"><div class=\"x-div e6-e92 m6-1n m6-1p m6-1q m6-1w\"><div class=\"x-div e6-e93 m6-1n m6-1q m6-1u m6-1v m6-1w m6-1y m6-23\"><div class=\"x-div e6-e94 m6-1j m6-1k m6-1m m6-1n m6-1p m6-1q m6-1r m6-24\"><div class=\"x-text x-text-headline e6-e95 m6-w m6-x m6-12 m6-13 m6-16\" tabindex=\"0\"><div class=\"x-text-content\"><div class=\"x-text-content-text\"><h2 class=\"x-text-content-text-primary\">Cosmetic and Implant Dentistry Westport</h2></div></div></div><a href=\"https://goo.gl/maps/czEUDZJfXCn1Yi938\" target=\"_blank\" class=\"x-text x-text-headline has-graphic e6-e96 m6-v m6-w m6-y m6-17 m6-18\"><div class=\"x-text-content\"><span class=\"x-graphic\" aria-hidden=\"true\"><i class=\"x-icon x-graphic-child x-graphic-icon x-graphic-primary\" aria-hidden=\"true\" data-x-icon-s=\"\"></i></span><div class=\"x-text-content-text\"><p class=\"x-text-content-text-primary\">638 W 39th St<br>Kansas City, MO 64111</p></div></div></a><a href=\"tel:816-388-0985\" class=\"x-text x-text-headline has-graphic e6-e97 m6-v m6-w m6-y m6-17 m6-18\"><div class=\"x-text-content\"><span class=\"x-graphic\" aria-hidden=\"true\"><i class=\"x-icon x-graphic-child x-graphic-icon x-graphic-primary\" aria-hidden=\"true\" data-x-icon-s=\"\"></i></span><div class=\"x-text-content-text\"><p class=\"x-text-content-text-primary\">816-388-0985</p></div></div></a><div class=\"x-text x-text-headline has-graphic e6-e98 m6-v m6-w m6-y m6-17\"><div class=\"x-text-content\"><span class=\"x-graphic\" aria-hidden=\"true\"><i class=\"x-icon x-graphic-child x-graphic-icon x-graphic-primary\" aria-hidden=\"true\" data-x-icon-s=\"\"></i></span><div class=\"x-text-content-text\"><p class=\"x-text-content-text-primary\">Monday – Thursday:<br>9:00 AM – 4:00 PM</p></div></div></div></div></div><div class=\"x-frame x-frame-map-embed e6-e99 m6-28\"><div class=\"x-frame-inner\"><div class=\"x-map x-map-embed\"><iframe src=\"https://www.google.com/maps?q=638+W+39th+St,+Kansas+City,+MO+64111&amp;output=embed\" width=\"100%\" height=\"100%\" style=\"border:0;\" loading=\"lazy\" allowfullscreen=\"\"></iframe></div></div></div></div></div></div></div></div>",
+  "iframes": [
+    {
+      "src": "https://www.google.com/maps?q=638+W+39th+St,+Kansas+City,+MO+64111&output=embed",
+      "title": null
+    }
+  ],
+  "images": [
+    {
+      "alt": "patient at dentist in westport",
+      "height": 853,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2025/12/CIDWPop3-scaled.jpg",
+      "width": 1280
+    },
+    {
+      "alt": "tooth icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-01.svg",
+      "width": 150
+    },
+    {
+      "alt": "braces icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg",
+      "width": 150
+    },
+    {
+      "alt": "sleep icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg",
+      "width": 0
+    },
+    {
+      "alt": "cracked tooth icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-02.svg",
+      "width": 0
+    },
+    {
+      "alt": "toothbrush icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-03.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth inspection icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-04.svg",
+      "width": 0
+    },
+    {
+      "alt": "shield icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-05.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth implant icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-06.svg",
+      "width": 0
+    },
+    {
+      "alt": "clean tooth icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-08.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth shield icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-07.svg",
+      "width": 0
+    },
+    {
+      "alt": "sleep icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth chart icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-11.svg",
+      "width": 0
+    },
+    {
+      "alt": "braces icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg",
+      "width": 150
+    },
+    {
+      "alt": "tooth icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-01.svg",
+      "width": 150
+    },
+    {
+      "alt": "braces icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg",
+      "width": 150
+    },
+    {
+      "alt": "sleep icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg",
+      "width": 0
+    },
+    {
+      "alt": "cracked tooth icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-02.svg",
+      "width": 0
+    },
+    {
+      "alt": "toothbrush icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-03.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth inspection icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-04.svg",
+      "width": 0
+    },
+    {
+      "alt": "shield icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-05.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth implant icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-06.svg",
+      "width": 0
+    },
+    {
+      "alt": "clean tooth icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-08.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth shield icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-07.svg",
+      "width": 0
+    },
+    {
+      "alt": "sleep icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth chart icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-11.svg",
+      "width": 0
+    },
+    {
+      "alt": "braces icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg",
+      "width": 150
+    },
+    {
+      "alt": "tooth icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-01.svg",
+      "width": 150
+    },
+    {
+      "alt": "braces icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg",
+      "width": 150
+    },
+    {
+      "alt": "sleep icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg",
+      "width": 0
+    },
+    {
+      "alt": "cracked tooth icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-02.svg",
+      "width": 0
+    },
+    {
+      "alt": "toothbrush icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-03.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth inspection icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-04.svg",
+      "width": 0
+    },
+    {
+      "alt": "shield icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-05.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth implant icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-06.svg",
+      "width": 0
+    },
+    {
+      "alt": "clean tooth icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-08.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth shield icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-07.svg",
+      "width": 0
+    },
+    {
+      "alt": "sleep icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-10.svg",
+      "width": 0
+    },
+    {
+      "alt": "tooth chart icon",
+      "height": 0,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-11.svg",
+      "width": 0
+    },
+    {
+      "alt": "braces icon",
+      "height": 150,
+      "src": "https://cosmeticimplantdentistrywp.com/wp-content/uploads/2023/08/icons-12.svg",
+      "width": 150
+    }
+  ],
+  "links": [
+    {
+      "href": "/contact-us/",
+      "text": "Contact Us"
+    },
+    {
+      "href": "/about-us/",
+      "text": "About Us"
+    },
+    {
+      "href": "/services/",
+      "text": "Our Services"
+    },
+    {
+      "href": "/services/general-dentistry/",
+      "text": "General DentistryOur general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth."
+    },
+    {
+      "href": "/full-mouth-restoration/",
+      "text": "Full Mouth RestorationIf multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance"
+    },
+    {
+      "href": "/sedation/",
+      "text": "SedationDental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment."
+    },
+    {
+      "href": "/services/emergency-dentistry/",
+      "text": "Emergency DentistryWhen sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies."
+    },
+    {
+      "href": "/services/teeth-cleaning/",
+      "text": "HygieneWe use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth."
+    },
+    {
+      "href": "/services/fillings/",
+      "text": "FillingsIf you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape."
+    },
+    {
+      "href": "/services/mouth-guards/",
+      "text": "Mouth GuardsWe develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely."
+    },
+    {
+      "href": "/services/dental-implants/",
+      "text": "Dental ImplantsIf you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal."
+    },
+    {
+      "href": "/services/crowns-bridges/",
+      "text": "Crowns & BridgesOur cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps."
+    },
+    {
+      "href": "/services/veneers/",
+      "text": "VeneersMake your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again."
+    },
+    {
+      "href": "/services/sleep-apnea/",
+      "text": "Sleep ApneaWe provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions."
+    },
+    {
+      "href": "/services/tmj-tmd/",
+      "text": "TMJ / TMDTMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep."
+    },
+    {
+      "href": "/services/clear-braces/",
+      "text": "Clear BracesOur clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth."
+    },
+    {
+      "href": "/services/general-dentistry/",
+      "text": "General DentistryOur general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth."
+    },
+    {
+      "href": "/full-mouth-restoration/",
+      "text": "Full Mouth RestorationIf multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance"
+    },
+    {
+      "href": "/sedation/",
+      "text": "SedationDental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment."
+    },
+    {
+      "href": "/services/emergency-dentistry/",
+      "text": "Emergency DentistryWhen sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies."
+    },
+    {
+      "href": "/services/teeth-cleaning/",
+      "text": "HygieneWe use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth."
+    },
+    {
+      "href": "/services/fillings/",
+      "text": "FillingsIf you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape."
+    },
+    {
+      "href": "/services/mouth-guards/",
+      "text": "Mouth GuardsWe develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely."
+    },
+    {
+      "href": "/services/dental-implants/",
+      "text": "Dental ImplantsIf you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal."
+    },
+    {
+      "href": "/services/crowns-bridges/",
+      "text": "Crowns & BridgesOur cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps."
+    },
+    {
+      "href": "/services/veneers/",
+      "text": "VeneersMake your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again."
+    },
+    {
+      "href": "/services/sleep-apnea/",
+      "text": "Sleep ApneaWe provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions."
+    },
+    {
+      "href": "/services/tmj-tmd/",
+      "text": "TMJ / TMDTMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep."
+    },
+    {
+      "href": "/services/clear-braces/",
+      "text": "Clear BracesOur clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth."
+    },
+    {
+      "href": "/services/general-dentistry/",
+      "text": "General DentistryOur general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth."
+    },
+    {
+      "href": "/full-mouth-restoration/",
+      "text": "Full Mouth RestorationIf multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance"
+    },
+    {
+      "href": "/sedation/",
+      "text": "SedationDental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment."
+    },
+    {
+      "href": "/services/emergency-dentistry/",
+      "text": "Emergency DentistryWhen sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies."
+    },
+    {
+      "href": "/services/teeth-cleaning/",
+      "text": "HygieneWe use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth."
+    },
+    {
+      "href": "/services/fillings/",
+      "text": "FillingsIf you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape."
+    },
+    {
+      "href": "/services/mouth-guards/",
+      "text": "Mouth GuardsWe develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely."
+    },
+    {
+      "href": "/services/dental-implants/",
+      "text": "Dental ImplantsIf you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal."
+    },
+    {
+      "href": "/services/crowns-bridges/",
+      "text": "Crowns & BridgesOur cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps."
+    },
+    {
+      "href": "/services/veneers/",
+      "text": "VeneersMake your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again."
+    },
+    {
+      "href": "/services/sleep-apnea/",
+      "text": "Sleep ApneaWe provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions."
+    },
+    {
+      "href": "/services/tmj-tmd/",
+      "text": "TMJ / TMDTMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep."
+    },
+    {
+      "href": "/services/clear-braces/",
+      "text": "Clear BracesOur clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth."
+    },
+    {
+      "href": "#prev",
+      "text": ""
+    },
+    {
+      "href": "#next",
+      "text": ""
+    },
+    {
+      "href": "tel:816-388-0985",
+      "text": "Call Now"
+    },
+    {
+      "href": "https://goo.gl/maps/czEUDZJfXCn1Yi938",
+      "text": "638 W 39th StKansas City, MO 64111"
+    },
+    {
+      "href": "tel:816-388-0985",
+      "text": "816-388-0985"
+    }
+  ],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "text": "DENTIST IN WESTPORT,\nKANSAS CITY\nCONTACT US\n\n5.0 from our patients on Google ★★★★★\n\nFAMILY DENTIST IN WESTPORT, KANSAS CITY\n\nAt Cosmetic & Implant Dentistry, we proudly serve patients of all ages and oral health backgrounds. As a trusted dentist in Westport, we offer a wide range of services, including crowns, bridges, teeth whitening, and dental fillings in Kansas City, MO.\n\nWhether you need a routine check-up or more urgent care like root canals or extractions, we’re here to help. Our friendly team is committed to making sure every patient feels comfortable and cared for in a warm, welcoming environment. We focus on personalized care, ensuring that both new and returning patients receive treatment that meets their unique needs and goals. Let us help you achieve a healthy, beautiful smile!\n\nABOUT US\nConvenient dental services\nCUTTING-EDGE TECHNOLOGY\nOur dental office has the most innovative equipment, technology, treatments, and solutions. We aim to continuously upgrade our services with the latest developments in the dental industry. From state-of-the-art X-rays to cleaning and whitening solutions, you can expect top-tier quality. We conduct treatments to make the smile brighter, straighter, and more natural. Whether you want to correct misaligned teeth, trauma, or discoloration, our team will provide the treatments you need to leave the office quickly and satisfied. Patients return to us for all their dental work because they can rely on our fast yet quality service and dedication to excellence.\nOUR SERVICES\nFULL-SERVICE DENTAL FOR INDIVIDUALS AND FAMILIES\nNo dental issue is too complex or challenging for our team to treat. From routine checkups to major procedures, you can depend on us to personalize your treatments and enhance your smile. Our services include\nGENERAL DENTISTRY\nOur general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth.\nFULL MOUTH RESTORATION\nIf multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance\nSEDATION\nDental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment.\nEMERGENCY DENTISTRY\nWhen sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies.\nHYGIENE\nWe use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth.\nFILLINGS\nIf you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape.\nMOUTH GUARDS\nWe develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely.\nDENTAL IMPLANTS\nIf you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal.\nCROWNS & BRIDGES\nOur cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps.\nVENEERS\nMake your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again.\nSLEEP APNEA\nWe provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions.\nTMJ / TMD\nTMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep.\nCLEAR BRACES\nOur clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth.\nGENERAL DENTISTRY\nOur general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth.\nFULL MOUTH RESTORATION\nIf multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance\nSEDATION\nDental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment.\nEMERGENCY DENTISTRY\nWhen sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies.\nHYGIENE\nWe use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth.\nFILLINGS\nIf you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape.\nMOUTH GUARDS\nWe develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely.\nDENTAL IMPLANTS\nIf you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal.\nCROWNS & BRIDGES\nOur cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps.\nVENEERS\nMake your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again.\nSLEEP APNEA\nWe provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions.\nTMJ / TMD\nTMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep.\nCLEAR BRACES\nOur clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth.\nGENERAL DENTISTRY\nOur general services include routine and bi-annual exams and oral health screenings to maintain the look and health of your teeth.\nFULL MOUTH RESTORATION\nIf multiple dental issues are affecting your smile, full mouth restoration combines advanced treatments to rebuild your teeth's function, health, and appearance\nSEDATION\nDental anxiety shouldn't keep you from the care you need. We offer sedation options including nitrous oxide, oral sedation, and IV sedation so you can relax comfortably throughout your treatment.\nEMERGENCY DENTISTRY\nWhen sudden oral trauma strikes, you can depend on us to restore your teeth quickly. We offer same-day appointments for dental emergencies.\nHYGIENE\nWe use the latest dental tools to remove plaque and tartar buildup from the hard-to-reach areas of the mouth.\nFILLINGS\nIf you have a cavity, we can fill it. Our customized fillings fit the cavity's size and shape.\nMOUTH GUARDS\nWe develop mouth guards to protect the mouth and teeth from impacts and injuries. We can customize yours to fit your mouth precisely.\nDENTAL IMPLANTS\nIf you're missing one or multiple teeth, our implants can restore your smile. They'll return your chewing, speaking, and smiling back to normal.\nCROWNS & BRIDGES\nOur cosmetic crowns cover damaged or discolored teeth with a shiny white cap, while bridges fill missing gaps.\nVENEERS\nMake your teeth right and beautiful with cosmetic veneers. Our veneers hide discoloration and staining so patients can smile confidently again.\nSLEEP APNEA\nWe provide nighttime mouth guards for patients with sleep apnea. Reduce snoring, improve breathing, and get better sleep with our solutions.\nTMJ / TMD\nTMJD is a painful and disruptive condition. Our mouth guards for TMJD carefully realign the jaw and prevent tooth grinding during sleep.\nCLEAR BRACES\nOur clear braces offer patients the clearest, most comfortable solutions for straightening and aligning teeth.\nCHOOSE US FOR THE PERFECT SMILE\nCALL NOW\nCOSMETIC AND IMPLANT DENTISTRY WESTPORT\n\n638 W 39th St\nKansas City, MO 64111\n\n816-388-0985\n\nMonday – Thursday:\n9:00 AM – 4:00 PM",
+  "title": "Westport Dentist | Kansas City, MO | Cosmetic & Implant",
+  "url": "https://cosmeticimplantdentistrywp.com/",
+  "requestedUrl": "https://cosmeticimplantdentistrywp.com/",
+  "label": "",
+  "capturedAt": "2026-10-06T17:07:54.314Z"
+}

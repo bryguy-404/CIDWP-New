@@ -1,0 +1,142 @@
+/* Interior pages share the approved homepage's type, palette, buttons, and spacing. */
+.site-header.is-interior { background: white; color: var(--color-ink); box-shadow: 0 1px 0 #dceced; }
+.is-interior .brand-light { opacity: 0; }
+.is-interior .brand-color { opacity: 1; }
+.is-interior .header-phone .icon { color: var(--color-brand); }
+.interior-page { padding-top: 116px; }
+.interior-hero { background: var(--color-pale); }
+.interior-hero-grid { display: grid; grid-template-columns: 1.12fr 1fr; min-height: 360px; gap: 65px; align-items: stretch; }
+.interior-hero-copy { padding-block: 45px 60px; align-self: center; }
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 8px 12px; font-size: 12px; line-height: 1.6; margin-bottom: 32px; color: var(--color-muted); }
+.breadcrumbs a { text-decoration: underline; text-underline-offset: 3px; }
+.interior-hero h1 { font-size: clamp(42px, 5.2vw, 76px); line-height: 1.06; font-weight: 400; margin: 0; overflow-wrap: anywhere; }
+.interior-hero-photo { margin-right: calc(-1 * var(--gutter)); overflow: hidden; }
+.interior-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; max-height: 500px; }
+.interior-section { padding-block: clamp(54px, 6.5vw, 96px); }
+.interior-section:nth-child(even) { background: var(--color-mist); }
+.interior-content { font-size: 17px; line-height: 1.85; }
+.interior-content h2 { font-size: clamp(31px, 3.4vw, 49px); line-height: 1.16; margin-bottom: 27px; letter-spacing: -.04em; }
+.interior-content h3 { font-size: clamp(27px, 2.8vw, 39px); line-height: 1.2; margin-block: 0 24px; }
+.interior-content h4 { font-size: 23px; font-weight: 500; line-height: 1.3; margin-block: 20px; }
+.interior-content h5, .interior-content h6 { font-size: 20px; line-height: 1.4; margin-block: 20px; }
+.interior-content p, .interior-content li, .source-copy { color: var(--color-muted); }
+.interior-content p:last-child { margin-bottom: 0; }
+.source-copy + a, .source-copy + div:has(> a), .source-widget + .source-widget { margin-top: 24px; }
+.interior-content a:not(.button):not(.source-service-card) { color: #08657c; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.interior-content .button { margin-block: 20px 8px; }
+.interior-content ul { list-style: disc; padding-left: 24px; margin-block: 24px; }
+.interior-content ol { list-style: decimal; padding-left: 24px; margin-block: 24px; }
+.interior-content li { padding-left: 5px; margin-block: 9px; }
+.interior-content li::marker { color: var(--color-brand); }
+.source-row { display: flex; align-items: center; gap: clamp(32px, 5vw, 80px); }
+.source-column { flex: 1; min-width: 0; }
+.source-column:only-child { width: 100%; max-width: 940px; margin-inline: auto; }
+.source-column img { width: 100%; max-height: 650px; object-fit: cover; }
+.interior-section:not(.interior-section-directory):nth-child(odd) .source-row:has(> .source-column:nth-child(2)) { flex-direction: row-reverse; }
+.source-service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 30px; align-items: stretch; }
+.source-service-grid > div { min-width: 0; }
+.source-service-card { display: block; height: 100%; background: var(--color-mist); border-bottom: 2px solid #ccf1f3; text-decoration: none; color: var(--color-ink); padding-top: 30px; }
+.source-service-card img { width: 84px; height: 84px; object-fit: contain; margin-inline: 26px; }
+.source-service-card h2, .source-service-card h3 { padding: 26px 26px 0; font-size: 27px; margin-bottom: 16px; }
+.source-service-card .source-copy { padding: 0 26px 30px; font-size: 15px; line-height: 1.75; }
+.source-service-card:hover { background: var(--color-pale); }
+.source-profiles { display: grid; gap: 70px; }
+.source-profiles > .source-column { width: 100%; max-width: none; }
+.source-profile { display: grid; grid-template-columns: minmax(220px, 360px) 1fr; gap: 65px; align-items: center; }
+.source-profile > img { width: 100%; height: auto; aspect-ratio: .9; object-fit: cover; }
+.source-profile h2 { margin-bottom: 12px; }
+.source-eyebrow { display: block; font-size: 15px; line-height: 1.5; color: #08657c; margin-bottom: 22px; font-weight: 500; letter-spacing: 0; }
+.source-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-block: 38px; }
+.source-card { padding: 30px; background: var(--color-pale); }
+.source-card h3 { font-size: 25px; letter-spacing: -.025em; }
+.source-card p { font-size: 16px; line-height: 1.7; }
+.source-numbered { display: flex; align-items: flex-start; gap: 28px; padding-block: 30px; border-bottom: 1px solid #d2e7e9; }
+.source-number { display: block; font-size: 34px; line-height: 1.2; min-width: 55px; color: var(--color-brand); }
+.source-faq { border-top: 1px solid #c7dddf; padding-block: 28px; }
+.source-faq h3 { font-size: 24px; line-height: 1.4; letter-spacing: -.02em; margin-bottom: 14px; }
+.source-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+.source-gallery img { width: 100%; object-fit: contain; }
+.interior-content iframe { display: block; width: 100%; border: 0; min-height: 380px; aspect-ratio: 16 / 9; margin-block: 30px; }
+.interior-content video { display: block; width: 100%; max-height: 650px; background: var(--color-ink); margin-top: 32px; }
+.interior-section-cta, .interior-section-cta:nth-child(even) { background: var(--color-blue); text-align: center; }
+.interior-section-cta .source-column { max-width: 800px; }
+.interior-section-cta .button { background: white; border-color: white; }
+.appointment-slot { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; padding-block: 22px; }
+.appointment-slot .button { margin: 0; }
+.interior-policy .interior-hero-grid { display: block; min-height: auto; }
+.interior-policy .interior-hero-copy { padding-block: 40px 60px; }
+.interior-policy .interior-hero h1 { font-size: clamp(40px, 5vw, 66px); }
+.interior-policy .interior-content { max-width: 900px; overflow-wrap: anywhere; }
+.interior-policy .interior-content div, .interior-policy .interior-content span { max-width: 100%; }
+.interior-policy .interior-section { padding-block: 28px; background: white; }
+.interior-policy .interior-section:first-child { padding-top: 60px; }
+.interior-policy .interior-section:last-child { padding-bottom: 90px; }
+.interior-content table { border-collapse: collapse; width: 100%; }
+.interior-content td, .interior-content th { text-align: left; padding: 14px; border-bottom: 1px solid #c7dddf; }
+.interior-content img { max-width: 100%; }
+[data-source-page="/review/"] .interior-content { max-width: 850px; }
+[data-source-page="/review/"] .interior-content img { width: 120px; margin-block: 28px 8px; }
+[data-source-page="/review/"] a[aria-label="Leave A Facebook Review"] { display: inline-block; margin-top: 28px; font-size: 23px; }
+[data-source-page="/about/specials/"] .interior-content img { max-width: 700px; margin-inline: auto; }
+[data-source-page="/smileclub/"] .source-widget { margin-block: 20px; }
+.source-quote { font-size: 22px; margin-block: 30px 16px; }
+.source-author { font-weight: 500; margin-bottom: 25px; }
+.financing-widget { min-height: 200px; width: 100%; max-width: 100%; }
+.financing-widget * { font-family: "Work Sans", sans-serif !important; }
+.interior-content .source-prose-heading { font-size: 17px; line-height: 1.85; letter-spacing: 0; color: var(--color-muted); font-weight: 400; }
+.source-row > div { flex: 1; min-width: 0; }
+.source-split { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 65px; }
+.source-split img { width: 100%; max-height: 620px; object-fit: cover; }
+.source-image-box { max-width: 850px; margin-block: 30px; }
+.source-image-box img { width: auto; max-height: 380px; object-fit: contain; margin-bottom: 25px; }
+.source-faq-title { font-size: 24px; line-height: 1.4; margin-bottom: 16px; }
+.source-testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+.source-testimonial { background: white; padding: 30px; border: 1px solid #d2e7e9; }
+.source-testimonial .source-quote { font-size: 18px; line-height: 1.8; margin-top: 0; }
+.source-avatar img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-block: 20px 10px; }
+.interior-content .source-emoji { width: 1em; height: 1em; display: inline-block; vertical-align: -.1em; }
+.interior-section-membership-bar { padding-block: 22px; background: var(--color-ink) !important; color: white; }
+.interior-section-membership-bar p, .interior-section-membership-bar h2, .interior-section-membership-bar h3, .interior-section-membership-bar a:not(.button) { color: white; }
+.source-membership-bar > div { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+.source-membership-bar .source-widget { margin: 0 !important; }
+.source-membership-bar .button { background: var(--color-pale); margin: 0; }
+.source-membership-bar img { max-width: 180px; }
+.source-membership-bar .source-row { width: 100%; }
+.interior-section-membership-bar .interior-content a:not(.button):not(.source-service-card), .interior-section-membership-bar .interior-content h4 { color: white; }
+.source-row .source-row { display: block; }
+.source-row .source-row > .source-column + .source-column { margin-top: 26px; }
+[data-source-page="/smileclub/"] .source-column img:not(.source-emoji) { max-height: 520px; object-fit: cover; }
+.interior-content [id] { scroll-margin-top: 140px; }
+@media (min-width: 1476px) { .interior-hero-photo { margin-right: calc((1300px - 100vw) / 2); } }
+@media (max-width: 1100px) {
+  .interior-page { padding-top: 92px; }
+  .interior-hero-grid { gap: 34px; }
+  .source-service-grid { grid-template-columns: repeat(2, 1fr); }
+  .source-card-grid { grid-template-columns: repeat(2, 1fr); }
+  .source-testimonials { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .interior-page { padding-top: 92px; }
+  .interior-hero-grid { display: flex; flex-direction: column; gap: 0; }
+  .interior-hero-copy { width: 100%; padding-block: 30px 42px; }
+  .breadcrumbs { margin-bottom: 25px; font-size: 11px; }
+  .interior-hero-photo { margin-inline: calc(-1 * var(--gutter)); height: 220px; }
+  .interior-hero-photo img { height: 100%; }
+  .source-row, .interior-section:not(.interior-section-directory):nth-child(odd) .source-row:has(> .source-column:nth-child(2)) { flex-direction: column; align-items: stretch; }
+  .source-column img { max-height: 420px; object-fit: cover; }
+  .source-profile { grid-template-columns: 1fr; gap: 30px; }
+  .source-profile > img { max-width: 380px; max-height: none; }
+  .source-card-grid, .source-gallery { grid-template-columns: 1fr; }
+  .source-split { grid-template-columns: 1fr; gap: 30px; }
+  .source-membership-bar > div { gap: 20px; }
+  .interior-content iframe { min-height: 220px; }
+  .source-numbered { gap: 16px; }
+  .source-number { min-width: 38px; font-size: 28px; }
+  .interior-content { font-size: 16px; line-height: 1.8; }
+}
+@media (max-width: 480px) {
+  .source-service-grid { grid-template-columns: 1fr; }
+  .interior-hero h1 { font-size: 40px; }
+  .source-card { padding: 24px; }
+  .appointment-slot { gap: 18px; }
+}

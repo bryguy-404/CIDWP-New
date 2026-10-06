@@ -1,0 +1,99 @@
+{
+  "canonical": "https://cosmeticimplantdentistrywp.com/union-hill-landing/",
+  "description": "Looking for a dentist in Union Hill? We're 5 minutes down Main St in Westport. Implants, veneers, cosmetic & family care. Book your visit online today!",
+  "forms": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Cosmetic Dentist ServingUnion Hill, Kansas City"
+    },
+    {
+      "tag": "H2",
+      "text": "Historic Neighborhood, Modern Smile"
+    },
+    {
+      "tag": "H3",
+      "text": "The Experience"
+    },
+    {
+      "tag": "H2",
+      "text": "Cosmetic & Restorative Services For Union Hill"
+    },
+    {
+      "tag": "H3",
+      "text": "Porcelain Veneers"
+    },
+    {
+      "tag": "H3",
+      "text": "Dental Implants"
+    },
+    {
+      "tag": "H3",
+      "text": "Full Mouth Restoration"
+    },
+    {
+      "tag": "H3",
+      "text": "Crowns, Bridges & Restorative Care"
+    },
+    {
+      "tag": "H2",
+      "text": "Higher-End Dentistry, Zero Stress"
+    },
+    {
+      "tag": "H3",
+      "text": "A Modern Office & Private Parking"
+    },
+    {
+      "tag": "H3",
+      "text": "Comfort-First Care"
+    },
+    {
+      "tag": "H3",
+      "text": "Cutting-Edge Technology"
+    },
+    {
+      "tag": "H3",
+      "text": "5.0-Star Rated"
+    },
+    {
+      "tag": "H2",
+      "text": "Take A Tour Of Our Office"
+    },
+    {
+      "tag": "H2",
+      "text": "Ready For The Smile You Actually Want?"
+    }
+  ],
+  "html": "<div class=\"x-section e2073-e1 m1ll-0\"><div class=\"x-row x-container max width e2073-e2 m1ll-1 m1ll-2\"><div class=\"x-row-inner\"><div class=\"x-col e2073-e3 m1ll-3\"><!-- Union Hill Landing Page v2 (Cosmetic-Forward) — Cosmetic & Implant Dentistry Westport -->\n<!-- Paste into a Cornerstone Raw HTML element. Row Size: Full Width, zero padding on Section/Row/Column. -->\n<!-- NOTE: Confirm the Full Mouth Restoration page URL below (search \"CONFIRM-URL\"). -->\n<style>\n  .cidwp-landing{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#4a4b4f;margin:0;line-height:1.7;}\n  .cidwp-landing *,.cidwp-landing *::before,.cidwp-landing *::after{box-sizing:border-box;}\n  .cidwp-landing .cidwp-wrap{max-width:1140px;margin:0 auto;padding:0 24px;}\n  .cidwp-landing .cidwp-script{font-family:'Brush Script MT','Segoe Script',cursive;color:#3a9cc0;font-size:1.75rem;margin:0 0 6px;}\n  .cidwp-landing h1,.cidwp-landing h2,.cidwp-landing h3{font-family:inherit;line-height:1.25;margin:0 0 18px;}\n  .cidwp-landing h2{color:#55565a;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:400;text-transform:uppercase;letter-spacing:1px;}\n  .cidwp-landing h3{color:#55565a;font-size:1.1rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;}\n  .cidwp-landing p{margin:0 0 16px;}\n\n  /* Buttons */\n  .cidwp-landing .cidwp-btn{display:inline-block;background:#64b0d4;color:#ffffff;text-decoration:none;text-transform:uppercase;font-weight:600;letter-spacing:2px;font-size:.95rem;padding:18px 40px;transition:background .2s ease;}\n  .cidwp-landing .cidwp-btn:hover{background:#2e7f9e;}\n  .cidwp-landing .cidwp-btn:focus-visible,.cidwp-landing a:focus-visible{outline:3px solid #2e7f9e;outline-offset:3px;}\n  .cidwp-landing .cidwp-btn--dark{background:#2e7f9e;}\n  .cidwp-landing .cidwp-btn--dark:hover{background:#64b0d4;}\n  .cidwp-landing .cidwp-textlink{color:#2e7f9e;font-weight:600;text-decoration:underline;}\n  .cidwp-landing .cidwp-textlink:hover{color:#64b0d4;}\n\n  /* Hero */\n  .cidwp-landing .cidwp-hero{position:relative;background:#3c4046 center/cover no-repeat;/* add background-image:url('...'); here for a photo */padding:120px 24px;text-align:center;}\n  .cidwp-landing .cidwp-hero::before{content:\"\";position:absolute;inset:0;background:rgba(0,0,0,.45);}\n  .cidwp-landing .cidwp-hero-inner{position:relative;max-width:900px;margin:0 auto;}\n  .cidwp-landing .cidwp-hero h1{color:#ffffff !important;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif !important;text-transform:uppercase !important;font-weight:800 !important;font-size:clamp(2rem,5vw,3.6rem) !important;letter-spacing:1px !important;line-height:1.25 !important;margin-bottom:28px;}\n  .cidwp-landing .cidwp-hero p{color:#ffffff !important;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif !important;font-size:1.05rem !important;max-width:640px;margin:0 auto 32px;}\n\n  /* Intro */\n  .cidwp-landing .cidwp-intro{padding:80px 0;}\n  .cidwp-landing .cidwp-intro-grid{display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap;}\n  .cidwp-landing .cidwp-intro-grid>div{flex:1 1 420px;}\n  .cidwp-landing .cidwp-panel{background:#dbe8f3;padding:48px 40px;}\n  .cidwp-landing .cidwp-panel ul{margin:0 0 20px;padding-left:20px;}\n  .cidwp-landing .cidwp-panel li{margin-bottom:8px;}\n\n  /* Services */\n  .cidwp-landing .cidwp-services{padding:40px 0 80px;text-align:center;}\n  .cidwp-landing .cidwp-services-intro{max-width:760px;margin:0 auto 56px;}\n  .cidwp-landing .cidwp-svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:44px;text-align:left;}\n  .cidwp-landing .cidwp-svc svg{width:52px;height:52px;stroke:#3a9cc0;fill:none;stroke-width:1.6;margin-bottom:16px;}\n  .cidwp-landing .cidwp-svc h3{margin-bottom:12px;}\n\n  /* Why choose us */\n  .cidwp-landing .cidwp-why{background:#dbe8f3;padding:80px 0;text-align:center;}\n  .cidwp-landing .cidwp-why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:48px;text-align:left;}\n  .cidwp-landing .cidwp-why-card{background:#ffffff;border-top:4px solid #3a9cc0;padding:36px 32px;box-shadow:0 6px 18px rgba(46,127,158,.12);display:flex;gap:20px;align-items:flex-start;}\n  .cidwp-landing .cidwp-why-card svg{flex:0 0 44px;width:44px;height:44px;stroke:#3a9cc0;fill:none;stroke-width:1.8;margin-top:4px;}\n  .cidwp-landing .cidwp-why-card h3{font-size:1rem;margin-bottom:8px;}\n  .cidwp-landing .cidwp-why-card p{margin-bottom:0;}\n  @media (max-width:800px){.cidwp-landing .cidwp-why-grid{grid-template-columns:1fr;}}\n\n  /* Office video tour */\n  .cidwp-landing .cidwp-tour{padding:80px 0;text-align:center;}\n  .cidwp-landing .cidwp-tour-intro{max-width:760px;margin:0 auto 40px;}\n  .cidwp-landing .cidwp-tour-frame{max-width:380px;margin:0 auto;aspect-ratio:9/16;background:#2e3237;box-shadow:0 10px 30px rgba(46,127,158,.18);}\n  .cidwp-landing .cidwp-tour-frame video{width:100%;height:100%;display:block;object-fit:cover;}\n\n  /* Final CTA */\n  .cidwp-landing .cidwp-final{background:#2e3237;text-align:center;padding:90px 24px;}\n  .cidwp-landing .cidwp-final h2{color:#ffffff !important;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif !important;font-weight:700 !important;text-transform:uppercase !important;letter-spacing:1px !important;}\n  .cidwp-landing .cidwp-final p{color:#e8eaec !important;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif !important;max-width:620px;margin:0 auto 30px;}\n  .cidwp-landing .cidwp-phone{display:block;margin-top:26px;color:#ffffff;font-size:1.3rem;font-weight:600;text-decoration:none;letter-spacing:1px;}\n  .cidwp-landing .cidwp-phone:hover{color:#64b0d4;}\n\n  @media (max-width:600px){\n    .cidwp-landing .cidwp-hero{padding:90px 20px;}\n    .cidwp-landing .cidwp-hero h1{font-size:1.6rem !important;letter-spacing:.5px !important;line-height:1.3 !important;}\n    .cidwp-landing .cidwp-hero h1 br{display:none;}\n    .cidwp-landing .cidwp-intro,.cidwp-landing .cidwp-tour{padding:56px 0;}\n    .cidwp-landing .cidwp-panel{padding:36px 24px;}\n    .cidwp-landing .cidwp-why,.cidwp-landing .cidwp-final{padding:60px 0;}\n    .cidwp-landing .cidwp-final{padding:70px 20px;}\n  }\n</style>\n\n<div class=\"cidwp-landing\">\n\n  <!-- HERO -->\n  <section class=\"cidwp-hero\">\n    <div class=\"cidwp-hero-inner\">\n      <h1>Cosmetic Dentist Serving<br>Union Hill, Kansas City</h1>\n      <p>Veneers, implants, and complete smile transformations in a modern, high-end office — five minutes down Main Street from Union Hill.</p>\n      <a class=\"cidwp-btn\" href=\"https://onlineappointment.carestack.com/?dn=acts&amp;ln=1\">Book An Appointment</a>\n    </div>\n  </section>\n\n  <!-- INTRO -->\n  <section class=\"cidwp-intro\">\n    <div class=\"cidwp-wrap\">\n      <div class=\"cidwp-intro-grid\">\n        <div>\n          <p class=\"cidwp-script\">Where Union Hill goes for a better smile</p>\n          <h2>Historic Neighborhood, Modern Smile</h2>\n          <p>Union Hill pairs 1880s brick row houses with skyline views of Crown Center and downtown — a neighborhood that appreciates things built with craft and kept beautiful. Your smile deserves the same standard of work.</p>\n          <p>Cosmetic &amp; Implant Dentistry Westport specializes in exactly that. Our modern office at 638 W 39th St is a straight shot down Main Street or Broadway — about five minutes, with the streetcar line running right between us — and private parking so your visit starts stress-free. From custom veneers to complete smile restorations, this is dentistry designed around the result you want to see in the mirror — and yes, we handle your routine checkups and cleanings too.</p>\n        </div>\n        <div class=\"cidwp-panel\">\n          <h3>The Experience</h3>\n          <ul>\n            <li>Modern, beautifully designed office</li>\n            <li>Private parking on site</li>\n            <li>Comfort-first care, including sedation options</li>\n            <li>Rated 5.0 by our patients on Google</li>\n          </ul>\n          <a class=\"cidwp-btn cidwp-btn--dark\" href=\"https://onlineappointment.carestack.com/?dn=acts&amp;ln=1\">Book An Appointment</a>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- SERVICES -->\n  <section class=\"cidwp-services\">\n    <div class=\"cidwp-wrap\">\n      <p class=\"cidwp-script\">Artistry meets dentistry</p>\n      <h2>Cosmetic &amp; Restorative Services For Union Hill</h2>\n      <p class=\"cidwp-services-intro\">Whether you're refining one detail or transforming your entire smile, every treatment plan is custom-designed. Union Hill patients most often visit us for:</p>\n      <div class=\"cidwp-svc-grid\">\n\n        <div class=\"cidwp-svc\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"8\" y=\"16\" width=\"10\" height=\"16\" rx=\"4\"></rect><rect x=\"19\" y=\"16\" width=\"10\" height=\"16\" rx=\"4\"></rect><rect x=\"30\" y=\"16\" width=\"10\" height=\"16\" rx=\"4\"></rect></svg>\n          <h3>Porcelain Veneers</h3>\n          <p>Hand-crafted veneers that correct chips, gaps, and discoloration — designed to fit your face and look completely natural.</p>\n        </div>\n\n        <div class=\"cidwp-svc\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 6c-5-3-14-3-14 6 0 8 4 12 5 20 .4 3 1.5 10 4 10s2.5-8 5-8 2.5 8 5 8 3.6-7 4-10c1-8 5-12 5-20 0-9-9-9-14-6z\"></path><path d=\"M22 22v10M17 27h10\" stroke-linecap=\"round\"></path></svg>\n          <h3>Dental Implants</h3>\n          <p>Permanent, natural-looking replacements for missing teeth that restore both the function and beauty of your smile.</p>\n        </div>\n\n        <div class=\"cidwp-svc\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 6c-5-3-14-3-14 6 0 8 4 12 5 20 .4 3 1.5 10 4 10s2.5-8 5-8 2.5 8 5 8 3.6-7 4-10c1-8 5-12 5-20 0-9-9-9-14-6z\"></path><path d=\"M32 8l2-4 2 4 4 2-4 2-2 4-2-4-4-2z\" stroke-linejoin=\"round\"></path></svg>\n          <h3>Full Mouth Restoration</h3>\n          <p>For bigger cases: advanced treatments combined into one plan that rebuilds your teeth's health, function, and appearance. <a class=\"cidwp-textlink\" href=\"/full-mouth-restoration/\">Learn more<!-- CONFIRM-URL --></a></p>\n        </div>\n\n        <div class=\"cidwp-svc\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M14 14h20v8a10 10 0 0 1-20 0z\" stroke-linejoin=\"round\"></path><path d=\"M18 34h12M20 38h8M14 14l-2-6h24l-2 6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>\n          <h3>Crowns, Bridges &amp; Restorative Care</h3>\n          <p>Precision crowns, bridges, and dentures that repair damage and complete your smile with a seamless, high-end finish.</p>\n        </div>\n\n      </div>\n    </div>\n  </section>\n\n  <!-- WHY CHOOSE US -->\n  <section class=\"cidwp-why\">\n    <div class=\"cidwp-wrap\">\n      <p class=\"cidwp-script\">Why patients choose us</p>\n      <h2>Higher-End Dentistry, Zero Stress</h2>\n      <div class=\"cidwp-why-grid\">\n        <div class=\"cidwp-why-card\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M8 22 24 8l16 14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M12 20v18h24V20\" stroke-linejoin=\"round\"></path><path d=\"M21 38v-10h6v10\" stroke-linejoin=\"round\"></path></svg>\n          <div>\n            <h3>A Modern Office &amp; Private Parking</h3>\n            <p>A beautiful, thoughtfully designed space with private on-site parking — your visit is easy from the moment you arrive.</p>\n          </div>\n        </div>\n        <div class=\"cidwp-why-card\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 40s-14-8.6-14-19a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 10.4-14 19-14 19z\" stroke-linejoin=\"round\"></path></svg>\n          <div>\n            <h3>Comfort-First Care</h3>\n            <p>Nitrous oxide, oral sedation, and IV sedation options so even big treatment days feel relaxed and manageable.</p>\n          </div>\n        </div>\n        <div class=\"cidwp-why-card\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"21\" cy=\"21\" r=\"11\"></circle><path d=\"M29 29l11 11\" stroke-linecap=\"round\"></path><path d=\"M16 21h10M21 16v10\" stroke-linecap=\"round\"></path></svg>\n          <div>\n            <h3>Cutting-Edge Technology</h3>\n            <p>State-of-the-art imaging and the latest treatment technology for precise, efficient results on every case.</p>\n          </div>\n        </div>\n        <div class=\"cidwp-why-card\">\n          <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 6l5.3 10.8L41 18.5l-8.5 8.3 2 11.8L24 33l-10.5 5.6 2-11.8L7 18.5l11.7-1.7z\" stroke-linejoin=\"round\"></path></svg>\n          <div>\n            <h3>5.0-Star Rated</h3>\n            <p>Our patients rate us 5.0 on Google — and trust us with their biggest smile transformations, not just checkups.</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- OFFICE VIDEO TOUR -->\n  <section class=\"cidwp-tour\">\n    <div class=\"cidwp-wrap\">\n      <p class=\"cidwp-script\">Come see for yourself</p>\n      <h2>Take A Tour Of Our Office</h2>\n      <p class=\"cidwp-tour-intro\">From the private parking lot to the treatment rooms, everything about our Westport office was designed to make you comfortable before you ever sit in the chair.</p>\n      <div class=\"cidwp-tour-frame\">\n        <video controls=\"\" preload=\"metadata\" playsinline=\"\">\n          <source src=\"https://cosmeticimplantdentistrywp.com/wp-content/uploads/2026/08/cidwp-tour-video.mp4\" type=\"video/mp4\">\n        </video>\n      </div>\n    </div>\n  </section>\n\n  <!-- FINAL CTA -->\n  <section class=\"cidwp-final\">\n    <h2>Ready For The Smile You Actually Want?</h2>\n    <p>Book your cosmetic consultation at our Westport office — five minutes from Union Hill at 638 W 39th St, Kansas City, MO 64111. Private parking available.</p>\n    <a class=\"cidwp-btn\" href=\"https://onlineappointment.carestack.com/?dn=acts&amp;ln=1\">Book An Appointment</a>\n    <a class=\"cidwp-phone\" href=\"tel:8163880985\">816-388-0985</a>\n  </section>\n\n</div></div></div></div></div>",
+  "iframes": [],
+  "images": [],
+  "links": [
+    {
+      "href": "https://onlineappointment.carestack.com/?dn=acts&ln=1",
+      "text": "Book An Appointment"
+    },
+    {
+      "href": "https://onlineappointment.carestack.com/?dn=acts&ln=1",
+      "text": "Book An Appointment"
+    },
+    {
+      "href": "/full-mouth-restoration/",
+      "text": "Learn more"
+    },
+    {
+      "href": "https://onlineappointment.carestack.com/?dn=acts&ln=1",
+      "text": "Book An Appointment"
+    },
+    {
+      "href": "tel:8163880985",
+      "text": "816-388-0985"
+    }
+  ],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "text": "COSMETIC DENTIST SERVING\nUNION HILL, KANSAS CITY\n\nVeneers, implants, and complete smile transformations in a modern, high-end office — five minutes down Main Street from Union Hill.\n\nBOOK AN APPOINTMENT\n\nWhere Union Hill goes for a better smile\n\nHISTORIC NEIGHBORHOOD, MODERN SMILE\n\nUnion Hill pairs 1880s brick row houses with skyline views of Crown Center and downtown — a neighborhood that appreciates things built with craft and kept beautiful. Your smile deserves the same standard of work.\n\nCosmetic & Implant Dentistry Westport specializes in exactly that. Our modern office at 638 W 39th St is a straight shot down Main Street or Broadway — about five minutes, with the streetcar line running right between us — and private parking so your visit starts stress-free. From custom veneers to complete smile restorations, this is dentistry designed around the result you want to see in the mirror — and yes, we handle your routine checkups and cleanings too.\n\nTHE EXPERIENCE\nModern, beautifully designed office\nPrivate parking on site\nComfort-first care, including sedation options\nRated 5.0 by our patients on Google\nBOOK AN APPOINTMENT\n\nArtistry meets dentistry\n\nCOSMETIC & RESTORATIVE SERVICES FOR UNION HILL\n\nWhether you're refining one detail or transforming your entire smile, every treatment plan is custom-designed. Union Hill patients most often visit us for:\n\nPORCELAIN VENEERS\n\nHand-crafted veneers that correct chips, gaps, and discoloration — designed to fit your face and look completely natural.\n\nDENTAL IMPLANTS\n\nPermanent, natural-looking replacements for missing teeth that restore both the function and beauty of your smile.\n\nFULL MOUTH RESTORATION\n\nFor bigger cases: advanced treatments combined into one plan that rebuilds your teeth's health, function, and appearance. Learn more\n\nCROWNS, BRIDGES & RESTORATIVE CARE\n\nPrecision crowns, bridges, and dentures that repair damage and complete your smile with a seamless, high-end finish.\n\nWhy patients choose us\n\nHIGHER-END DENTISTRY, ZERO STRESS\nA MODERN OFFICE & PRIVATE PARKING\n\nA beautiful, thoughtfully designed space with private on-site parking — your visit is easy from the moment you arrive.\n\nCOMFORT-FIRST CARE\n\nNitrous oxide, oral sedation, and IV sedation options so even big treatment days feel relaxed and manageable.\n\nCUTTING-EDGE TECHNOLOGY\n\nState-of-the-art imaging and the latest treatment technology for precise, efficient results on every case.\n\n5.0-STAR RATED\n\nOur patients rate us 5.0 on Google — and trust us with their biggest smile transformations, not just checkups.\n\nCome see for yourself\n\nTAKE A TOUR OF OUR OFFICE\n\nFrom the private parking lot to the treatment rooms, everything about our Westport office was designed to make you comfortable before you ever sit in the chair.\n\nREADY FOR THE SMILE YOU ACTUALLY WANT?\n\nBook your cosmetic consultation at our Westport office — five minutes from Union Hill at 638 W 39th St, Kansas City, MO 64111. Private parking available.\n\nBOOK AN APPOINTMENT\n816-388-0985",
+  "title": "Union Hill Dentist | Cosmetic & Implant Dentistry Westport",
+  "url": "https://cosmeticimplantdentistrywp.com/union-hill-landing/",
+  "requestedUrl": "https://cosmeticimplantdentistrywp.com/union-hill-landing/",
+  "label": "Union Hill Landing",
+  "capturedAt": "2026-10-06T17:09:20.545Z"
+}
