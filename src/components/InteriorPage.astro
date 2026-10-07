@@ -4,6 +4,7 @@ import Header from './Header.astro';
 import Footer from './Footer.astro';
 import AppointmentForm from './AppointmentForm.astro';
 import FinancingWidget from './FinancingWidget.astro';
+import InteriorCta from './InteriorCta.astro';
 import heroPhoto from '../assets/round2/clinical-care.jpg';
 import '../styles/interior.css';
 interface Section { html: string; kind: string; sourceIndex: number }
@@ -26,7 +27,7 @@ const isProfile = page.path.includes('meet-the-');
     </div>
   </section>
   <div data-original-content>
-    {page.sections.map((section, index) => <section class:list={['interior-section', `interior-section-${section.kind}`, { 'interior-section-first': index === 0 }]}>
+    {page.sections.map((section, index) => section.kind === 'cta' ? <InteriorCta><Fragment set:html={section.html} /></InteriorCta> : <section class:list={['interior-section', `interior-section-${section.kind}`, { 'interior-section-first': index === 0 }]}>
       <div class="shell interior-content">
         {section.html.split(/(<!--APPOINTMENT_FORM-->|<!--FINANCING_WIDGET-->)/).map(part => part === '<!--APPOINTMENT_FORM-->' ? <AppointmentForm /> : part === '<!--FINANCING_WIDGET-->' ? <FinancingWidget /> : <Fragment set:html={part} />)}
       </div>

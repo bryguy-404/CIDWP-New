@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import practicePhoto from '../assets/practice-interior.jpg';
+---
+
+<section id="page-cta" class="interior-section interior-section-cta">
+  <div class="interior-cta-photo" aria-hidden="true">
+    <Image src={practicePhoto} alt="" widths={[480, 800, 1200, 1600]} sizes="(max-width: 760px) 100vw, 65vw" loading="lazy" />
+  </div>
+  <div class="shell interior-cta-shell">
+    <div class="interior-content interior-cta-copy">
+      <slot />
+    </div>
+  </div>
+</section>

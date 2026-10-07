@@ -58,9 +58,25 @@
 .source-gallery img { width: 100%; object-fit: contain; }
 .interior-content iframe { display: block; width: 100%; border: 0; min-height: 380px; aspect-ratio: 16 / 9; margin-block: 30px; }
 .interior-content video { display: block; width: 100%; max-height: 650px; background: var(--color-ink); margin-top: 32px; }
-.interior-section-cta, .interior-section-cta:nth-child(even) { background: var(--color-blue); text-align: center; }
-.interior-section-cta .source-column { max-width: 800px; }
-.interior-section-cta .button { background: white; border-color: white; }
+/* Shared closing invitation: real practice photography with a readable teal foreground. */
+.interior-section-cta, .interior-section-cta:nth-child(even) { position: relative; isolation: isolate; overflow: hidden; background: var(--color-ink); color: white; padding-block: clamp(64px, 7vw, 100px); scroll-margin-top: 116px; }
+.interior-cta-photo { position: absolute; inset: 0 0 0 35%; z-index: -2; }
+.interior-cta-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 55%; }
+.interior-section-cta::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #0e3647 30%, rgb(14 54 71 / .96) 43%, rgb(14 54 71 / .72) 58%, rgb(14 54 71 / .12) 100%); }
+.interior-cta-shell { min-height: 260px; display: flex; align-items: center; }
+.interior-cta-copy { width: 58%; max-width: 650px; }
+.interior-cta-copy::before { content: ""; display: block; width: 56px; height: 3px; background: var(--color-blue); margin-bottom: 28px; }
+.interior-cta-copy h2, .interior-cta-copy h3 { max-width: 17ch; font-size: clamp(38px, 4.6vw, 66px); font-weight: 400; line-height: 1.08; letter-spacing: -.045em; margin: 0 0 28px; }
+.interior-cta-copy h2 { max-width: none; font-size: clamp(36px, 3.8vw, 54px); }
+.interior-cta-copy p, .interior-cta-copy .source-copy { max-width: 540px; color: #e0eff0; line-height: 1.75; }
+.interior-cta-copy .source-column { max-width: none; }
+.interior-cta-copy .button { min-height: 60px; padding: 17px 28px; margin-block: 8px 0; background: var(--color-blue); border-color: var(--color-blue); color: var(--color-ink); gap: 14px; }
+.interior-cta-copy .button::after { content: ""; width: 20px; height: 20px; flex-shrink: 0; background: currentColor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15m-6-6 6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat; }
+.interior-cta-copy .button[href^="tel:"]::after { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m8 3 3 5-3 3c1 2 3 4 5 5l3-3 5 3c0 3-2 5-4 5C10 21 3 14 3 7c0-2 2-4 5-4Z'/%3E%3C/svg%3E"); }
+.interior-cta-copy .button:hover { background: white; border-color: white; }
+.interior-cta-copy a:focus-visible { outline-color: var(--color-blue); }
+.interior-cta-copy a:not(.button):not(.source-service-card) { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-blue); text-underline-offset: 5px; }
+.interior-cta-copy .button + a:not(.button) { margin: 14px 0 0 22px; }
 .appointment-slot { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; padding-block: 22px; }
 .appointment-slot .button { margin: 0; }
 .interior-policy .interior-hero-grid { display: block; min-height: auto; }
@@ -133,6 +149,15 @@
   .source-numbered { gap: 16px; }
   .source-number { min-width: 38px; font-size: 28px; }
   .interior-content { font-size: 16px; line-height: 1.8; }
+  .interior-section-cta, .interior-section-cta:nth-child(even) { padding-block: 210px 52px; scroll-margin-top: 92px; }
+  .interior-cta-photo { inset: 0 0 auto; height: 340px; }
+  .interior-cta-photo img { object-position: 60% 45%; }
+  .interior-section-cta::before { background: linear-gradient(180deg, rgb(14 54 71 / .08) 0, rgb(14 54 71 / .45) 130px, #0e3647 320px); }
+  .interior-cta-shell { min-height: 0; }
+  .interior-cta-copy { width: 100%; max-width: 560px; }
+  .interior-cta-copy::before { margin-bottom: 24px; }
+  .interior-cta-copy h2, .interior-cta-copy h3 { font-size: clamp(36px, 7vw, 48px); margin-bottom: 26px; }
+  .interior-cta-copy .button + a:not(.button) { margin-left: 0; display: flex; width: fit-content; }
 }
 @media (max-width: 480px) {
   .source-service-grid { grid-template-columns: 1fr; }
